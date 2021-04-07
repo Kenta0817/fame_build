@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/**
+* 選ばれる理由
+*
+*/
+#contents.bg-square {
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-bottom: 25px;
+  }
+}
+
+/* 共通
+========================================================================== */
+/* =====================================
+ wrap-nav-reason
+ ===================================== */
+.wrap-nav-reason {
+  margin: 0 -10px 90px;
+}
+
+.wrap-nav-reason .nav-reason {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.wrap-nav-reason .nav-reason .nav-reason-inner {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 35px 0 45px;
+}
+
+.wrap-nav-reason .nav-reason .nav-reason-ph {
+  margin-bottom: 30px;
+}
+
+.wrap-nav-reason .nav-reason .nav-reason-icon {
+  margin-bottom: 15px;
+}
+
+.wrap-nav-reason .nav-reason .nav-reason-sttl {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+
+.wrap-nav-reason .nav-reason .nav-reason-txt {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-nav-reason {
+    margin: 0 0 15px;
+  }
+  .wrap-nav-reason .nav-reason {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .wrap-nav-reason .nav-reason .nav-reason-inner {
+    padding: 20px 15px 25px;
+  }
+  .wrap-nav-reason .nav-reason .nav-reason-sttl {
+    font-size: 24px;
+    font-size: 2.4rem;
+    letter-spacing: 0.1em;
+  }
+  .wrap-nav-reason .nav-reason .nav-reason-txt {
+    margin-bottom: 15px;
+  }
+}
+
+/* 一覧
+========================================================================== */
+/* =====================================
+ main-area
+ ===================================== */
+.reason-index .main-area {
+  text-align: center;
+  padding: 60px 0 70px;
+}
+
+.reason-index .main-area .main-ttl {
+  margin-bottom: 45px;
+}
+
+.reason-index .main-area .main-lead {
+  font-size: 45px;
+  font-size: 4.5rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.reason-index .main-area .main-txt {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.85;
+}
+
+@media screen and (max-width: 767px) {
+  .reason-index .main-area {
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .reason-index .main-area .main-ttl {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .reason-index .main-area .main-ttl img {
+    width: 180px;
+  }
+  .reason-index .main-area .main-lead {
+    font-size: 26px;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+  }
+  .reason-index .main-area .main-txt {
+    text-align: left;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+/* =====================================
+ wrap-box-reason
+ ===================================== */
+.reason-index .sct-data {
+  background: #fff;
+  padding: 100px 0 80px;
+  margin-bottom: 80px;
+}
+
+.reason-index .sct-data .sct-data-inner {
+  display: block;
+}
+
+.reason-index .sct-data .sct-data-inner:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.reason-index .sct-data .box-data .box-data-ttl {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.reason-index .sct-data .box-data .box-data-txt {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.reason-index .sct-data .data-l {
+  width: 391px;
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+.reason-index .sct-data .data-l .data-lead {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-family: "FOT-筑紫ゴシック Pr5 M","TsukuGoPr5-M",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.786;
+  margin-bottom: 70px;
+}
+
+.reason-index .sct-data .data-l .box-data .box-data-ttl {
+  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.reason-index .sct-data .data-l .box-data .box-data-ttl span {
+  font-size: 20px;
+  font-size: 2rem;
+  display: block;
+}
+
+.reason-index .sct-data .data-l .box-data .box-data-img {
+  margin-bottom: 45px;
+}
+
+.reason-index .sct-data .data-l .box-data .box-data-cap {
+  font-size: 13px;
+  font-size: 1.3rem;
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-top: 15px;
+}
+
+.reason-index .sct-data .data-r {
+  width: 725px;
+  letter-spacing: -.40em;
+}
+
+.reason-index .sct-data .data-r .box-data {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 55px;
+  margin-bottom: 45px;
+}
+
+.reason-index .sct-data .data-r .box-data .box-data-hd {
+  margin-bottom: 20px;
+}
+
+.reason-index .sct-data .data-r .box-data .box-data-ttl span {
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .reason-index .sct-data {
+    background: #fff;
+    padding: 40px 0 15px;
+    margin-bottom: 30px;
+  }
+  .reason-index .sct-data .box-data .box-data-ttl {
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .reason-index .sct-data .data-l {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+  .reason-index .sct-data .data-l .data-lead {
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .reason-index .sct-data .data-l .box-data .box-data-ttl {
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .reason-index .sct-data .data-l .box-data .box-data-ttl span {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .reason-index .sct-data .data-l .box-data .box-data-img {
+    margin-bottom: 45px;
+  }
+  .reason-index .sct-data .data-l .box-data .box-data-img img {
+    width: 80%;
+  }
+  .reason-index .sct-data .data-r {
+    width: 100%;
+  }
+  .reason-index .sct-data .data-r .box-data {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .reason-index .sct-data .data-r .box-data .box-data-hd {
+    margin-bottom: 20px;
+  }
+}
+
+/* =====================================
+ bnr-list
+ ===================================== */
+.reason-index .bnr-list {
+  text-align: center;
+}
+
+.reason-index .bnr-list li {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .reason-index .bnr-list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .reason-index .bnr-list li {
+    margin-bottom: 15px;
+  }
+}
+
+/* 詳細
+========================================================================== */
+.reason-detail#contents.bg-square {
+  padding-top: 0;
+}
+
+.reason-detail .main-area {
+  margin-bottom: 100px;
+}
+
+.reason-detail .main-area .main-visual {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 55px;
+}
+
+.reason-detail .main-area .main-icon {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.reason-detail .main-area .main-ttl {
+  text-align: center;
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.reason-detail .main-area .main-lead {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reason-detail .main-area .main-txt {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.reason-detail .sct-reason .box-reason {
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-main {
+  width: 1500px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-ttl {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #000;
+  background: #f5cd00;
+  display: inline-block;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0 13px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-lead {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 1.625;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  letter-spacing: 0.03em;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-lead02 {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.625;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-txt {
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 50px;
+  width: 545px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents {
+  padding: 70px 150px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents .box-reason-contents-lead {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.625;
+  margin-bottom: 20px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents .box-reason-contents-txt {
+  margin-bottom: 15px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents .btn-cmn-data {
+  margin-top: 50px;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents.col2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  letter-spacing: -.40em;
+}
+
+.reason-detail .sct-reason .box-reason .box-reason-contents.col2 .inb {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.reason-detail .sct-reason .wrap-box-reason.col2 {
+  letter-spacing: -.40em;
+  margin: 0 -10px;
+}
+
+.reason-detail .sct-reason .wrap-box-reason.col2 .inb {
+  width: 50%;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-main {
+  height: 450px;
+  vertical-align: bottom;
+}
+
+.reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-main .box-reason-main-lead {
+  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 75px;
+}
+
+.reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-contents {
+  padding: 40px;
+}
+
+.reason-detail + .cmn-inner .wrap-nav-reason {
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .reason-detail .cmn-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .reason-detail .main-area {
+    margin-bottom: 30px;
+  }
+  .reason-detail .main-area .main-visual {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .reason-detail .main-area .main-icon {
+    margin-bottom: 20px;
+  }
+  .reason-detail .main-area .main-icon img {
+    width: 250px;
+  }
+  .reason-detail .main-area .main-ttl {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .reason-detail .main-area .main-lead {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .reason-detail .main-area .main-txt {
+    width: 100%;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .reason-detail .sct-reason .box-reason {
+    margin-bottom: 30px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-main {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 30px 15px;
+    box-sizing: border-box;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-ttl {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-lead {
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-lead02 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-main .box-reason-main-txt {
+    margin-left: 0;
+    width: 100%;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents {
+    padding: 30px 15px 15px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents .box-reason-contents-lead {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents .btn-cmn-data {
+    margin-top: 20px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents.col2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents.col2 .inb {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .reason-detail .sct-reason .box-reason .box-reason-contents.col2 .inb:last-child {
+    margin-bottom: 0;
+  }
+  .reason-detail .sct-reason .wrap-box-reason.col2 {
+    letter-spacing: -.40em;
+    margin: 0;
+  }
+  .reason-detail .sct-reason .wrap-box-reason.col2 .inb {
+    width: 100%;
+    padding: 0;
+  }
+  .reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-main {
+    height: auto;
+  }
+  .reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-main .box-reason-main-lead {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  .reason-detail .sct-reason .wrap-box-reason.col2 .inb .box-reason .box-reason-contents {
+    padding: 30px 15px 15px;
+  }
+  .reason-detail + .cmn-inner .wrap-nav-reason {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,562 @@
+@charset "UTF-8";
+/*
+**********************************************************************
+
+* common.css
+
+*********************************************************************
+*/
+/* =========================================================
+body
+========================================================= */
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, sans-serif;
+  line-height: 1.8;
+  background: #fff;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    min-width: 1240px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: 320px;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+/* =========================================================
+layout
+========================================================= */
+#Wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .inner {
+    max-width: 1240px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .inner {
+    padding: 0 15px;
+  }
+}
+
+/* =========================================================
+#GHead
+========================================================= */
+#GHead {
+  line-height: 1;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  transition: ease 0.4s transform;
+  transform: translateY(-120%);
+  background-color: #fff;
+}
+
+.is-headActive #GHead {
+  transform: translateY(0);
+}
+
+.is-top #GHead {
+  transform: translateY(-100%);
+}
+
+#GHead img {
+  vertical-align: top;
+}
+
+#GHead .titBlock {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  #GHead {
+    min-width: 1240px;
+    height: 100px;
+    padding: 0 420px 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #GHead .headInner {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  #GHead .headInner > * {
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+  }
+  #GHead .houseImg {
+    width: 110px;
+    padding-right: 10px;
+  }
+  #GHead .titBlock {
+    width: 140px;
+    padding-right: 10px;
+  }
+  #GHead .titBlock .sectTit {
+    padding-top: 15px;
+  }
+  #GHead .titBlock .enTit {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #GHead {
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  #GHead .headInner {
+    padding-top: 15px;
+  }
+  #GHead .headInner:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  #GHead .houseImg {
+    float: left;
+    width: 68px;
+    padding-right: 5px;
+  }
+  #GHead .titBlock {
+    float: left;
+    width: 90px;
+  }
+  #GHead .titBlock .sectTit {
+    padding-top: 7px;
+  }
+  #GHead .titBlock .enTit {
+    margin-top: 2px;
+  }
+}
+
+/*============================
+#MenuWrap
+============================*/
+#MenuWrap .itemList li a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) {
+  #MenuWrap .navTitBox {
+    display: none;
+  }
+  #MenuWrap .itemList:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  #MenuWrap .itemList li {
+    float: left;
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-width: 769px) and (max-width: 1299px) {
+  #MenuWrap .itemList li {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #MenuWrap .itemList li:first-child a:before {
+    display: none;
+  }
+  #MenuWrap .itemList li a {
+    position: relative;
+    display: block;
+    padding: 5px 16px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-width: 769px) and (max-width: 1299px) {
+  #MenuWrap .itemList li a {
+    padding: 5px 14px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #MenuWrap .itemList li a:before {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    content: '';
+    left: 0;
+    top: 0;
+    transform: skewX(-30deg);
+    background-color: #f5cd00;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #MenuWrap {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    transition: ease 0.4s transform;
+    transform: translateY(-100%);
+    background-color: #fff;
+  }
+  .is-menuOpen #MenuWrap {
+    transform: translateY(0);
+  }
+  #MenuWrap .navTitBox {
+    text-align: center;
+  }
+  #MenuWrap .navTitBox .navHouseImg img {
+    width: 80px;
+  }
+  #MenuWrap .navTitBox .smileTit {
+    margin-top: 15px;
+  }
+  #MenuWrap .navTitBox .smileTit img {
+    width: 230px;
+  }
+  #MenuWrap .navTitBox .enTit {
+    margin-top: 5px;
+  }
+  #MenuWrap .navTitBox .enTit img {
+    width: 230px;
+  }
+  #MenuWrap .itemList {
+    margin-top: 50px;
+  }
+  #MenuWrap .itemList li {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+  #MenuWrap .itemList li:first-child {
+    margin-top: 0;
+  }
+  #MenuWrap .itemList li a {
+    position: relative;
+    display: block;
+    padding: 5px 16px 12px;
+  }
+  #MenuWrap .itemList li a:before {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    content: '';
+    left: 50%;
+    margin-left: -12px;
+    bottom: 0;
+    background-color: #f5cd00;
+  }
+}
+
+@media only screen and (max-height: 599px) {
+  #MenuWrap {
+    padding: 8vh 0;
+  }
+  #MenuWrap .itemList {
+    margin-top: 20px;
+  }
+  #MenuWrap .itemList li {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-height: 529px) {
+  #MenuWrap {
+    padding: 4vh 0;
+  }
+  #MenuWrap .navTitBox {
+    max-width: 40vh;
+    margin: 0 auto;
+  }
+  #MenuWrap .itemList {
+    margin-top: 5px;
+  }
+  #MenuWrap .itemList li {
+    margin-top: 5px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  #MenuWrap .itemList li a {
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-height: 374px) {
+  #MenuWrap .itemList:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  #MenuWrap .itemList li {
+    width: 50%;
+    float: left;
+  }
+}
+
+/*============================
+#InfoNav
+============================*/
+#InfoNav {
+  z-index: 3;
+}
+
+#InfoNav .itemList:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#InfoNav .itemList li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+#InfoNav .itemList li a {
+  position: relative;
+  display: block;
+}
+
+#InfoNav .itemList li a:before {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  content: '';
+  left: 0;
+  top: 0;
+  background-color: #f5cd00;
+}
+
+#InfoNav .itemList li:first-child a:before {
+  background-color: #ffe600;
+}
+
+@media only screen and (min-width: 769px) {
+  #InfoNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 420px;
+    height: 100px;
+  }
+  #InfoNav .itemList li a {
+    padding: 17px 0;
+  }
+  #InfoNav .itemList li a:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    content: '';
+    left: 0;
+    top: 0;
+    transform: skewX(-40deg);
+    transform-origin: 0 100%;
+  }
+  #InfoNav .itemList li a img {
+    margin-left: -40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #InfoNav {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  #InfoNav .itemList li a {
+    padding: 11px 0;
+  }
+  #InfoNav .itemList li a:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    content: '';
+    left: 0;
+    top: 0;
+    transform-origin: 0 100%;
+  }
+  #InfoNav .itemList li a img {
+    width: auto;
+    height: 48px;
+  }
+}
+
+/*============================
+#MenuBtn
+============================*/
+@media only screen and (max-width: 768px) {
+  #MenuBtn {
+    position: fixed;
+    z-index: 5;
+    top: 15px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.2s ease opacity;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .is-headActive #MenuBtn,
+  .is-menuOpen #MenuBtn,
+  .is-top #MenuBtn {
+    transition-delay: 0.2s;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  #MenuBtn span {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 3px;
+    transition: transform 0.3s ease;
+    background-color: #000;
+  }
+  #MenuBtn span.m1 {
+    top: 3px;
+  }
+  #MenuBtn span.m2 {
+    top: 50%;
+    margin-top: -1px;
+  }
+  #MenuBtn span.m3 {
+    bottom: 3px;
+    opacity: 1;
+  }
+  .is-menuOpen #MenuBtn span.m1 {
+    transform: translateY(11px) rotate(-225deg);
+  }
+  .is-menuOpen #MenuBtn span.m2 {
+    transform: translateY(0) rotate(225deg);
+  }
+  .is-menuOpen #MenuBtn span.m3 {
+    transform: translateY(-11px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* =========================================================
+#Contents
+========================================================= */
+/* =========================================================
+#GFoot
+========================================================= */
+#GFoot {
+  position: relative;
+  color: #221815;
+}
+
+#GFoot img {
+  vertical-align: top;
+}
+
+#GFoot .copyright {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  #GFoot {
+    padding: 50px 0 150px;
+  }
+  #GFoot .logo {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #GFoot .logo a {
+    display: block;
+  }
+  #GFoot .copyright {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #GFoot {
+    padding: 30px 0 100px;
+  }
+  #GFoot .logo {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #GFoot .logo a {
+    display: block;
+  }
+  #GFoot .copyright {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+}

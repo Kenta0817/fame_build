@@ -1,0 +1,586 @@
+@charset "UTF-8";
+#contents.bg-square {
+    padding-bottom: 65px
+}
+
+@media screen and (max-width:767px) {
+    #contents.bg-square {
+        padding-bottom: 25px
+    }
+}
+
+.main-area {
+    width: 830px;
+    padding: 60px 0
+}
+
+.main-area .main-ttl {
+    width: 238px
+}
+
+.main-area .fr {
+    padding-top: 20px
+}
+
+.main-area .fr .main-lead {
+    font-size: 45px;
+    font-size: 4.5rem;
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px
+}
+
+.main-area .fr .main-txt {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.85
+}
+
+@media screen and (max-width:767px) {
+    .main-area {
+        width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box
+    }
+    .main-area .main-ttl {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px
+    }
+    .main-area .main-ttl img {
+        width: 180px
+    }
+    .main-area .fr {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%
+    }
+    .main-area .fr .main-lead {
+        font-size: 26px;
+        font-size: 2.6rem;
+        margin-bottom: 15px
+    }
+    .main-area .fr .main-txt {
+        font-size: 14px;
+        font-size: 1.4rem
+    }
+}
+
+.sct-greeting {
+    background: #e5e3df url(img/bg_greeting.png) center no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    padding: 155px 0 65px;
+    box-sizing: border-box;
+    min-height: 520px;
+    margin-bottom: 65px
+}
+
+.sct-greeting .sct-greeting-inner {
+    padding-left: 110px;
+    box-sizing: border-box
+}
+
+.sct-greeting .greeting-sttl {
+    display: inline-block;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #f5cd00;
+    background: #000;
+    padding: 0 10px;
+    margin-bottom: 20px
+}
+
+.sct-greeting .greeting-lead {
+    position: relative;
+    z-index: 2;
+    line-height: 1.778;
+    margin-bottom: 20px
+}
+
+.sct-greeting .greeting-lead span {
+    display: inline-block;
+    font-size: 45px;
+    font-size: 4.5rem;
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #f5cd00;
+    line-height: 1;
+    padding: 10px 15px;
+    margin-bottom: 20px
+}
+
+.sct-greeting .greeting-img {
+    position: absolute;
+    right: 4.5%;
+    bottom: 0
+}
+
+@media screen and (max-width:767px) {
+    .sct-greeting {
+        background-size: 100% auto;
+        padding: 100px 15px 30px;
+        min-height: auto;
+        margin-bottom: 35px;
+        background-position: bottom
+    }
+    .sct-greeting .sct-greeting-inner {
+        padding-left: 0
+    }
+    .sct-greeting .greeting-sttl {
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin-bottom: 10px
+    }
+    .sct-greeting .greeting-lead {
+        margin-bottom: 10px
+    }
+    .sct-greeting .greeting-lead span {
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 10px 5px;
+        margin-bottom: 10px
+    }
+    .sct-greeting .greeting-img {
+        right: -130px
+    }
+    .sct-greeting .greeting-img img {
+        width: 500px
+    }
+}
+
+.bnr-recruit {
+    margin-bottom: 50px
+}
+
+.bnr-recruit a {
+    display: block
+}
+
+@media screen and (max-width:767px) {
+    .bnr-recruit {
+        margin-bottom: 30px
+    }
+    .bnr-recruit a {
+        display: block;
+        position: relative
+    }
+    .bnr-recruit img {
+        width: 100%
+    }
+    .bnr-recruit .btn-more {
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        text-align: center
+    }
+}
+
+.wrap-box-company {
+    margin: 0;
+    justify-content: space-between
+}
+
+.wrap-box-company .box-company {
+    padding: 0;
+    box-sizing: border-box;
+    width: 48.2%;
+    margin: auto;
+}
+
+.wrap-box-company .box-company .box-company-inner {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 35px 0 45px
+}
+
+.wrap-box-company .box-company .box-company-sttl {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    letter-spacing: .1em
+}
+
+.wrap-box-company .box-company .box-company-txt {
+    margin-bottom: 30px
+}
+
+@media screen and (max-width:767px) {
+    .wrap-box-company {
+        margin: 0 0 15px;
+        display: block
+    }
+    .wrap-box-company .box-company {
+        padding: 0;
+        margin-bottom: 15px;
+        width: 100%
+    }
+    .wrap-box-company .box-company .box-company-inner {
+        padding: 20px 15px 25px
+    }
+    .wrap-box-company .box-company .box-company-sttl {
+        font-size: 24px;
+        font-size: 2.4rem;
+        letter-spacing: .1em
+    }
+    .wrap-box-company .box-company .box-company-txt {
+        margin-bottom: 15px
+    }
+}
+
+.sct-futurelife-bnr {
+    text-align: center;
+    display: block;
+    overflow: visible!important;
+    text-decoration: none!important;
+    position: relative;
+    transition: .3s
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr {
+        width: 1180px;
+        margin: 0 auto 50px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr {
+        background: url(../../futurelife/css/img/bg_main.jpg) center no-repeat;
+        background-size: cover;
+        height: 250px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr {
+        background: url(../../futurelife/css/img/bg_main%40sp.jpg) center top no-repeat;
+        background-size: cover;
+        height: 200px;
+        margin-bottom: 30px
+    }
+}
+
+.sct-futurelife-bnr.-patternB {
+    background: #dfdfdf;
+    box-sizing: border-box
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr.-patternB {
+        border-bottom: 50px solid #fff
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr.-patternB {
+        border-bottom: 25px solid #fff
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr+.sct-futurelife-bnr {
+        margin-top: 40px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr+.sct-futurelife-bnr {
+        margin-top: 15px
+    }
+}
+
+.sct-futurelife-bnr:hover {
+    opacity: .75
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr-inner {
+        margin: 0 auto;
+        width: 1180px
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:767px) {
+    .sct-futurelife-bnr-inner {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:768px) {
+    .-patternB .sct-futurelife-bnr-inner {
+        width: 100%
+    }
+}
+
+.sct-futurelife-bnr-cont {
+    text-align: center;
+    width: 100%
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr-cont {
+        padding-top: 60px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr-cont {
+        padding-top: 60px
+    }
+}
+
+.-patternB .sct-futurelife-bnr-cont {
+    width: 100%
+}
+
+@media screen and (max-width:767px) {
+    .-patternB .sct-futurelife-bnr-cont {
+        padding-top: 60px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr-img {
+        margin: 0 auto 0;
+        width: 1024px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr-img {
+        margin: 13vw auto -7vw;
+        width: 90vw
+    }
+    .sct-futurelife-bnr-img img {
+        width: 100%
+    }
+}
+
+.sct-futurelife-bnr-ttl {
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-feature-settings: "palt";
+    letter-spacing: .1em
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr-ttl {
+        font-size: 35px;
+        font-size: 3.5rem
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr-ttl {
+        font-size: 17px;
+        font-size: 1.7rem
+    }
+}
+
+.sct-futurelife-bnr-ttl-cap {
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #5b5b5b
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-bnr-ttl-cap {
+        font-size: 16px;
+        font-size: 1.6rem;
+        margin-top: 5px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-bnr-ttl-cap {
+        font-size: 11px;
+        font-size: 1.1rem;
+        margin-top: 5px
+    }
+}
+
+.sct-futurelife-btn {
+    position: absolute;
+    pointer-events: none
+}
+
+@media screen and (min-width:768px) {
+    .sct-futurelife-btn {
+        right: 40px;
+        top: 170px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sct-futurelife-btn {
+        right: 0;
+        top: 140px;
+        width: 100%;
+        text-align: center
+    }
+}
+
+.sct-data {
+    background: #fff;
+    padding: 100px 0 80px;
+    margin-top: 80px
+}
+
+.sct-data .sct-data-inner {
+    display: block
+}
+
+.sct-data .sct-data-inner:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.sct-data .box-data .box-data-ttl {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "FOT-筑紫ゴシック Pro E", TsukuGoPro-E, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 1.5
+}
+
+.sct-data .box-data .box-data-txt {
+    font-size: 13px;
+    font-size: 1.3rem
+}
+
+.sct-data .data-l {
+    width: 391px;
+    padding-top: 30px;
+    padding-left: 45px
+}
+
+.sct-data .data-l .data-lead {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-family: "FOT-筑紫ゴシック Pr5 M", TsukuGoPr5-M, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.786;
+    margin-bottom: 70px
+}
+
+.sct-data .data-l .box-data .box-data-ttl {
+    font-size: 30px;
+    font-size: 3rem;
+    margin-bottom: 30px
+}
+
+.sct-data .data-l .box-data .box-data-ttl span {
+    font-size: 20px;
+    font-size: 2rem;
+    display: block
+}
+
+.sct-data .data-l .box-data .box-data-img {
+    margin-bottom: 45px
+}
+
+.sct-data .data-l .box-data .box-data-cap {
+    font-size: 13px;
+    font-size: 1.3rem;
+    text-indent: -1em;
+    margin-left: 1em;
+    margin-top: 15px
+}
+
+.sct-data .data-r {
+    width: 725px;
+    letter-spacing: -.4em
+}
+
+.sct-data .data-r .box-data {
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 55px;
+    margin-bottom: 45px
+}
+
+.sct-data .data-r .box-data .box-data-hd {
+    margin-bottom: 20px
+}
+
+.sct-data .data-r .box-data .box-data-ttl span {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-family: "FOT-筑紫ゴシック Pro B", TsukuGoPro-B, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10px
+}
+
+@media screen and (max-width:767px) {
+    .sct-data {
+        background: #fff;
+        padding: 40px 0 15px;
+        margin-bottom: 30px;
+        margin-top: 45px
+    }
+    .sct-data .box-data .box-data-ttl {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 15px
+    }
+    .sct-data .data-l {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 35px
+    }
+    .sct-data .data-l .data-lead {
+        font-size: 22px;
+        font-size: 2.2rem;
+        margin-bottom: 30px
+    }
+    .sct-data .data-l .box-data .box-data-ttl {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 30px
+    }
+    .sct-data .data-l .box-data .box-data-ttl span {
+        font-size: 16px;
+        font-size: 1.6rem
+    }
+    .sct-data .data-l .box-data .box-data-img {
+        margin-bottom: 45px
+    }
+    .sct-data .data-l .box-data .box-data-img img {
+        width: 80%
+    }
+    .sct-data .data-r {
+        width: 100%
+    }
+    .sct-data .data-r .box-data {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 40px
+    }
+    .sct-data .data-r .box-data .box-data-hd {
+        margin-bottom: 20px
+    }
+}

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/**
+* 採用情報 募集要項
+*
+*/
+#wrap-tab {
+  border-bottom: 2px solid #000;
+}
+
+#tab {
+  border-bottom: none;
+  margin-bottom: -2px;
+  width: 75%;
+}
+
+#tab li {
+  box-sizing: border-box;
+  width: 50%;
+  display: block;
+  position: static;
+  border-bottom: 2px solid #000;
+}
+
+.wrap-tab-box {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-tab-box {
+    margin-top: 15px;
+  }
+  #wrap-tab {
+    border-bottom: none;
+  }
+  #tab {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #tab li.active {
+    border-bottom: none;
+  }
+}
+
+/* ==========================================================================
+sct-outline
+========================================================================== */
+.sct-outline {
+  background: #fff;
+  padding: 90px 90px 90px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sct-outline .txt-want {
+  margin-bottom: 40px;
+}
+
+.sct-outline .txt-want span {
+  display: inline-block;
+  font-size: 40px;
+  font-size: 4rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #f5cd00;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.sct-outline .tbl-recruit {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sct-outline .tbl-recruit td,
+.sct-outline .tbl-recruit th {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 1.75;
+}
+
+.sct-outline .tbl-recruit th {
+  border-right: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.sct-outline .tbl-recruit .list-dot li {
+  margin: 5px 20px 5px 0;
+}
+
+.sct-outline .tbl-recruit em {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-outline {
+    padding: 30px 30px;
+    margin-bottom: 0;
+  }
+  .sct-outline .txt-want {
+    margin-bottom: 20px;
+  }
+  .sct-outline .txt-want span {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+  .sct-outline table.tbl-recruit {
+    width: 100%;
+  }
+  .sct-outline table.tbl-recruit td,
+  .sct-outline table.tbl-recruit th {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .sct-outline table.tbl-recruit th {
+    width: 80px;
+  }
+}

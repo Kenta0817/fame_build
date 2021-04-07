@@ -1,0 +1,677 @@
+@charset "UTF-8";
+/**
+* 採用情報
+*
+*/
+/* ==========================================================================
+layout
+========================================================================== */
+#contents.bg-square {
+  padding-top: 65px;
+  color: #001344;
+}
+
+#contents.bg-square * {
+  box-sizing: border-box;
+}
+
+#contents.bg-square .btn-cmn a:before {
+  background-color: #001344;
+}
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-top: 106px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+}
+
+/* ==========================================================================
+cm-main
+========================================================================== */
+#cm-main {
+  box-sizing: border-box;
+  padding-top: 85px;
+  height: 270px;
+  background: url("img/bg_main.jpg") center 30% no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+#cm-main > * {
+  position: relative;
+  z-index: 2;
+}
+
+#cm-main:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 19, 68, 0.6);
+  left: 0;
+  top: 0;
+}
+
+#cm-main .cm-main-ttl {
+  margin-bottom: 5px;
+  line-height: 1.35;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+#cm-main .cm-main-sttl {
+  margin-bottom: 10px;
+  line-height: 1.35;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+  #cm-main {
+    padding-top: 30px;
+    height: 150px;
+  }
+  #cm-main .cm-main-ttl {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  #cm-main .cm-main-sttl {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+  #cm-main .cm-main-cap img {
+    width: 170px;
+  }
+}
+
+/* ==========================================================================
+recruit-nav
+========================================================================== */
+.wrap-recruit-nav {
+  background-color: #001344;
+  position: relative;
+}
+
+.wrap-recruit-nav .cmn-inner {
+  overflow: hidden;
+}
+
+.wrap-recruit-nav .recruit-nav {
+  display: flex;
+  align-items: center;
+  float: left;
+  border-bottom: 5px solid #334269;
+}
+
+.wrap-recruit-nav .recruit-nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 80px;
+  margin-bottom: -5px;
+}
+
+.wrap-recruit-nav .recruit-nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100%;
+  border-bottom: 5px solid transparent;
+  text-decoration: none;
+  transition: 0.2s border-color;
+}
+
+.wrap-recruit-nav .recruit-nav li a:hover {
+  border-color: #00a273;
+}
+
+.wrap-recruit-nav .recruit-nav li span {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.wrap-recruit-nav .recruit-nav li.nav-s span {
+  padding: 0 20px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.wrap-recruit-nav .recruit-nav li.active {
+  border-bottom: 5px solid #00a273;
+}
+
+.wrap-recruit-nav .recruit-nav li.activeParent a {
+  border-bottom: 5px solid #00a273;
+}
+
+.wrap-recruit-nav .recruit-nav li.mr {
+  margin-right: 45px;
+}
+
+.wrap-recruit-nav .btn-entry {
+  position: absolute;
+  float: right;
+  right: 50px;
+  z-index: 10;
+  transition: .3s;
+  padding: 20px 0;
+}
+
+.wrap-recruit-nav .btn-entry a {
+  display: block;
+  padding: 5px 15px 5px 45px;
+  border-radius: 40px;
+  text-decoration: none;
+  background: #00a273 url("img/icon_entry_l.png") 20px center no-repeat;
+  background-size: 23px;
+  transition: .6s;
+  width: auto;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.wrap-recruit-nav .btn-entry a span {
+  color: #fff;
+  line-height: 1;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  transition: .6s;
+}
+
+.wrap-recruit-nav .btn-entry.fixed {
+  position: fixed;
+  right: 50px;
+  z-index: 10;
+  width: 150px;
+  height: 150px;
+  top: 100px;
+}
+
+.wrap-recruit-nav .btn-entry.fixed a {
+  padding: 85px 0 0 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #00a273 url("img/icon_entry_l.png") center 35px no-repeat;
+  background-size: 45px;
+  border-radius: 100%;
+}
+
+.wrap-recruit-nav .btn-entry.fixed a span {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/* ==========================================================================
+sp-recruit-menu
+========================================================================== */
+@media screen and (min-width: 768px) {
+  .sp-recruit-menu {
+    display: none;
+  }
+  .sp-recruit-menu-cont {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sp-recruit-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 76px;
+    -webkit-transition: 0.3s height;
+    transition: 0.3s height;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner {
+    display: flex;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner > * {
+    width: 50%;
+    text-align: center;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-menu {
+    padding: 30px 0;
+    background: #001344;
+    line-height: 1;
+    -webkit-transition: 0.3s padding;
+    transition: 0.3s padding;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-menu span {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-menu span:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 18px;
+    height: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    content: "";
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-menu span:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 18px;
+    height: 3px;
+    background: #fff;
+    content: "";
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-entry a {
+    display: block;
+    padding: 30px 15px;
+    background: #00a273;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-transition: 0.3s padding;
+    transition: 0.3s padding;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-entry a span {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    color: #fff;
+    line-height: 1;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .sp-recruit-menu .sp-recruit-menu-inner .btn-entry a span:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background: url("img/icon_entry.png") no-repeat;
+    background-size: 100%;
+    content: "";
+  }
+  .sp-recruit-menu.fixed {
+    position: fixed;
+    left: 0;
+    top: 63px;
+    width: 100%;
+    z-index: 10;
+    height: 46px;
+  }
+  .sp-recruit-menu.fixed .sp-recruit-menu-inner .btn-menu {
+    padding: 15px 0;
+  }
+  .sp-recruit-menu.fixed .sp-recruit-menu-inner .btn-entry a {
+    display: block;
+    padding: 15px;
+  }
+  .sp-recruit-menu-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    background: #001344;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .sp-recruit-menu-cont .sp-recruit-menu-lead {
+    position: relative;
+    margin: 0 auto 30px;
+    width: 300px;
+    height: 117px;
+  }
+  .sp-recruit-menu-cont .sp-recruit-menu-lead > img {
+    width: 100%;
+  }
+  .sp-recruit-menu-cont .sp-recruit-menu-lead .circle {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    display: block;
+    width: 105px;
+  }
+  .sp-recruit-menu-cont .recruit-nav {
+    padding: 0 60px;
+  }
+  .sp-recruit-menu-cont .recruit-nav li span {
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .sp-recruit-menu-cont .recruit-nav li.nav-s span {
+    opacity: 0.6;
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  .sp-recruit-menu-cont .recruit-nav li.mb {
+    margin-bottom: 30px;
+  }
+  .sp-recruit-menu-cont .recruit-nav li.active span, .sp-recruit-menu-cont .recruit-nav li.activeParent span {
+    color: #00a273;
+  }
+  .sp-recruit-menu-cont .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  .sp-recruit-menu-cont .btn-close:after, .sp-recruit-menu-cont .btn-close:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: "";
+  }
+  .sp-recruit-menu-cont .btn-close:before {
+    transform: rotate(-45deg);
+  }
+  .sp-recruit-menu-cont .btn-close:after {
+    transform: rotate(45deg);
+  }
+  .sp-recruit-menu-cont.show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+sct-member
+========================================================================== */
+.sct-member {
+  padding: 0 45px 90px;
+}
+
+.sct-member.box-col3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sct-member.box-col3 .box {
+  position: relative;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+.sct-member.box-col3 .box-menber a {
+  text-decoration: none;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-top .box-menber-lead {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-top .box-menber-lead span {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 2px 10px;
+  background: #4553a3;
+  color: #fff;
+  white-space: pre;
+  line-height: 1.4;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-btm {
+  padding: 20px 20px 10px;
+  background: #fff;
+  color: #001344;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-btm .box-menber-occ {
+  margin-bottom: 8px;
+  color: #4553a3;
+  line-height: 1;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-btm .box-menber-name {
+  line-height: 1;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.sct-member.box-col3 .box-menber .box-menber-btm .box-menber-year {
+  text-align: right;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.sct-member.box-col3 .box-member {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 290px;
+  height: auto;
+}
+
+.sct-member.box-col3 .box-member:after, .sct-member.box-col3 .box-member:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #001344;
+  content: "";
+}
+
+.sct-member.box-col3 .box-member:before {
+  background: #f3f6ff;
+}
+
+.sct-member.box-col3 .box-member:after {
+  width: 90%;
+  background: #fff;
+  -webkit-transform: skew(0deg, -7deg);
+  transform: skew(0deg, -7deg);
+  transform-origin: left top;
+}
+
+.sct-member.box-col3 .box-member .box-member-inner {
+  position: relative;
+  z-index: 1;
+  padding: 45px 65px 70px 35px;
+  width: 100%;
+  height: 100%;
+}
+
+.sct-member.box-col3 .box-member .box-member-inner:before {
+  position: absolute;
+  top: 110px;
+  right: 45px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #001344;
+  border-radius: 100%;
+  content: "";
+}
+
+.sct-member.box-col3 .box-member .box-member-ttl {
+  margin-bottom: 12px;
+}
+
+.sct-member.box-col3 .box-member .box-member-ttl span {
+  display: block;
+}
+
+.sct-member.box-col3 .box-member .box-member-ttl strong {
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+.sct-member.box-col3 .box-member .box-member-txt {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-member {
+    padding: 45px 15px 50px;
+  }
+  .sct-member.box-col3 .box {
+    order: 2;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .sct-member.box-col3 .box.sp-oder1 {
+    order: 1;
+  }
+  .sct-member.box-col3 .box-menber {
+    overflow: visible;
+  }
+  .sct-member.box-col3 .box-menber .box-menber-top {
+    overflow: visible;
+  }
+  .sct-member.box-col3 .box-menber .box-menber-top .box-menber-img img {
+    width: 100%;
+  }
+  .sct-member.box-col3 .box-member {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .sct-member.box-col3 .box-member:after, .sct-member.box-col3 .box-member:before {
+    width: 100%;
+  }
+  .sct-member.box-col3 .box-member:after {
+    width: 90%;
+  }
+  .sct-member.box-col3 .box-member .box-member-inner {
+    padding: 45px 60px 70px 30px;
+  }
+  .sct-member.box-col3 .box-member .box-member-inner:before {
+    right: 15%;
+  }
+}
+
+/* ==========================================================================
+recruit-btn-entry
+========================================================================== */
+.recruit-btn-entry {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.recruit-btn-entry a {
+  display: inline-block;
+  padding: 15px 50px;
+  border-radius: 40px;
+  background: #00a273;
+  text-decoration: none;
+}
+
+.recruit-btn-entry a span {
+  display: inline-block;
+  margin-left: 4px;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.recruit-btn-entry a:before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("img/icon_entry_l.png") no-repeat;
+  background-size: 100%;
+  content: "";
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .recruit-btn-entry {
+    margin-top: 30px;
+  }
+  .recruit-btn-entry a {
+    padding: 10px 30px;
+    border-radius: 40px;
+  }
+  .recruit-btn-entry a span {
+    margin-left: 4px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .recruit-btn-entry a:before {
+    width: 25px;
+    height: 25px;
+  }
+}

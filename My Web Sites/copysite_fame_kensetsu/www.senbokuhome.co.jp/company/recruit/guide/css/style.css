@@ -1,0 +1,651 @@
+@charset "UTF-8";
+/**
+* 採用情報 泉北ホーム早わかりガイド
+*
+*/
+/* ==========================================================================
+共通
+========================================================================== */
+#contents.bg-square {
+  padding-top: 50px; }
+
+.page-inner {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1200px;
+  border-radius: 8px;
+  background: #fff; }
+
+.box-guide-num {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  color: #eeeff0;
+  line-height: 1;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 400px;
+  font-size: 40rem; }
+
+.box-guide-lead {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 15px; }
+  .box-guide-lead span,
+  .box-guide-lead strong {
+    display: block; }
+  .box-guide-lead strong {
+    margin-bottom: 15px; }
+  .box-guide-lead span {
+    color: #00a273;
+    line-height: 1.167;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    font-size: 3rem; }
+
+.box-guide-slead {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  color: #00a273;
+  line-height: 1.167;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem; }
+
+.box-guide-ttl {
+  margin-bottom: 5px; }
+  .box-guide-ttl span,
+  .box-guide-ttl strong {
+    display: inline-block;
+    vertical-align: middle; }
+  .box-guide-ttl span {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #001344;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+  .box-guide-ttl strong {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+  @media screen and (min-width: 768px) {
+    .box-guide-ttl.box-guide-ttl-large span {
+      width: 25px;
+      height: 25px;
+      font-size: 19px;
+      font-size: 1.9rem; }
+    .box-guide-ttl.box-guide-ttl-large strong {
+      font-size: 25px;
+      font-size: 2.5rem; } }
+
+.box-guide-img {
+  margin-bottom: 25px; }
+
+.box-guide-txt {
+  line-height: 1.667;
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.ttl-data {
+  margin-bottom: 15px;
+  text-align: center; }
+  .ttl-data .ttl-data-inner {
+    display: inline-block;
+    padding-left: 46px;
+    background: url("img/icon_data.png") left center no-repeat;
+    background-size: 33px auto;
+    text-align: left;
+    line-height: 1.5; }
+    .ttl-data .ttl-data-inner strong {
+      display: block;
+      font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      font-size: 2.2rem; }
+      .ttl-data .ttl-data-inner strong span {
+        font-size: 24px;
+        font-size: 2.4rem; }
+    .ttl-data .ttl-data-inner > span {
+      opacity: 0.6;
+      font-size: 12px;
+      font-size: 1.2rem; }
+
+@media screen and (min-width: 768px) {
+  .wrap-box-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .wrap-box-data.box-col4 .box-data {
+    width: 25%; } }
+
+@media screen and (min-width: 768px) {
+  .wrap-box-data.box-col2 .box-data {
+    width: 50%; } }
+
+.wrap-box-data .box-data {
+  padding: 25px 30px;
+  border-top: 1px dotted #001344;
+  border-bottom: 1px dotted #001344;
+  border-left: 1px dotted #001344; }
+  .wrap-box-data .box-data .box-data-ttl {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    font-size: 1.5rem; }
+    .wrap-box-data .box-data .box-data-ttl > span {
+      display: inline-block;
+      padding: 0 12px;
+      border: 1px solid #b2b8c7;
+      line-height: 1.6; }
+      .wrap-box-data .box-data .box-data-ttl > span.kana {
+        width: 125%;
+        -webkit-transform: scale(0.8, 1);
+        -ms-transform: scale(0.8, 1);
+        transform: scale(0.8, 1);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0; }
+  .wrap-box-data .box-data .box-data-lead {
+    margin-bottom: 10px;
+    min-height: 71px;
+    text-align: center; }
+  .wrap-box-data .box-data .box-data-txt {
+    margin-bottom: 8px;
+    line-height: 1.667;
+    font-size: 13px;
+    font-size: 1.3rem; }
+  .wrap-box-data .box-data .box-data-cap {
+    margin-left: 1em;
+    text-indent: -1em;
+    line-height: 1.667;
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .wrap-box-data .box-data:first-child {
+    border-left: none; }
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-top: 130px; }
+  .page-inner {
+    overflow: visible;
+    width: 100%; }
+  .box-guide-num {
+    font-size: 280px;
+    font-size: 28rem; }
+  .box-guide-lead {
+    margin-bottom: 35px; }
+    .box-guide-lead span {
+      font-size: 16px;
+      font-size: 1.6rem; }
+  .box-guide-slead {
+    font-size: 16px;
+    font-size: 1.6rem; }
+  .box-guide-ttl {
+    margin-bottom: 5px; }
+    .box-guide-ttl span {
+      margin-right: 5px;
+      width: 18px;
+      height: 18px;
+      font-size: 15px;
+      font-size: 1.5rem; }
+    .box-guide-ttl strong {
+      font-size: 18px;
+      font-size: 1.8rem; }
+  .box-guide-img {
+    margin-bottom: 20px; }
+    .box-guide-img .ofi {
+      height: 240px; }
+  .box-guide-txt {
+    line-height: 1.667;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .ttl-data {
+    margin-bottom: 15px; }
+    .ttl-data .ttl-data-inner {
+      padding-left: 38px;
+      background-size: 28px auto; }
+      .ttl-data .ttl-data-inner strong {
+        font-size: 18px;
+        font-size: 1.8rem; }
+        .ttl-data .ttl-data-inner strong span {
+          font-size: 20px;
+          font-size: 2rem; }
+      .ttl-data .ttl-data-inner > span {
+        font-size: 11px;
+        font-size: 1.1rem; }
+  .wrap-box-data .box-data {
+    border-top: none;
+    border-left: none; }
+    .wrap-box-data .box-data .box-data-ttl {
+      font-size: 14px;
+      font-size: 1.4rem; }
+    .wrap-box-data .box-data .box-data-lead {
+      margin-bottom: 10px;
+      min-height: 71px;
+      text-align: center; }
+    .wrap-box-data .box-data:first-child {
+      border-top: 1px dotted #001344; } }
+
+/* ==========================================================================
+sct-lead
+========================================================================== */
+.sct-lead {
+  position: relative;
+  margin-bottom: 110px;
+  padding: 120px 50px 0;
+  background: url("img/bg_lead.jpg") center top no-repeat;
+  background-size: cover; }
+  .sct-lead .sct-lead-cont {
+    position: relative;
+    z-index: 1;
+    padding: 50px 100px 15px 60px;
+    width: 605px;
+    border-radius: 8px 8px 0 0;
+    background: #fff; }
+    .sct-lead .sct-lead-cont .sct-lead-cont-lead {
+      margin-bottom: 20px; }
+      .sct-lead .sct-lead-cont .sct-lead-cont-lead span {
+        display: inline;
+        padding: 0 2px 8px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, transparent), color-stop(0%, #f5cd00));
+        background: -webkit-linear-gradient(transparent 85%, #f5cd00 0%);
+        background: -o-linear-gradient(transparent 85%, #f5cd00 0%);
+        background: linear-gradient(transparent 85%, #f5cd00 0%);
+        line-height: 1.4;
+        font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        font-size: 3rem; }
+    .sct-lead .sct-lead-cont .sct-lead-cont-txt {
+      line-height: 1.667;
+      font-size: 15px;
+      font-size: 1.5rem; }
+  .sct-lead .sct-lead-img01,
+  .sct-lead .sct-lead-img02 {
+    position: absolute;
+    z-index: 2; }
+  .sct-lead .sct-lead-img01 {
+    top: 50px;
+    left: 500px; }
+  .sct-lead .sct-lead-img02 {
+    top: 120px;
+    right: 75px; }
+
+@media screen and (max-width: 767px) {
+  .sct-lead {
+    margin-bottom: 40px;
+    padding: 50px 10px 0;
+    background: none; }
+    .sct-lead:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 400px;
+      background: url("img/bg_lead.jpg") center top no-repeat;
+      background-size: cover;
+      content: ""; }
+    .sct-lead .sct-lead-cont {
+      padding: 110px 15px 0;
+      width: 100%; }
+      .sct-lead .sct-lead-cont .sct-lead-cont-lead {
+        margin-bottom: 20px; }
+        .sct-lead .sct-lead-cont .sct-lead-cont-lead span {
+          font-size: 27px;
+          font-size: 2.7rem; }
+      .sct-lead .sct-lead-cont .sct-lead-cont-txt {
+        font-size: 14px;
+        font-size: 1.4rem; }
+    .sct-lead .sct-lead-img01 {
+      top: -30px;
+      left: -30px;
+      z-index: 3;
+      width: 190px; }
+    .sct-lead .sct-lead-img02 {
+      top: -30px;
+      right: -30px;
+      width: 260px; } }
+
+/* ==========================================================================
+sct-guide01
+========================================================================== */
+.sct-guide01 {
+  margin-bottom: 60px; }
+  @media screen and (min-width: 768px) {
+    .sct-guide01 .wrap-box-guide.box-col2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 55px; }
+      .sct-guide01 .wrap-box-guide.box-col2 > .box-guide {
+        margin-bottom: 35px;
+        width: 50%; } }
+  .sct-guide01 .wrap-img .img {
+    height: 490px; }
+    .sct-guide01 .wrap-img .img img {
+      height: 100%;
+      -o-object-position: left top;
+      object-position: left top; }
+  .sct-guide01 .box-guide01 {
+    position: relative;
+    padding: 40px 100px 0 80px; }
+    .sct-guide01 .box-guide01 .box-guide-num {
+      top: -50px;
+      right: -50px; }
+  .sct-guide01 .box-guide02 .box-guide-cont,
+  .sct-guide01 .box-guide03 .box-guide-cont {
+    padding: 0 30px; }
+  .sct-guide01 .box-guide02 {
+    padding: 0 30px 0 100px; }
+  .sct-guide01 .box-guide03 {
+    padding: 0 100px 0 30px; }
+  .sct-guide01 .wrap-box-data {
+    padding: 0 40px; }
+
+@media screen and (max-width: 767px) {
+  .sct-guide01 {
+    margin-bottom: 60px;
+    padding: 0 10px; }
+    .sct-guide01 .wrap-box-guide {
+      margin-bottom: 50px; }
+    .sct-guide01 .box-guide01 {
+      position: relative;
+      padding: 40px 0 0; }
+      .sct-guide01 .box-guide01 .box-guide-lead strong {
+        width: 250px; }
+      .sct-guide01 .box-guide01 .box-guide-num {
+        top: -30px;
+        right: -65px; }
+    .sct-guide01 .box-guide {
+      margin-bottom: 35px; }
+    .sct-guide01 .box-guide01 .box-guide-cont,
+    .sct-guide01 .box-guide02 .box-guide-cont,
+    .sct-guide01 .box-guide03 .box-guide-cont {
+      padding: 0 15px; }
+    .sct-guide01 .box-guide02 {
+      padding: 0; }
+    .sct-guide01 .box-guide03 {
+      padding: 0; }
+    .sct-guide01 .wrap-box-data {
+      padding: 0; } }
+
+/* ==========================================================================
+sct-guide02
+========================================================================== */
+.sct-guide02 {
+  position: relative;
+  margin-bottom: 30px; }
+  .sct-guide02 .sct-guide-floormap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
+  .sct-guide02 .box-guide01 {
+    position: relative;
+    margin-bottom: 80px;
+    padding: 40px 100px 0; }
+    .sct-guide02 .box-guide01 .box-guide-num {
+      top: -50px;
+      left: 0; }
+    .sct-guide02 .box-guide01 .box-guide-cont {
+      width: 325px; }
+  @media screen and (min-width: 768px) {
+    .sct-guide02 .box-guide-col2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 70px; } }
+  .sct-guide02 .box-guide02 {
+    width: 420px; }
+    .sct-guide02 .box-guide02 .box-guide-cont {
+      padding: 0 15px; }
+  .sct-guide02 .box-guide-data {
+    width: 560px; }
+    .sct-guide02 .box-guide-data .box-data {
+      padding-right: 0;
+      padding-left: 0;
+      width: 50%; }
+      .sct-guide02 .box-guide-data .box-data .box-data-ttl {
+        margin-bottom: 10px; }
+  .sct-guide02 .area-merit {
+    position: relative;
+    z-index: 2; }
+    .sct-guide02 .area-merit .area-merit-ttl {
+      margin-bottom: 15px;
+      text-align: center; }
+      .sct-guide02 .area-merit .area-merit-ttl span {
+        position: relative;
+        display: inline-block;
+        font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        font-size: 1.6rem; }
+        .sct-guide02 .area-merit .area-merit-ttl span:after, .sct-guide02 .area-merit .area-merit-ttl span:before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          display: block;
+          margin: auto;
+          width: 3px;
+          height: 25px;
+          background: #001344;
+          content: ""; }
+        .sct-guide02 .area-merit .area-merit-ttl span:before {
+          left: -20px;
+          -webkit-transform: rotate(-20deg);
+          -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg); }
+        .sct-guide02 .area-merit .area-merit-ttl span:after {
+          right: -20px;
+          -webkit-transform: rotate(20deg);
+          -ms-transform: rotate(20deg);
+          transform: rotate(20deg); }
+    .sct-guide02 .area-merit .wrap-box-merit {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 865px; }
+      .sct-guide02 .area-merit .wrap-box-merit .box-merit {
+        position: relative;
+        padding: 15px;
+        width: 280px;
+        border: 3px solid #001344;
+        border-radius: 5px;
+        background: #fff; }
+        .sct-guide02 .area-merit .wrap-box-merit .box-merit .box-merit-txt {
+          margin-bottom: 10px;
+          min-height: 100px;
+          line-height: 1.667;
+          font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          font-size: 1.3rem; }
+        .sct-guide02 .area-merit .wrap-box-merit .box-merit .box-merit-cap {
+          line-height: 1.3;
+          opacity: 0.6;
+          font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          font-size: 1.3rem; }
+        .sct-guide02 .area-merit .wrap-box-merit .box-merit .box-merit-icon {
+          position: absolute;
+          right: 30px;
+          bottom: -25px; }
+        .sct-guide02 .area-merit .wrap-box-merit .box-merit:before {
+          position: absolute;
+          right: 90px;
+          bottom: -10px;
+          display: block;
+          width: 22px;
+          height: 10px;
+          background: url(img/icon_speach.png) no-repeat;
+          background-size: 100%;
+          content: ""; }
+
+@media screen and (max-width: 767px) {
+  .sct-guide02 {
+    margin-bottom: 0; }
+    .sct-guide02 .sct-guide-floormap {
+      position: static;
+      margin-left: -15%;
+      width: 120%; }
+    .sct-guide02 .box-guide01 {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+      padding: 0 15px; }
+      .sct-guide02 .box-guide01 .box-guide-num {
+        top: -20px;
+        right: -40px;
+        left: auto; }
+      .sct-guide02 .box-guide01 .box-guide-lead {
+        margin-bottom: 10px; }
+        .sct-guide02 .box-guide01 .box-guide-lead strong {
+          width: 230px; }
+      .sct-guide02 .box-guide01 .box-guide-cont {
+        position: relative;
+        z-index: 1;
+        margin-top: -30px;
+        padding: 0 15px;
+        width: 100%; }
+    .sct-guide02 .box-guide02 {
+      padding: 0 15px;
+      width: 100%; }
+      .sct-guide02 .box-guide02 .box-guide-cont {
+        padding: 0 15px; }
+    .sct-guide02 .box-guide-data {
+      margin-top: 30px;
+      padding: 0 15px;
+      width: 100%; }
+      .sct-guide02 .box-guide-data .box-data {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%; }
+        .sct-guide02 .box-guide-data .box-data .box-data-ttl {
+          margin-bottom: 10px; }
+        .sct-guide02 .box-guide-data .box-data .box-data-lead img {
+          width: auto;
+          height: 200px; }
+    .sct-guide02 .area-merit {
+      margin-top: 35px; }
+      .sct-guide02 .area-merit .wrap-box-merit {
+        display: block;
+        width: 100%; }
+        .sct-guide02 .area-merit .wrap-box-merit .box-merit {
+          margin: 0 auto 45px;
+          width: 80%; } }
+
+/* ==========================================================================
+sct-guide03
+========================================================================== */
+.sct-guide03 {
+  padding-bottom: 70px; }
+  @media screen and (min-width: 768px) {
+    .sct-guide03 .wrap-box-guide.box-col2 {
+      display: block; }
+      .sct-guide03 .wrap-box-guide.box-col2:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .sct-guide03 .wrap-box-guide.box-col2 .box-guide {
+        float: right;
+        width: 50%; } }
+  .sct-guide03 .wrap-img .img {
+    height: 490px; }
+    .sct-guide03 .wrap-img .img img {
+      height: 100%;
+      -o-object-position: left top;
+      object-position: left top; }
+  .sct-guide03 .box-guide01 {
+    position: relative;
+    margin-top: 45px;
+    padding: 40px 100px 0 70px; }
+    .sct-guide03 .box-guide01 .box-guide-num {
+      top: -100px;
+      right: 10px; }
+    .sct-guide03 .box-guide01 .box-guide-cont {
+      padding: 0 15px; }
+    .sct-guide03 .box-guide01 .box-guide-lead {
+      margin-left: -110px; }
+      .sct-guide03 .box-guide01 .box-guide-lead strong img {
+        max-width: 544px;
+        width: 544px; }
+    .sct-guide03 .box-guide01 .box-guide-txt {
+      margin-bottom: 45px; }
+  .sct-guide03 .box-guide02 {
+    padding: 0; }
+    .sct-guide03 .box-guide02 .box-guide-img {
+      margin-bottom: 80px; }
+  .sct-guide03 .wrap-box-data {
+    padding: 0 0 0 50px; }
+
+@media screen and (max-width: 767px) {
+  .sct-guide03 {
+    padding-bottom: 70px; }
+    .sct-guide03 .wrap-img .img {
+      height: 100%; }
+      .sct-guide03 .wrap-img .img img {
+        height: 100%;
+        -o-object-position: left top;
+        object-position: left top; }
+    .sct-guide03 .box-guide01 {
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      padding: 70px 15px 0; }
+      .sct-guide03 .box-guide01 .box-guide-num {
+        top: 0;
+        right: -40px; }
+      .sct-guide03 .box-guide01 .box-guide-cont {
+        padding: 0 15px; }
+      .sct-guide03 .box-guide01 .box-guide-lead {
+        margin-left: 0; }
+        .sct-guide03 .box-guide01 .box-guide-lead strong img {
+          width: 100%; }
+      .sct-guide03 .box-guide01 .box-guide-img {
+        position: relative;
+        z-index: 1; }
+      .sct-guide03 .box-guide01 .box-guide-txt {
+        margin-bottom: 40px; }
+    .sct-guide03 .box-guide02 {
+      padding: 0; }
+    .sct-guide03 .wrap-box-data {
+      padding: 0 15px; } }

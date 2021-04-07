@@ -1,0 +1,747 @@
+@charset "UTF-8";
+/**
+* 「これからの暮らし」の研究
+*
+*/
+/* ==========================================================================
+futurelife
+========================================================================== */
+.futurelife {
+  padding-bottom: 50px; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__inner {
+    margin: 0 auto;
+    width: 1180px; } }
+  @media screen and (min-width: 768px) and (max-width: 767px) {
+    .futurelife__inner {
+      width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__inner {
+    padding: 0 25px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__main {
+    background: url(img/bg_main.jpg) center no-repeat;
+    background-size: cover;
+    height: 350px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__main {
+    background: url(img/bg_main%40sp.jpg) center no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 42px; } }
+
+.futurelife__main.-patternB {
+  background: #dfdfdf;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .futurelife__main.-patternB {
+      margin-bottom: 11vw; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__mainInner {
+    margin: 0 auto;
+    width: 1180px; } }
+  @media screen and (min-width: 768px) and (max-width: 767px) {
+    .futurelife__mainInner {
+      width: 100%; } }
+
+@media screen and (min-width: 768px) {
+    .-patternB .futurelife__mainInner {
+      width: 100%; } }
+
+.futurelife__mainCont {
+  text-align: center;
+  text-decoration: none;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .futurelife__mainCont {
+      width: 600px;
+      padding-top: 94px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__mainCont {
+      padding-top: 46px; } }
+  .-patternB .futurelife__mainCont {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .-patternB .futurelife__mainCont {
+        padding-top: 105px; } }
+    @media screen and (max-width: 767px) {
+      .-patternB .futurelife__mainCont {
+        padding-top: 68px; } }
+  .futurelife__mainCont:hover {
+    text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__img {
+    margin-top: 40px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__img {
+    margin-top: 30px;
+    margin-left: -27vw;
+    width: 154vw; }
+    .futurelife__img img {
+      width: 100%; } }
+
+.futurelife__mainTtl {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em; }
+  @media screen and (min-width: 768px) {
+    .futurelife__mainTtl {
+      font-size: 45px;
+      font-size: 4.5rem; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__mainTtl {
+      font-size: 23px;
+      font-size: 2.3rem; } }
+
+.futurelife__mainTtlCap {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #5b5b5b; }
+  @media screen and (min-width: 768px) {
+    .futurelife__mainTtlCap {
+      font-size: 22px;
+      font-size: 2.2rem;
+      margin-top: 12px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__mainTtlCap {
+      font-size: 11px;
+      font-size: 1.1rem;
+      margin-top: 6px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__concept {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0; } }
+
+.futurelife__conceptLead {
+  line-height: 1.42857143;
+  font-family: "FOT-TsukuMin Pro"; }
+  @media screen and (min-width: 768px) {
+    .futurelife__conceptLead {
+      font-size: 28px;
+      font-size: 2.8rem; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__conceptLead {
+      font-size: 20px;
+      font-size: 2rem;
+      text-align: center; } }
+
+.futurelife__conceptTxt {
+  line-height: 1.625;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #868686; }
+  @media screen and (min-width: 768px) {
+    .futurelife__conceptTxt {
+      font-size: 16px;
+      font-size: 1.6rem;
+      width: 500px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__conceptTxt {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin-top: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__feature {
+    margin-top: 90px;
+    display: flex; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__feature {
+    margin-top: 15px;
+    padding: 0 15px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__feature li {
+    width: 50%; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__feature li:nth-child(n + 2) {
+    margin-top: 15px; } }
+
+.futurelife__feature li a {
+  position: relative;
+  transition: 0.3s;
+  display: block;
+  overflow: visible; }
+  .futurelife__feature li a img {
+    width: 100%; }
+  .futurelife__feature li a span {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .futurelife__feature li a span {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -43px;
+        left: 30px;
+        z-index: 1;
+        border-radius: 50%;
+        font-size: 20px;
+        font-size: 2rem; } }
+    @media screen and (max-width: 767px) {
+      .futurelife__feature li a span {
+        font-size: 12px;
+        font-size: 1.2rem;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 1px 8px; } }
+  .futurelife__feature li a:hover {
+    opacity: 0.75; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__feature__3col {
+    margin-top: 90px;
+    display: flex; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__feature__3col {
+    margin-top: 42px;
+    padding: 0 15px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__feature__3col li {
+    width: 33.3333333%; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__feature__3col li:nth-child(n + 2) {
+    margin-top: 15px; } }
+
+.futurelife__feature__3col li a {
+  position: relative;
+  transition: 0.3s;
+  display: block;
+  overflow: visible; }
+  .futurelife__feature__3col li a img {
+    width: 100%; }
+  .futurelife__feature__3col li a span {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .futurelife__feature__3col li a span {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -40px;
+        left: 10px;
+        z-index: 1;
+        border-radius: 50%;
+        font-size: 18px;
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 767px) {
+      .futurelife__feature__3col li a span {
+        font-size: 12px;
+        font-size: 1.2rem;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 1px 8px; } }
+  .futurelife__feature__3col li a:hover {
+    opacity: 0.75; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__report {
+    margin-top: 110px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__report {
+    margin-top: 50px; } }
+
+.futurelife__reportTtl {
+  text-align: center;
+  line-height: 1; }
+  @media screen and (max-width: 767px) {
+    .futurelife__reportTtl img {
+      width: auto;
+      height: 20px; } }
+
+.futurelife__reportBtn {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .futurelife__reportBtn {
+      margin-top: 35px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__reportBtn {
+      margin-top: 30px; } }
+  .futurelife__reportBtn .futurelife__reportBtnLink {
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .futurelife__reportBtn .futurelife__reportBtnLink {
+        font-size: 20px;
+        font-size: 2rem; } }
+    @media screen and (max-width: 767px) {
+      .futurelife__reportBtn .futurelife__reportBtnLink {
+        font-size: 15px;
+        font-size: 1.5rem; } }
+    @media screen and (min-width: 768px) {
+      .futurelife__reportBtn .futurelife__reportBtnLink::before {
+        top: 6px;
+        left: 4px; } }
+    @media screen and (min-width: 768px) {
+      .futurelife__reportBtn .futurelife__reportBtnLink:active::before {
+        -webkit-transform: translate(-1px, -3px);
+        -ms-transform: translate(-1px, -3px);
+        transform: translate(-1px, -3px); } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__detail + .futurelife__reportBtn {
+    margin-top: 55px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__detail + .futurelife__reportBtn {
+    margin-top: 50px; } }
+
+@media screen and (min-width: 768px) {
+  .request + .futurelife__reportBtn {
+    margin-top: 55px; } }
+
+@media screen and (max-width: 767px) {
+  .request + .futurelife__reportBtn {
+    margin-top: 50px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__history {
+    margin: 115px auto 0;
+    width: 950px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__history {
+    margin-top: 55px; } }
+
+.futurelife__historyTtl {
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .futurelife__historyTtl {
+      line-height: 1; }
+      .futurelife__historyTtl img {
+        width: auto;
+        height: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__historyContWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__historyCont {
+    width: 400px;
+    border-top: 2px solid #000;
+    padding-top: 35px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__historyCont {
+    margin-top: 30px;
+    padding-top: 15px;
+    position: relative; }
+    .futurelife__historyCont::before {
+      width: 100px;
+      height: 1px;
+      background: #000000;
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute; } }
+
+.futurelife__historyContLead {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.25; }
+  @media screen and (min-width: 768px) {
+    .futurelife__historyContLead {
+      font-size: 20px;
+      font-size: 2rem; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__historyContTxt {
+    line-height: 1.78571429;
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-top: 26px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__historyContTxt {
+    line-height: 1.25;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-top: 13px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__historyContList {
+    margin-top: 16px;
+    line-height: 1.78571429; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__historyContList {
+    margin-top: 11px;
+    line-height: 1.45; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__historyContList li {
+    font-size: 12px;
+    font-size: 1.2rem; } }
+
+.futurelife__historyContList li a {
+  text-decoration: underline; }
+  .futurelife__historyContList li a:hover {
+    text-decoration: none; }
+
+/* ==========================================================================
+.futurelife.-lower
+========================================================================== */
+@media screen and (min-width: 768px) {
+  .futurelife.-lower .futurelife__main {
+    height: 250px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife.-lower .futurelife__main {
+    height: 125px;
+    background-position: center top; } }
+
+.futurelife.-lower .futurelife__main.-patternB {
+  box-sizing: border-box; }
+  @media screen and (min-width: 768px) {
+    .futurelife.-lower .futurelife__main.-patternB {
+      border-bottom: 50px solid #fff; } }
+  @media screen and (max-width: 767px) {
+    .futurelife.-lower .futurelife__main.-patternB {
+      border-bottom: 25px solid #fff; } }
+
+.futurelife.-lower .futurelife__mainCont {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .futurelife.-lower .futurelife__mainCont {
+      padding-top: 60px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife.-lower .futurelife__mainCont {
+      padding-top: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife.-lower .futurelife__mainTtl {
+    font-size: 35px;
+    font-size: 3.5rem; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife.-lower .futurelife__mainTtl {
+    font-size: 17px;
+    font-size: 1.7rem; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife.-lower .futurelife__mainTtlCap {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin-top: 5px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife.-lower .futurelife__mainTtlCap {
+    font-size: 11px;
+    font-size: 1.1rem;
+    margin-top: 5px; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife.-lower .futurelife__img {
+    margin-top: 0; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife.-lower .futurelife__img {
+    margin-top: 0;
+    margin-left: -7vw;
+    width: 120vw; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife.-lower .futurelife__report {
+    margin-top: 80px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife.-lower .futurelife__report {
+    margin-top: 50px; } }
+
+/* ==========================================================================
+.futurelife__detail
+========================================================================== */
+@media screen and (min-width: 768px) {
+  .futurelife__detail {
+    width: 825px;
+    margin: 100px auto 0; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__detail {
+    margin-top: 30px; } }
+
+.futurelife__detailHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailHead {
+      padding: 0 10px 3px;
+      border-bottom: 2px solid #000; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailHead {
+      padding: 0 0 5px;
+      border-bottom: 1px solid #000; } }
+
+.futurelife__detailHeadCat {
+  line-height: 1; }
+  .futurelife__detailHeadCat img {
+    height: 20px;
+    width: auto; }
+
+.futurelife__detailHeadDate {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #777777; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailHeadDate {
+      font-size: 14px;
+      font-size: 1.4rem;
+      margin-left: 20px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailHeadDate {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin-left: 10px; } }
+
+.futurelife__detailHeadTtl {
+  width: 100%;
+  font-family: "FOT-TsukuMin Pro";
+  line-height: 1.45;
+  margin-top: 5px; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailHeadTtl {
+      font-size: 30px;
+      font-size: 3rem; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailHeadTtl {
+      font-size: 20px;
+      font-size: 2rem; } }
+
+@media screen and (min-width: 768px) {
+  .futurelife__detailCont {
+    padding-top: 44px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__detailCont {
+    padding-top: 20px; } }
+
+.futurelife__detailCont h3 {
+  background: #f1f1f1;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.45;
+  border-bottom: 2px solid #000; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont h3 {
+      margin-top: 50px;
+      font-size: 22px;
+      font-size: 2.2rem;
+      padding: 10px 10px 9px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont h3 {
+      margin-top: 30px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding: 6px 6px 5px; } }
+
+.futurelife__detailCont h4 {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.45;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont h4 {
+      margin-top: 40px;
+      padding-left: 30px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont h4 {
+      margin-top: 20px;
+      padding-left: 20px; } }
+  .futurelife__detailCont h4::before {
+    content: "";
+    display: block;
+    background: #999;
+    position: absolute;
+    left: 0; }
+    @media screen and (min-width: 768px) {
+      .futurelife__detailCont h4::before {
+        width: 20px;
+        height: 20px;
+        top: 3px; } }
+    @media screen and (max-width: 767px) {
+      .futurelife__detailCont h4::before {
+        width: 15px;
+        height: 15px;
+        top: 6px; } }
+
+.futurelife__detailCont p:not(.img) {
+  line-height: 1.44; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont p:not(.img) {
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-top: 28px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont p:not(.img) {
+      font-size: 15px;
+      font-size: 1.5rem;
+      margin-top: 16px; } }
+  .futurelife__detailCont p:not(.img) a {
+    text-decoration: underline; }
+    .futurelife__detailCont p:not(.img) a:hover {
+      text-decoration: none; }
+    .futurelife__detailCont p:not(.img) a[target="_blank"] {
+      display: inline-block;
+      position: relative;
+      padding-right: 1.2em;
+      margin-right: 0.3em;
+      line-height: 1;
+      vertical-align: top; }
+      @media screen and (min-width: 768px) {
+        .futurelife__detailCont p:not(.img) a[target="_blank"] {
+          margin-top: 0.15em; } }
+      @media screen and (max-width: 767px) {
+        .futurelife__detailCont p:not(.img) a[target="_blank"] {
+          margin-top: 0.19em; } }
+      .futurelife__detailCont p:not(.img) a[target="_blank"]:after, .futurelife__detailCont p:not(.img) a[target="_blank"]:before {
+        position: absolute;
+        width: 12px;
+        height: 10px;
+        margin: auto;
+        content: "";
+        box-sizing: border-box; }
+      .futurelife__detailCont p:not(.img) a[target="_blank"]:after {
+        bottom: 0;
+        margin-bottom: 0.15em;
+        right: 0;
+        border: 1px solid #000;
+        background-color: #fff; }
+      .futurelife__detailCont p:not(.img) a[target="_blank"]:before {
+        bottom: 0;
+        right: 0.3em;
+        background-color: #000; }
+    .futurelife__detailCont p:not(.img) a[href*=".pdf"] {
+      display: inline-block;
+      position: relative;
+      padding-right: 1.2em;
+      margin-right: 0.3em;
+      line-height: 1;
+      vertical-align: top; }
+      @media screen and (min-width: 768px) {
+        .futurelife__detailCont p:not(.img) a[href*=".pdf"] {
+          margin-top: 0.15em; } }
+      @media screen and (max-width: 767px) {
+        .futurelife__detailCont p:not(.img) a[href*=".pdf"] {
+          margin-top: 0.19em; } }
+      .futurelife__detailCont p:not(.img) a[href*=".pdf"]:before {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        margin: auto;
+        content: "";
+        box-sizing: border-box;
+        bottom: 0;
+        right: 0;
+        background: url("../../common/css/img/icon_pdf.png") left top no-repeat;
+        background-size: 100%; }
+      .futurelife__detailCont p:not(.img) a[href*=".pdf"]:after {
+        display: none; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__detailCont .img {
+    margin-top: 45px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__detailCont .img {
+    margin-top: 25px; } }
+
+.futurelife__detailCont .movie {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-bottom: 50px; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont .movie {
+      margin-top: 45px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont .movie {
+      margin-top: 25px; } }
+  .futurelife__detailCont .movie iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+@media screen and (min-width: 768px) {
+  .futurelife__detailCont ul {
+    margin-top: 65px; } }
+
+@media screen and (max-width: 767px) {
+  .futurelife__detailCont ul {
+    margin-top: 30px; } }
+
+.futurelife__detailCont ul li {
+  line-height: 1.45;
+  background: url(img/icon_check.png) left 1px no-repeat; }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont ul li {
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding-left: 30px;
+      background-size: 24px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont ul li {
+      font-size: 15px;
+      font-size: 1.5rem;
+      padding-left: 20px;
+      background-size: 15px;
+      background-position: left 2px; } }
+  @media screen and (min-width: 768px) {
+    .futurelife__detailCont ul li:nth-child(n + 2) {
+      margin-top: 8px; } }
+  @media screen and (max-width: 767px) {
+    .futurelife__detailCont ul li:nth-child(n + 2) {
+      margin-top: 5px; } }
+
+.futurelife__detailCont > *:first-child {
+  margin-top: 0 !important; }

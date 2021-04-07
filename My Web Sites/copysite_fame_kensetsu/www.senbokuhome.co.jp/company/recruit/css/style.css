@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/**
+* 採用情報 TOP
+*
+*/
+/* ==========================================================================
+main
+========================================================================== */
+#main {
+  position: relative;
+  height: 570px;
+  background: #001344;
+  overflow: hidden;
+}
+
+#main .main-lead {
+  position: absolute;
+  right: 0;
+  bottom: 57px;
+  left: 0;
+  margin: auto;
+  width: 696px;
+  height: 273px;
+  z-index: 1;
+}
+
+#main .main-lead > img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+#main .main-lead .circle {
+  position: absolute;
+  top: 0;
+  right: 167px;
+  display: block;
+  z-index: 3;
+}
+
+#main .main-lead .circle.circle-bg {
+  z-index: -1;
+}
+
+#main .main-bg {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("img/bg_main.jpg") center no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    height: 270px;
+  }
+  #main .main-lead {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 300px;
+    height: 117px;
+  }
+  #main .main-lead > img {
+    width: 100%;
+  }
+  #main .main-lead .circle {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    display: block;
+    width: 105px;
+  }
+  #main .main-bg {
+    background: url("img/bg_main_sp.jpg") center bottom no-repeat;
+    background-size: cover;
+  }
+}
+
+/* ==========================================================================
+sct-guide
+========================================================================== */
+.sct-guide {
+  position: relative;
+  margin-bottom: 60px;
+  padding-top: 70px;
+}
+
+.sct-guide:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  max-width: 1500px;
+  width: 80%;
+  height: 350px;
+  background: url("img/bg_guide.jpg") center no-repeat;
+  background-size: cover;
+  content: "";
+}
+
+.sct-guide .cmn-inner {
+  position: relative;
+}
+
+.sct-guide .sct-guide-img {
+  position: absolute;
+  top: -40px;
+  right: 60px;
+}
+
+.sct-guide .sct-guide-cont {
+  position: relative;
+  z-index: 1;
+  padding: 40px 55px;
+  width: 510px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.sct-guide .sct-guide-cont .sct-guide-cont-ttl {
+  margin-bottom: 13px;
+  color: #001344;
+  line-height: 1.15;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+.sct-guide .sct-guide-cont .sct-guide-cont-ttl strong {
+  display: block;
+  color: #ffdb00;
+  text-shadow: #001344 1px 1px 0px, black -1px 1px 0px, #001344 1px -1px 0px, black -1px -1px 0;
+  font-size: 60px;
+  font-size: 6rem;
+}
+
+.sct-guide .sct-guide-cont .sct-guide-cont-txt {
+  margin-bottom: 20px;
+  line-height: 1.65;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.sct-guide .sct-guide-cont .btn-cmn {
+  text-align: right;
+}
+
+.sct-guide .sct-guide-cont .btn-cmn span {
+  padding: 5px 20px;
+  color: #001344;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-guide {
+    margin-bottom: 0;
+    padding-bottom: 45px;
+    padding-top: 215px;
+  }
+  .sct-guide:before {
+    width: 100%;
+    height: 350px;
+  }
+  .sct-guide .sct-guide-img {
+    position: absolute;
+    top: -170px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    margin: auto;
+    max-width: 300px;
+    width: 80%;
+  }
+  .sct-guide .sct-guide-cont {
+    padding: 55px 55px 40px;
+    width: 100%;
+  }
+  .sct-guide .sct-guide-cont .sct-guide-cont-ttl {
+    margin-bottom: 13px;
+    text-align: center;
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+  .sct-guide .sct-guide-cont .sct-guide-cont-ttl strong {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+  .sct-guide .sct-guide-cont .sct-guide-cont-txt {
+    margin-bottom: 20px;
+    line-height: 1.65;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  .sct-guide .sct-guide-cont .btn-cmn {
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+sct-discussion
+========================================================================== */
+.sct-discussion {
+  width: 1090px;
+  margin: 0 auto 80px;
+}
+
+.sct-discussion a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.sct-discussion .sct-discussion-img {
+  height: 350px;
+}
+
+.sct-discussion .sct-discussion-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.sct-discussion .sct-discussion-ttl {
+  width: 660px;
+  position: relative;
+  z-index: 1;
+  margin: -135px auto 0;
+  text-align: center;
+  padding: 20px 0 20px;
+  background: #f5cd00;
+  border: 1px dashed #000;
+}
+
+.sct-discussion .sct-discussion-ttl .btn-more {
+  margin-top: 15px;
+}
+
+.sct-discussion .sct-discussion-ttl .btn-more span span {
+  padding: 5px 17px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-discussion {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .sct-discussion .sct-discussion-img {
+    height: auto;
+  }
+  .sct-discussion .sct-discussion-img img {
+    height: auto;
+    width: 100%;
+  }
+  .sct-discussion .sct-discussion-ttl {
+    width: 94.5%;
+    margin: -35px auto 0;
+    padding: 0 0 20px;
+    border: 2px dashed #000;
+    text-align: center;
+  }
+  .sct-discussion .sct-discussion-ttl img.sp-item {
+    margin-top: -25px;
+    display: inline-block !important;
+  }
+}
+
+/* ==========================================================================
+recruit-link
+========================================================================== */
+.recruit-link {
+  display: flex;
+  justify-content: center;
+}
+
+.recruit-link .btn-cmn {
+  margin: 0 22px;
+}
+
+.recruit-link .btn-cmn span {
+  padding: 20px 60px;
+}
+
+.recruit-link .btn-cmn span strong {
+  display: inline-block;
+  color: #001344;
+  vertical-align: middle;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.recruit-link .btn-cmn span:before {
+  display: inline-block;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background: url("img/icon_doc.png") no-repeat;
+  background-size: 100%;
+  content: "";
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .recruit-link {
+    display: block;
+  }
+  .recruit-link .btn-cmn {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  .recruit-link .btn-cmn span {
+    width: 250px;
+  }
+}
+
+/* ==========================================================================
+回転アニメーション
+========================================================================== */
+.rotate-target {
+  transform: rotateZ(180deg);
+  transition-duration: 1s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.175, 0.5, 0.175, 1.1);
+  transition-delay: 1.3s;
+}
+
+.loaded .rotate-target {
+  transform: rotateZ(0);
+}
+
+.rotate-target.rotate-delay-1 {
+  transition-delay: 1.1s;
+}
+
+.rotate-target.rotate-delay-2 {
+  transition-delay: 1.2s;
+}
+
+.rotate-target.rotate-delay-3 {
+  transition-delay: 1.3s;
+}

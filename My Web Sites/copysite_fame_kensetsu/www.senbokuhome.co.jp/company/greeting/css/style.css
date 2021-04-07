@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/**
+* 社長メッセージ
+*
+*/
+#contents {
+  padding-bottom: 50px; }
+  #contents .page-inner {
+    background: #fff;
+    padding-bottom: 120px; }
+  #contents .sct-greeting {
+    padding: 120px 0 0 90px;
+    position: relative;
+    min-height: 850px;
+    box-sizing: border-box; }
+  #contents .main-lead {
+    position: relative;
+    z-index: 2;
+    line-height: 1.778;
+    margin-bottom: 20px;
+    margin-left: -15px; }
+    #contents .main-lead span {
+      display: inline-block;
+      font-size: 45px;
+      font-size: 4.5rem;
+      font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      background: #f5cd00;
+      line-height: 1;
+      padding: 10px 15px;
+      margin-bottom: 20px; }
+  #contents .sub-lead {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 15px; }
+    #contents .sub-lead.lead2 {
+      margin-top: 100px; }
+    #contents .sub-lead.lead3, #contents .sub-lead.lead4 {
+      margin-top: 60px; }
+  #contents .greeting-txt {
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    font-size: 1.4rem;
+    width: 450px; }
+    #contents .greeting-txt.full {
+      width: 1000px; }
+  #contents .president-img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 600px; }
+    #contents .president-img .president-img-contents {
+      position: absolute;
+      right: 60px;
+      bottom: 30px;
+      color: #fff;
+      text-align: right; }
+      #contents .president-img .president-img-contents .president-txt {
+        line-height: 1.538;
+        margin-bottom: 15px; }
+  #contents .sct-snav {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+@media screen and (max-width: 767px) {
+  #contents {
+    padding-bottom: 30px !important; }
+    #contents .page-inner {
+      padding-bottom: 30px; }
+    #contents .sct-greeting {
+      padding: 30px 0 0;
+      position: static;
+      min-height: auto; }
+    #contents .main-lead {
+      position: static;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      #contents .main-lead span {
+        font-size: 22px;
+        font-size: 2.2rem;
+        padding: 5px 10px;
+        margin-bottom: 10px; }
+    #contents .sub-lead {
+      position: static;
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-bottom: 15px; }
+    #contents .greeting-txt {
+      position: static;
+      font-size: 14px;
+      font-size: 1.4rem;
+      width: 100%; }
+      #contents .greeting-txt.full {
+        width: 100%; }
+    #contents .president-img {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      margin-bottom: 30px; }
+      #contents .president-img .president-img-contents {
+        right: auto;
+        bottom: 15px;
+        left: 15px;
+        letter-spacing: -.40em; }
+        #contents .president-img .president-img-contents .president-txt {
+          margin-bottom: 0;
+          display: inline-block;
+          letter-spacing: normal;
+          vertical-align: top;
+          font-size: 12px;
+          font-size: 1.2rem;
+          text-align: left;
+          margin-right: 20px; }
+        #contents .president-img .president-img-contents .president-name {
+          display: inline-block;
+          letter-spacing: normal;
+          vertical-align: top; }
+    #contents .sct-snav {
+      width: auto;
+      margin: 0 auto;
+      box-sizing: border-box; } }

@@ -1,0 +1,965 @@
+@charset "UTF-8";
+/**
+* フル装備の家 設備＆構造
+*
+*/
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 1380px;
+    overflow: visible; } }
+
+#contents.bg-square {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.featureDetail * {
+  box-sizing: border-box; }
+
+/* ==========================================================================
+   featureDetail__main
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .featureDetail__main {
+    position: relative;
+    height: 1000px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__mainInner {
+    margin: 0 auto;
+    width: 1180px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px; } }
+  @media screen and (min-width: 768px) and (max-width: 767px) {
+    .featureDetail__mainInner {
+      width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .featureDetail__mainInner {
+    padding: 0 15px; } }
+
+.featureDetail__mainBg {
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__mainBg {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 1000px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__mainBg {
+      height: 375px; } }
+  body.load .featureDetail__mainBg {
+    transition: 1.5s;
+    opacity: 1; }
+
+/* 無限ループアニメーション */
+.slide-top,
+.slide-bottom {
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .slide-top,
+    .slide-bottom {
+      width: 1960px; } }
+  @media screen and (max-width: 767px) {
+    .slide-top,
+    .slide-bottom {
+      width: 1500px; } }
+  .slide-top .slick-list,
+  .slide-bottom .slick-list {
+    overflow: visible; }
+  .slide-top .slick-slide,
+  .slide-bottom .slick-slide {
+    position: relative; }
+
+.featureDetail__mainCont {
+  background: #fff; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__mainCont {
+      width: 409px;
+      padding: 58px 45px;
+      border-radius: 10px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__mainCont {
+      border-radius: 8px;
+      padding: 41px 27px;
+      margin-top: -60px;
+      position: relative;
+      z-index: 1; } }
+  .-structure .featureDetail__mainCont {
+    background: #000;
+    color: #fff; }
+
+@media screen and (max-width: 767px) {
+  .featureDetail__mainTtl {
+    text-align: center; }
+    .featureDetail__mainTtl img {
+      width: 237px; } }
+
+.featureDetail__mainLead {
+  line-height: 1.45454545;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__mainLead {
+      font-size: 22px;
+      font-size: 2.2rem;
+      margin-top: 22px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__mainLead {
+      text-align: center;
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-top: 18px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__mainTxt {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.66666667;
+    margin-top: 30px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__mainTxt {
+    line-height: 1.42857143;
+    margin-top: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__mainVoice {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(50px); }
+    .featureDetail__mainVoice.-voice01 {
+      top: 45px;
+      left: 170px; }
+    .featureDetail__mainVoice.-voice02 {
+      bottom: 40px;
+      right: 120px; }
+    .-inviewActive .featureDetail__mainVoice {
+      transition: 0.5s 5s;
+      opacity: 1;
+      transform: translateY(0); }
+    .featureDetail__mainVoice img {
+      width: auto;
+      height: 67px; } }
+
+.-inviewFirst .featureDetail__mainVoice {
+  opacity: 1;
+  transform: translateY(0);
+  transition: none; }
+
+.-inviewSecont .featureDetail__mainVoice {
+  opacity: 0;
+  transform: translateY(50px); }
+  body.load .-inviewSecont .featureDetail__mainVoice {
+    transition: 0.5s 5s;
+    opacity: 1;
+    transform: translateY(0); }
+
+/* ==========================================================================
+   featureDetail__container
+   ========================================================================== */
+.featureDetail__container {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__container {
+      padding-bottom: 80px;
+      margin: 86px 0 0;
+      padding-top: 94px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__container {
+      padding-bottom: 60px;
+      padding-top: 15px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__containerNaviWrap {
+    width: 319px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__containerNaviWrap {
+    position: relative;
+    padding: 0 15px;
+    min-height: 40px; }
+    .featureDetail__containerNaviWrap + * {
+      margin-top: 38px; }
+    .featureDetail__containerNaviWrap.fixed {
+      z-index: 96; } }
+@media screen and (min-width: 768px) {
+  .featureDetail__containerNaviWrap.fixed {
+    display: none; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__containerNaviWrap.fixed {
+    position: fixed;
+    top: 78px;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s; }
+    .menu-show .featureDetail__containerNaviWrap.fixed {
+      opacity: 1;
+      pointer-events: auto; }
+    .featureDetail__containerNaviWrap.fixed .featureDetail__containerNavi {
+      display: none;
+      box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.6); } }
+
+.featureDetail__containerNaviMenuBtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: block;
+  background: #000;
+  width: 40px;
+  height: 40px; }
+  .-structure .featureDetail__containerNaviMenuBtn {
+    background: #ffdb00; }
+
+.featureDetail__containerNaviMenuBtnDot {
+  content: "";
+  display: block;
+  width: 4px;
+  position: absolute;
+  height: 4px;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  background: #ffdb00;
+  margin: auto; }
+  .-structure .featureDetail__containerNaviMenuBtnDot {
+    background: #000; }
+  .featureDetail__containerNaviMenuBtnDot:nth-child(1) {
+    left: 10px; }
+  .featureDetail__containerNaviMenuBtnDot:nth-child(2) {
+    left: 0;
+    right: 0; }
+  .featureDetail__containerNaviMenuBtnDot:nth-child(3) {
+    right: 10px; }
+
+.featureDetail__containerNavi {
+  background: #fff; }
+  .-structure .featureDetail__containerNavi {
+    background: #000; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__containerNavi {
+      position: sticky;
+      top: 0;
+      right: 0;
+      padding: 20px 20px 20px 130px; } }
+  @media screen and (min-width: 768px) and (min-width: 1540px) {
+    .featureDetail__containerNavi {
+      padding: 20px 70px 20px 70px; } }
+
+  @media screen and (max-width: 767px) {
+    .featureDetail__containerNavi {
+      padding: 45px 30px 25px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__containerNaviTtl {
+    text-align: center; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__containerNaviList {
+    padding: 0 10px;
+    margin-top: 15px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__containerNaviList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.featureDetail__containerNaviListItem {
+  border-bottom: 2px dotted #999999; }
+  @media screen and (max-width: 767px) {
+    .featureDetail__containerNaviListItem {
+      width: calc(50% - 15px);
+      display: flex;
+      align-items: center; } }
+
+.featureDetail__containerNaviListItemLink {
+  line-height: 1.28571429;
+  display: block;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #999999;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__containerNaviListItemLink {
+      padding: 6px 0 6px 15px;
+      font-size: 13px;
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__containerNaviListItemLink {
+      padding: 8px 0 8px 15px;
+      font-size: 13px;
+      font-size: 1.3rem;
+      width: 100%; } }
+  .featureDetail__containerNaviListItemLink:hover {
+    text-decoration: none; }
+  .active .featureDetail__containerNaviListItemLink {
+    color: #000; }
+  .-structure .active .featureDetail__containerNaviListItemLink {
+    color: #fff; }
+  .featureDetail__containerNaviListItemLink::before {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 2px;
+    top: 11px;
+    border-radius: 100%; }
+    .active .featureDetail__containerNaviListItemLink::before {
+      background: #f5ce35; }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__containerNaviBtn {
+    margin-top: 15px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__containerNaviBtn {
+    margin-top: 25px; }
+    .featureDetail__containerNaviBtn img {
+      width: 100%; } }
+
+.featureDetail__sct {
+  position: relative;
+  z-index: 2; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sct {
+      width: 980px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sct + * {
+      margin-top: 200px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sct + * {
+      margin-top: 100px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctTtl {
+    position: absolute;
+    top: 76px;
+    left: -110px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__sctTtl {
+    display: flex;
+    align-items: center;
+    padding: 0 15px; } }
+
+.featureDetail__sctTtlNum {
+  display: block;
+  position: relative; }
+  .featureDetail__sctTtlNum img {
+    position: relative;
+    z-index: 1; }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctTtlNum {
+      width: 43px; } }
+  .featureDetail__sctTtlNum::after {
+    position: absolute;
+    content: "";
+    background: #ffdb00;
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .featureDetail__sctTtlNum::after {
+        width: 200px;
+        height: 5px;
+        left: -40px;
+        top: 27px; } }
+    @media screen and (max-width: 767px) {
+      .featureDetail__sctTtlNum::after {
+        width: 3px;
+        height: 100px;
+        left: 10px;
+        top: -20px; } }
+
+.featureDetail__sctTtlInner {
+  display: block;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-feature-settings: "palt"; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctTtlInner {
+      writing-mode: vertical-rl;
+      font-size: 40px;
+      font-size: 4rem;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      margin: 30px 0 0 20px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctTtlInner {
+      flex: 1;
+      font-size: 25px;
+      margin-left: 12px; } }
+
+@media screen and (max-width: 767px) {
+  .featureDetail__sctPic {
+    margin-top: 10px; } }
+
+.featureDetail__Sttl {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px); }
+  @media screen and (min-width: 768px) {
+    .featureDetail__Sttl {
+      margin-top: 66px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__Sttl {
+      margin-top: 38px;
+      padding: 0 25px; }
+      .featureDetail__Sttl img {
+        margin-left: -30px; } }
+  .featureDetail__Sttl.is-inview {
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+    opacity: 1;
+    transform: translateY(0); }
+
+.featureDetail__sctLead {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(25px); }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctLead {
+      margin-top: 37px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctLead {
+      margin-top: 10px; } }
+  .featureDetail__sctLead.is-inview {
+    transition: 0.8s 0.5s;
+    opacity: 1;
+    transform: translateY(0); }
+
+.featureDetail__sctLeadInner {
+  display: inline-block;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline wavy #f5ce35;
+  line-height: 1.55; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctLeadInner {
+      font-size: 45px;
+      font-size: 4.5rem; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctLeadInner {
+      font-size: 23px;
+      font-size: 2.3rem; } }
+
+.featureDetail__sctTxt {
+  opacity: 0;
+  transform: translateY(25px); }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctTxt {
+      text-align: center;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.75;
+      margin-top: 15px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctTxt {
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 1.42857143;
+      margin-top: 15px;
+      padding: 0 20px; } }
+  .featureDetail__sctTxt.is-inview {
+    transition: 0.8s 0.5s;
+    opacity: 1;
+    transform: translateY(0); }
+
+.featureDetail__sctImg {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctImg {
+      margin-top: 35px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctImg {
+      margin-top: 30px; }
+      .featureDetail__sctImg img {
+        max-width: 80%; } }
+
+.featureDetail__sctBlock {
+  background: #fff; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlock {
+      width: 880px;
+      margin: 0 auto;
+      margin-top: 55px;
+      border-bottom: 5px solid #000; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlock {
+      margin: 30px 20px 0;
+      border-bottom: 3px solid #000; } }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlock + .featureDetail__sctBlock {
+      margin-top: 20px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlock + .featureDetail__sctBlock {
+      margin-top: 10px; } }
+
+.featureDetail__sctBlockTtl {
+  background: #fff;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  transition: 0.21s;
+  cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlockTtl {
+      font-size: 26px;
+      font-size: 2.6rem;
+      padding: 15px 100px 15px 110px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlockTtl {
+      font-size: 13px;
+      font-size: 1.3rem;
+      padding: 12px 50px 12px 55px;
+      line-height: 1.45; } }
+  .featureDetail__sctBlockTtl.active {
+    background: #ffdb00; }
+
+.featureDetail__sctBlockTtlBtn {
+  position: absolute;
+  display: block;
+  background: #ffdb00;
+  top: 0;
+  right: 0;
+  height: 100%; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlockTtlBtn {
+      width: 80px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlockTtlBtn {
+      width: 40px; } }
+  .featureDetail__sctBlockTtlBtn::before, .featureDetail__sctBlockTtlBtn::after {
+    display: block;
+    position: absolute;
+    background: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      .featureDetail__sctBlockTtlBtn::before, .featureDetail__sctBlockTtlBtn::after {
+        width: 20px;
+        height: 4px; } }
+    @media screen and (max-width: 767px) {
+      .featureDetail__sctBlockTtlBtn::before, .featureDetail__sctBlockTtlBtn::after {
+        width: 10px;
+        height: 2px; } }
+  .featureDetail__sctBlockTtlBtn::after {
+    transform: rotate(90deg);
+    transition: 0.21s; }
+    .active .featureDetail__sctBlockTtlBtn::after {
+      transform: rotate(0); }
+
+.featureDetail__sctBlockTtlIcon {
+  position: absolute; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlockTtlIcon {
+      top: -20px;
+      left: 0; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlockTtlIcon {
+      top: -13px;
+      left: 0;
+      width: 40px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctBlockContainer {
+    padding: 45px 40px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__sctBlockContainer {
+    padding: 20px 20px 30px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctBlockContainerCol2 {
+    display: flex; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctBlockContainerPic {
+    width: 400px; }
+    .featureDetail__sctBlockContainerPic span {
+      display: block;
+      margin-top: 10px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__sctBlockContainerPic span {
+    display: block;
+    margin-top: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctBlockCont {
+    flex: 1;
+    margin-left: 40px;
+    padding-top: 10px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__sctBlockCont {
+    margin-top: 10px; } }
+
+.featureDetail__sctBlockTxt {
+  line-height: 1.71428571; }
+
+.featureDetail__sctBlockNote {
+  margin-top: 10px;
+  font-size: 12px; }
+
+.indent {
+  text-indent: -1em;
+  padding-left: 1em;
+  line-height: 1.2; }
+
+.featureDetail__sctBlockSubTtl {
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlockSubTtl {
+      margin-top: 28px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlockSubTtl {
+      margin-top: 18px;
+      font-size: 10px;
+      font-size: 1rem; } }
+
+.featureDetail__sctBlockLineup {
+  display: flex; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctBlockLineup {
+      margin-top: 18px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctBlockLineup {
+      margin-top: 13px; } }
+
+@media screen and (min-width: 768px) {
+  .featureDetail__sctBlockLineupItem {
+    width: 70px;
+    margin-right: 20px; } }
+@media screen and (max-width: 767px) {
+  .featureDetail__sctBlockLineupItem {
+    width: 53px;
+    margin-right: 15px; } }
+.featureDetail__sctBlockLineupItem.-inactive {
+  opacity: 0.2; }
+
+.featureDetail__sctVoice {
+  background: #fff;
+  border: 1px dashed #000; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoice {
+      width: 880px;
+      margin: 38px auto 0; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoice {
+      margin: 30px 15px 0; } }
+
+.featureDetail__sctVoiceInner {
+  border: 5px solid #ffdb00; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceInner {
+      display: flex;
+      padding: 40px 45px 28px 0; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceInner {
+      padding: 30px; } }
+
+.featureDetail__sctVoiceContLeft {
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceContLeft {
+      width: 225px;
+      flex-direction: column;
+      padding-top: 15px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceContLeft {
+      flex-wrap: wrap;
+      justify-content: center; } }
+
+.featureDetail__sctVoiceTtl {
+  width: 100%;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceTtl {
+      margin-bottom: 15px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceTtl img {
+      width: 132px; } }
+
+.featureDetail__sctVoicePic {
+  border-radius: 100%;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoicePic {
+      margin-top: 5px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoicePic {
+      width: 50px; } }
+
+.featureDetail__sctVoiceName {
+  line-height: 1.4; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceName {
+      font-size: 13px;
+      font-size: 1.3rem;
+      margin-top: 18px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceName {
+      font-size: 11px;
+      font-size: 1.1rem;
+      margin-left: 10px; } }
+  .featureDetail__sctVoiceName strong {
+    display: block;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .featureDetail__sctVoiceName strong {
+        font-size: 18px;
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 767px) {
+      .featureDetail__sctVoiceName strong {
+        font-size: 14px;
+        font-size: 1.4rem; } }
+
+.featureDetail__sctVoiceContRight {
+  flex: 1; }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceContRight {
+      margin-top: 18px; } }
+
+.featureDetail__sctVoiceCatch {
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceCatch {
+      font-size: 18px;
+      font-size: 1.8rem; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceCatch {
+      font-size: 13px;
+      font-size: 1.3rem; } }
+
+.featureDetail__sctVoiceTxt {
+  line-height: 1.57142857; }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceTxt {
+      font-size: 13px;
+      font-size: 1.3rem; } }
+
+.featureDetail__sctVoiceTxtSup {
+  color: #6c6c6c; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceTxtSup {
+      font-size: 12px;
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceTxtSup {
+      font-size: 11px;
+      font-size: 1.1rem; } }
+
+.featureDetail__sctVoiceNote {
+  margin-top: 15px; }
+
+.featureDetail__sctVoiceNoteItem {
+  line-height: 1.45;
+  color: #6c6c6c; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctVoiceNoteItem {
+      font-size: 13px;
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctVoiceNoteItem {
+      font-size: 12px;
+      font-size: 1.2rem; }
+      .featureDetail__sctVoiceNoteItem:nth-child(n + 2) {
+        margin-top: 5px; } }
+
+small {
+  vertical-align: top;
+  position: relative;
+  top: -0.1em; }
+  @media screen and (min-width: 768px) {
+    small {
+      font-size: 12px;
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 767px) {
+    small {
+      font-size: 11px;
+      font-size: 1.1rem; } }
+
+.featureDetail__sctExperiment {
+  background: #fff;
+  /* border: 1px dashed #000;*/ }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctExperiment {
+      width: 880px;
+      margin: 38px auto 0; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctExperiment {
+      margin: 30px 15px 0; } }
+
+.featureDetail__sctExperimentInner {
+  border: 5px solid #e5e5e5; }
+  @media screen and (min-width: 768px) {
+    .featureDetail__sctExperimentInner {
+      padding: 40px; } }
+  @media screen and (max-width: 767px) {
+    .featureDetail__sctExperimentInner {
+      padding: 30px; } }
+  .featureDetail__sctExperimentInner h4 {
+    margin-bottom: 20px; }
+    @media screen and (max-width: 767px) {
+      .featureDetail__sctExperimentInner h4 {
+        text-align: center; } }
+    .featureDetail__sctExperimentInner h4 span {
+      font-size: 22px;
+      font-size: 2.2rem;
+      font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      color: #000;
+      background-color: #ffdb00;
+      padding: 10px 20px;
+      border-radius: 10px; }
+      @media screen and (max-width: 767px) {
+        .featureDetail__sctExperimentInner h4 span {
+          font-size: 15px;
+          font-size: 1.5rem;
+          padding: 10px; } }
+  .featureDetail__sctExperimentInner .featureDetail__sctExperiment__ttl {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px; }
+  .featureDetail__sctExperimentInner .featureDetail__sctExperiment__sttl {
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+  .featureDetail__sctExperimentInner .featureDetail__sctExperiment__txt {
+    font-size: 16px;
+    font-size: 1.6rem; }
+    @media screen and (max-width: 767px) {
+      .featureDetail__sctExperimentInner .featureDetail__sctExperiment__txt {
+        font-size: 12px;
+        font-size: 1.2rem; } }
+
+.featureDetail__sctBlockContainerPic a {
+  display: block;
+  position: relative; }
+  .featureDetail__sctBlockContainerPic a:after, .featureDetail__sctBlockContainerPic a:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+  .featureDetail__sctBlockContainerPic a:before {
+    background: #fff url("../../common/css/img/icon_zoom.png") 6px 6px no-repeat;
+    background-size: 18px 18px;
+    border: 1px solid #000;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2; }
+  .featureDetail__sctBlockContainerPic a:after {
+    background: #000;
+    right: 7px;
+    bottom: 7px;
+    z-index: 1; }
+  .featureDetail__sctBlockContainerPic a:hover:before {
+    background-color: #f5cd00; }
+  .featureDetail__sctBlockContainerPic a:active:before {
+    -webkit-transform: translate(3px, 3px);
+    -ms-transform: translate(3px, 3px);
+    transform: translate(3px, 3px); }
+
+.featherlight-content .featherlight-previous, .featherlight-content .featherlight-next {
+  display: none; }
+
+.feature__requestSection {
+  background: #fff;
+  padding: 50px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .feature__requestSection {
+      width: 880px;
+      margin: 0 auto;
+      margin-top: 55px; } }
+  @media screen and (max-width: 767px) {
+    .feature__requestSection {
+      margin: 30px 20px 0;
+      padding: 20px; } }
+  @media screen and (min-width: 768px) {
+    .feature__requestSection + .feature__requestSection {
+      margin-top: 20px; } }
+  @media screen and (max-width: 767px) {
+    .feature__requestSection + .feature__requestSection {
+      margin-top: 10px; } }
+  .feature__requestSection h3 {
+    text-align: center;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .feature__requestSection h3 {
+        font-size: 26px; } }
+  .feature__requestSection .feature__requestBtn {
+    position: relative; }
+    .feature__requestSection .feature__requestBtn img {
+      position: absolute;
+      display: inline-block; }
+      @media screen and (min-width: 768px) {
+        .feature__requestSection .feature__requestBtn img {
+          top: -20px;
+          left: 100px; } }
+      @media screen and (max-width: 767px) {
+        .feature__requestSection .feature__requestBtn img {
+          top: -5px;
+          left: -20px;
+          width: 35%; } }
+    .feature__requestSection .feature__requestBtn a {
+      font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      background: #ffdb00;
+      color: #000;
+      border-radius: 50px;
+      display: block; }
+      .feature__requestSection .feature__requestBtn a:hover {
+        text-decoration: none;
+        opacity: .6; }
+      @media screen and (min-width: 768px) {
+        .feature__requestSection .feature__requestBtn a {
+          width: 80%;
+          margin: 50px auto 0;
+          padding: 10px 30px 10px 120px;
+          font-size: 26px;
+          border: 5px solid #000; } }
+      @media screen and (max-width: 767px) {
+        .feature__requestSection .feature__requestBtn a {
+          width: 100%;
+          margin: 20px auto 0;
+          padding: 10px 0;
+          border: 3px solid #000; } }
+    @media screen and (max-width: 767px) {
+      .feature__requestSection .feature__requestBtn {
+        margin-top: 20px; } }

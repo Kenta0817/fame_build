@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/**
+* 土地探しのポイント
+*
+*/
+#contents.bg-square {
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-bottom: 25px;
+  }
+}
+
+.ttl-main {
+  margin: 30px 0 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .ttl-main {
+    margin: 10px 0 35px;
+  }
+}
+
+/* ==========================================================================
+sct-otoshiana
+========================================================================== */
+.sct-otoshiana {
+  position: relative;
+  padding: 80px 0 140px;
+  background: url("img/bg_otoshiana.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.sct-otoshiana:before {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  left: 0;
+  display: block;
+  margin: auto;
+  width: 286px;
+  height: 212px;
+  background: url("img/img_arrow.png") no-repeat;
+  background-size: 100%;
+  content: "";
+  transform: translatex(35px);
+}
+
+.sct-otoshiana-ttl {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.wrap-box-otoshiana {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1020px;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+}
+
+.box-otoshiana {
+  width: 330px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.box-otoshiana .box-otoshiana-img {
+  margin: 0 0 30px 20px;
+}
+
+.box-otoshiana .box-otoshiana-dl {
+  padding: 0 35px 35px;
+}
+
+.box-otoshiana .box-otoshiana-dl dt {
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.box-otoshiana .box-otoshiana-dl dd {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-otoshiana {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    background: #1d333f url("img/bg_otoshiana_sp.png") top no-repeat;
+    background-size: 100%;
+  }
+  .sct-otoshiana:before {
+    transform: translatex(0);
+  }
+  .sct-otoshiana-ttl {
+    margin-bottom: 40px;
+    text-align: right;
+  }
+  .sct-otoshiana-ttl img.sp-item {
+    display: inline !important;
+  }
+  .wrap-box-otoshiana {
+    display: block;
+    width: 100%;
+  }
+  .box-otoshiana {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+sct-support
+========================================================================== */
+.sct-support {
+  padding: 90px 0 360px;
+  background: #3491dc url("img/bg_support.jpg") center bottom no-repeat;
+  background-size: cover;
+}
+
+.sct-support-ttl {
+  margin-bottom: 20px;
+}
+
+.sct-support-txt {
+  margin-left: 160px;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.75;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.sct-support-img {
+  margin: -20px 160px 0 0;
+}
+
+.wrap-box-support {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 75px;
+  width: 1060px;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+}
+
+.box-support {
+  position: relative;
+  width: 180px;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.box-support .box-support-img {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.box-support .box-support-img:before {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 18px solid #ea5504;
+  content: "";
+}
+
+.box-support .box-support-icon {
+  position: absolute;
+  top: -31px;
+  left: -31px;
+  z-index: 1;
+  width: 62px;
+}
+
+.box-support:last-child .box-support-img:before {
+  display: none;
+}
+
+.area-point {
+  position: relative;
+  padding: 45px 110px 55px;
+  border-radius: 4px;
+  background-color: #fbf2e0;
+}
+
+.area-point .area-point-ttl {
+  margin-bottom: 20px;
+}
+
+.area-point .point-list li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.area-point .point-list li .num {
+  padding-top: 15px;
+  width: 100px;
+}
+
+.area-point .point-list li dl {
+  width: calc(100% - 100px);
+}
+
+.area-point .point-list li dl dt {
+  color: #f39700;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.area-point .point-list li dl dd {
+  color: #1885bd;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.area-point .point-list li:last-child {
+  margin-bottom: 0;
+}
+
+.area-point .point-circle {
+  position: absolute;
+  right: 140px;
+  bottom: -65px;
+  width: 334px;
+  height: 334px;
+  border-radius: 50%;
+  background: #f39700;
+}
+
+.area-point .point-circle dl {
+  padding: 70px 35px 0;
+  color: #fff;
+}
+
+.area-point .point-circle dl dt {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.area-point .point-circle dl dt span {
+  padding: 0 15px;
+  line-height: 1.55;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 2.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.area-point .point-circle dl dt span:before, .area-point .point-circle dl dt span:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+}
+
+.area-point .point-circle dl dt span:before {
+  left: 0;
+  transform: rotate(-20deg);
+}
+
+.area-point .point-circle dl dt span:after {
+  right: 0;
+  transform: rotate(20deg);
+}
+
+.area-point .point-circle dl dd {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.50;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.area-point .point-circle dl dd strong {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #f6e000;
+}
+
+.area-point .point-circle dl dd strong span {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.area-point .point-circle .point-circle-cap {
+  position: absolute;
+  top: -95px;
+  left: 130px;
+  width: 296px;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-support {
+    padding: 90px 0 130px;
+    background-size: 100%;
+  }
+  .sct-support-ttl {
+    margin-bottom: 20px;
+  }
+  .sct-support-txt {
+    float: none;
+    margin-left: 0;
+  }
+  .sct-support-img {
+    float: none;
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  .wrap-box-support {
+    flex-wrap: wrap;
+    margin: 40px auto 0;
+    width: 100%;
+  }
+  .box-support {
+    margin-bottom: 35px;
+    width: 47%;
+  }
+  .box-support .box-support-img:before {
+    display: none;
+  }
+  .box-support .box-support-txt {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .box-support .box-support-icon {
+    position: absolute;
+    top: -15px;
+    left: -3px;
+    z-index: 1;
+    width: 50px;
+  }
+  .area-point {
+    overflow: hidden;
+    padding: 50px 0 0;
+  }
+  .area-point .area-point-ttl {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+  .area-point .point-list {
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+  .area-point .point-list li {
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .area-point .point-list li .num {
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .area-point .point-list li dl {
+    width: 100%;
+  }
+  .area-point .point-list li dl dt {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .area-point .point-circle {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: -50px;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    background: #f39700;
+    margin: 0 auto;
+  }
+  .area-point .point-circle dl {
+    padding: 70px 35px 0;
+    color: #fff;
+  }
+  .area-point .point-circle .point-circle-cap {
+    position: absolute;
+    top: -110px;
+    left: 30px;
+    width: 296px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .area-point .point-list {
+    margin-bottom: 150px;
+  }
+  .area-point .point-circle {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    bottom: 15px;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .area-point .point-circle dl {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .area-point .point-circle .point-circle-cap {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 296px;
+  }
+}
+
+/* ==========================================================================
+   information-area
+   ========================================================================== */
+.information-area {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+
+.information-area .information-area-img {
+  width: 640px;
+}
+
+.information-area .information-area-contents {
+  box-sizing: border-box;
+  padding: 40px 55px 0;
+  width: calc(100% - 640px);
+  background: #00a271;
+  color: #fff;
+}
+
+.information-area .information-area-lead {
+  margin-bottom: 10px;
+  line-height: 1.25;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+.information-area .information-area-cap {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.information-area .information-area-num {
+  margin-bottom: 15px;
+}
+
+.information-area .information-area-num > span {
+  margin-left: 8px;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+
+.information-area .information-area-num > strong {
+  line-height: 1;
+  font-size: 55px;
+  font-size: 5.5rem;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.information-area .information-area-num > strong span {
+  display: inline-block;
+  padding: 0 6px;
+  text-shadow: 1.414px 1.414px 0 rgba(0, 0, 0, 0.25);
+}
+
+.information-area .information-area-num > strong span:not(:nth-last-child(4n)) {
+  margin: 0 3px;
+  background: #00ae83;
+}
+
+.information-area .btn-cmn span {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.information-area .information-area-txt {
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .information-area {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .information-area .information-area-img {
+    width: 100%;
+  }
+  .information-area .information-area-contents {
+    padding: 15px;
+    width: 100%;
+  }
+  .information-area .information-area-lead {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+  .information-area .information-area-cap {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .information-area .information-area-num {
+    margin-bottom: 15px;
+  }
+  .information-area .information-area-num > span {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  .information-area .information-area-num > strong {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  .information-area .information-area-txt {
+    line-height: 1.4;
+  }
+  .information-area .btn-cmn {
+    margin-top: 10px;
+  }
+}

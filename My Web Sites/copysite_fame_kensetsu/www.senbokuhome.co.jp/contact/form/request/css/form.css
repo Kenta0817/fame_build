@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+#contents{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#main{
+	margin: 20px 0;
+}
+
+#side{
+}
+
+footer{
+	background-color: #226584;
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+.cap {
+	text-indent: -1em;
+	padding: 1em;
+	margin: 60px 0 30px 0;
+	background-color: #f1f1f1;
+	font-size: .9em;
+}
+/*.cap {
+	text-indent: -1em;
+	padding: 1em;
+	margin: 60px 0 20px 0;
+	font-size: 1em;
+	
+}*/
+@media screen and (max-width: 767px) {
+	.cap {
+		margin: 30px 0;
+	}
+	
+}
+/* テーブルの横幅、thとtdの基本指定 */
+table{
+	width:100%;
+}
+
+.form{
+	margin: 20px 0 0 0;
+}
+.form table th{
+	width:33%;
+	font-size: 108%;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 25px 10px 25px;
+	vertical-align:top;
+}
+	.form table th b{
+		font-weight: normal;
+		display: block;
+	}
+
+.form table td{
+	width:67%;
+	font-size: 108%;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 17px 10px 17px;
+	vertical-align:middle;
+}
+
+/* 各フィールドの横幅パターン */
+
+.form table td .small{
+	width:33%;
+}
+.form table td .medium{
+	width:60%;
+}
+.form table td .large{
+	width:95%;
+}
+
+
+/* パーツの余白調整 */
+.form table td span {
+    margin-right: 5px;
+}
+.form table td label {
+    margin-right: 30px;
+    vertical-align: text-top;
+}
+
+
+/* 必須項目 */
+.form table th .required {
+	position:relative;
+	padding-right:75px;
+}
+.form table th .required span{
+	position:absolute;
+	top:middle;
+	right:0 ;
+	top:0 ;
+	/top:-5px ;
+	background-color:#CC1800;
+	color:#FFF;
+	font-size:85%;
+	padding:3px 7px;
+}
+
+/* 任意項目 */
+.form table th .arbitrary {
+	position:relative;
+	padding-right:75px;
+}
+.form table th .arbitrary span{
+	position:absolute;
+	top:middle;
+	right:0 ;
+	top:0 ;
+	/top:-5px ;
+	background-color:#BCBCBC;
+	color:#FFF;
+	font-size:85%;
+	padding:3px 7px;
+}
+
+
+/* 入力項目 */
+.form input[type="text"],
+.form input[type="email"], 
+.form input[type="tel"],
+.form textarea{
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 2px 2px 2px 0 rgba(200, 200, 200, 0.2) inset;
+	font-size: 100%;
+	min-height: 14px;
+	padding: 9px 11px;
+}
+.form .drop {
+	padding: 4px;
+	font-size:100%;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 2px 2px 2px 0 rgba(200, 200, 200, 0.2) inset;
+}
+.form input[type="text"]:focus, 
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+textarea:focus {
+   background-color: #EFEFEF;
+}
+
+/* ボタン類 */
+.form_btn{
+	text-align: center;
+	margin: 40px 0;
+}
+.form_btn li{
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;
+	margin: 0 10px 0 0;
+}
+
+.btn_confirm {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 4px 0 #FFFFFF inset;
+    display: inline-block;
+    font-size: 149%;
+	width:430px;
+    height: 62px;
+    text-align: center;
+	color:#FFF;
+	behavior: url(../../../../form_template/css/PIE.html);
+	cursor: pointer;
+}
+.btn_submit {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 4px 0 #FFFFFF inset;
+    display: inline-block;
+    font-size: 149%;
+	width:280px;
+    height: 62px;
+    text-align: center;
+	color:#FFF;
+	behavior: url(../../../../form_template/css/PIE.html);
+	cursor: pointer;
+}
+.btn_back {
+    background-color: #999999;
+    border: 1px solid #999999;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 4px 0 #FFFFFF inset;
+    display: inline-block;
+    font-size: 149%;
+	width:280px;
+    height: 62px;
+    text-align: center;
+	color:#FFF;
+	behavior: url(../../../../form_template/css/PIE.html);
+	cursor: pointer;
+}
+.postal_btn {
+    border: 1px solid #C1C1C1;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 3px 0 #FFFFFF inset;
+    display: inline-block;
+	padding:7px 2px 7px 7px;
+	font-size:85%;
+	background: #fdfdfd;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fdfdfd), to(#e7e7e7));
+	background: -webkit-linear-gradient(#fdfdfd, #e7e7e7);
+	background: -moz-linear-gradient(#fdfdfd, #e7e7e7);
+	background: -ms-linear-gradient(#fdfdfd, #e7e7e7);
+	background: -o-linear-gradient(#fdfdfd, #e7e7e7);
+	background: linear-gradient(#fdfdfd, #e7e7e7);
+	-pie-background: linear-gradient(#fdfdfd, #e7e7e7);
+	width:15em;
+	behavior: url(../../../../form_template/css/PIE.html);
+	cursor: pointer;
+}
+	.postal_btn span{
+		background: url("../img/icon_postal.png") no-repeat scroll 0 center;
+		padding-left:15px;
+	}
+
+
+/* エラーリスト */
+ul.error{
+	background-color: #fae7e8;
+	border: 1px solid #e72407;
+	padding: 20px 20px;
+}
+ul.error li{
+	color: #CC1800;
+}
+ul.error li a {
+	color: #CC1800;
+    text-decoration: underline;
+}
+ul.error li a:visited {
+    color: #CC1800;
+    text-decoration: underline;
+}
+ul.error li a:hover {
+    color: #CC1800;
+    min-height: 1em;
+    text-decoration: none;
+}
+
+/* 各フィールドのエラーメッセージ */
+span.error{
+	color: #CC1800;
+	display:block;
+	margin-top:7px;
+	font-size:86%;
+}
+tr.error{
+	background-color:#fae7e8;
+}
+
+/* 見出し */
+.form h2 {
+	padding: 5px 0 30px 30px;
+}
+
+
+/* 個人情報保護方針 */
+.form form div.privacy_policy {
+	background-color: #F9F9F9;
+	border: 1px solid #E5E5E5;
+	height: 160px;
+	line-height: 1.8em;
+	overflow-y: scroll;
+	padding: 20px 80px;
+	width: 740px;
+}
+.form form div.privacy_policy h2{
+	margin-top:15px !important;
+	padding: 0 0 5px 0;
+	font-size:124%;
+	font-weight:bold;
+
+	background:none !important;
+    border:none;
+    color: #121212;
+	margin-top:30px;
+}
+.form form div.privacy_policy h3{
+	padding-top:15px;
+	padding-bottom: 5px;
+	font-size:108%;
+	font-weight:bold;
+}
+
+
+/* 説明文 */
+.info{
+	margin: 10px 0;
+}
+
+
+/* ステップ表示 */
+.progress{
+	margin: 20px 0;
+}
+
+/* 入力補助 */
+.form table td .note{
+	color: #999999;
+	display:inline-block;
+	margin-bottom:5px;
+}
+
+.tab{
+	list-style-type: none;
+}
+.tab li{
+	display: inline-block;
+	background-color: #D2D3D2;
+	border-radius: 5px;
+}
+.tab li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-size: 2rem;
+}
+.tab li.active{
+	background-color: #08588F;
+}

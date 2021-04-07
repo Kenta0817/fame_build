@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+**********************************************************************
+
+* common.css
+
+*********************************************************************
+*/
+#Wrapper {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, sans-serif;
+  line-height: 1.7;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#Contents {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+#Contents strong {
+  color: #ed782b;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .inner {
+    max-width: 1240px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    padding: 0 25px;
+  }
+}
+
+#foot {
+  border-top: 1px solid #e8e8e8;
+}

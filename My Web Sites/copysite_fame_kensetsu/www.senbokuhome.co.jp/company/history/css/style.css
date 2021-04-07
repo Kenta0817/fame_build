@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+* 沿革
+*
+*/
+#contents {
+  padding-bottom: 50px; }
+  #contents .sct-history {
+    padding: 90px 0 0 90px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 50px; }
+  #contents .page-inner {
+    background: #fff;
+    padding-bottom: 120px; }
+  #contents table.history {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; }
+    #contents table.history th, #contents table.history td {
+      padding: 10px;
+      border-bottom: 1px solid #e5e5e5; }
+    #contents table.history th {
+      border-right: 1px solid #e5e5e5;
+      background-color: #f5f5f5; }
+    #contents table.history .month {
+      border-right: 1px solid #e5e5e5;
+      background-color: #f9f9f9; }
+  #contents .sct-snav {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-bottom: 30px; }
+    #contents.bg-square .sct-history {
+      padding: 30px 0 30px;
+      margin-bottom: 0; }
+    #contents.bg-square .page-inner {
+      background: #fff;
+      padding-bottom: 30px; }
+    #contents.bg-square table.history {
+      width: 100%; }
+      #contents.bg-square table.history td,
+      #contents.bg-square table.history th {
+        font-size: 13px;
+        font-size: 1.3rem; }
+      #contents.bg-square table.history th {
+        width: 60px; }
+      #contents.bg-square table.history .month {
+        width: 35px;
+        text-align: center; }
+    #contents.bg-square h3 {
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin: 40px 0 20px;
+      padding-bottom: 10px; }
+    #contents.bg-square .sct-snav {
+      width: auto;
+      margin: 0 auto;
+      box-sizing: border-box; } }

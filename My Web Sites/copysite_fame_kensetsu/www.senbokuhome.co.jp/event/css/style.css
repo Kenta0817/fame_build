@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/**
+ * Event
+ *
+ */
+/* ==========================================================================
+   共通部分
+   ========================================================================== */
+/* ==========================================================================
+   一覧
+   ========================================================================== */
+#head-nav {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.wrap-tab {
+  padding: 30px 0;
+}
+
+#event-tab li {
+  margin-right: 20px;
+}
+
+#event-tab li > span span {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.load #event-tab li.current > span span {
+  transform: translate3d(3px, 3px, 0);
+  background: #f5cd00;
+}
+
+.event-contents {
+  opacity: 0;
+}
+
+.load .event-contents {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-tab {
+    padding: 15px 0;
+  }
+  #event-tab li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #event-tab li > span span {
+    width: auto;
+    padding: 3px 8px;
+  }
+}
+
+#jquery-tab-pager-navi {
+  margin-top: 50px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -.40em;
+}
+
+#jquery-tab-pager-navi li {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin: 0 6px 6px;
+  vertical-align: top !important;
+  background: #000;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  transform: translate3d(3px, 3px, 0);
+}
+
+#jquery-tab-pager-navi li a {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  display: block;
+  overflow: visible;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 5px 12px;
+  text-decoration: none;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: 0.1s;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#jquery-tab-pager-navi li a:hover {
+  background-color: #f5cd00;
+}
+
+#jquery-tab-pager-navi li a:active {
+  transform: translate3d(3px, 3px, 0);
+}
+
+#jquery-tab-pager-navi li a.current {
+  background-color: #f5cd00;
+  transform: translate3d(3px, 3px, 0);
+}
+
+#jquery-tab-pager-navi li a.next:after, #jquery-tab-pager-navi li a.previos:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: auto 0;
+  content: "";
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+#jquery-tab-pager-navi li a.previos:after {
+  top: 13px;
+  left: 12px;
+  transform: rotate(90deg);
+}
+
+#jquery-tab-pager-navi li a.next:after {
+  top: 13px;
+  left: 13px;
+  transform: rotate(-90deg);
+}
+
+#jquery-tab-pager-navi li.nex.disable, #jquery-tab-pager-navi li.pre.disable {
+  display: none;
+}
+
+#jquery-tab-pager-navi li.pre {
+  margin-right: 30px;
+}
+
+#jquery-tab-pager-navi li.nex {
+  margin-left: 30px;
+}
+
+.no-pager #jquery-tab-pager-navi {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #jquery-tab-pager-navi {
+    margin-top: 30px;
+  }
+  #jquery-tab-pager-navi li {
+    width: 34px;
+    height: 34px;
+  }
+  #jquery-tab-pager-navi li a {
+    padding: 7px 12px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #jquery-tab-pager-navi li a.previos:after {
+    top: 12px;
+    left: 10px;
+  }
+  #jquery-tab-pager-navi li a.next:after {
+    top: 12px;
+    left: 12px;
+  }
+  #jquery-tab-pager-navi li.pre {
+    margin-right: 15px;
+  }
+  #jquery-tab-pager-navi li.nex {
+    margin-left: 15px;
+  }
+}
+
+/* ==========================================================================
+   詳細
+   ========================================================================== */
+.info-detail-hd {
+  padding: 0 50px 50px;
+  border-bottom: 1px solid #e5e5e5;
+  display: block;
+}
+
+.info-detail-hd:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.info-detail-hd .wrap-info-year-date {
+  box-sizing: border-box;
+  padding: 0 0 15px 0;
+  vertical-align: middle !important;
+  letter-spacing: -.40em;
+}
+
+.info-detail-hd .wrap-info-year-date .info-date, .info-detail-hd .wrap-info-year-date .bar {
+  box-sizing: border-box;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  vertical-align: bottom !important;
+  line-height: 1;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 15px;
+  padding-right: 15px;
+  position: relative;
+  border-right: 1px solid #e5e5e5;
+}
+
+.info-detail-hd .wrap-info-year-date .info-date .info-week-day, .info-detail-hd .wrap-info-year-date .bar .info-week-day {
+  margin-left: 5px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.info-detail-hd .wrap-info-year-date .info-date .info-week-day.sat, .info-detail-hd .wrap-info-year-date .bar .info-week-day.sat {
+  color: #4553a3;
+}
+
+.info-detail-hd .wrap-info-year-date .info-date .info-week-day.sun, .info-detail-hd .wrap-info-year-date .bar .info-week-day.sun {
+  color: #e83421;
+}
+
+.info-detail-hd .wrap-info-year-date .info-date:last-child, .info-detail-hd .wrap-info-year-date .bar:last-child {
+  border-right: none;
+}
+
+.info-detail-hd .wrap-info-year-date .bar {
+  border-right: none;
+  background: #fff;
+  margin-left: -16px;
+  position: relative;
+  padding-left: 15px;
+  z-index: 1;
+}
+
+.info-detail-hd .info-contents {
+  box-sizing: border-box;
+}
+
+.info-detail-hd .info-contents .info-txt {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 767px) {
+  .info-detail-hd {
+    padding: 0 0 20px;
+  }
+  .info-detail-hd .wrap-info-year-date {
+    padding: 0 0 5px;
+  }
+  .info-detail-hd .wrap-info-year-date .info-date, .info-detail-hd .wrap-info-year-date .bar {
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: none;
+  }
+  .info-detail-hd .wrap-info-year-date .info-date .info-week-day, .info-detail-hd .wrap-info-year-date .bar .info-week-day {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .info-detail-hd .wrap-info-year-date .bar {
+    margin-left: -6px;
+    padding-left: 5px;
+  }
+  .info-detail-hd .info-contents {
+    padding: 5px 0 5px 0;
+  }
+  .info-detail-hd .info-contents .info-txt {
+    line-height: 1.4;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}

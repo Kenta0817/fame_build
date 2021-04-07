@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/**
+ * Contact
+ *
+ */
+/* ==========================================================================
+   共通部分
+   ========================================================================== */
+#contact-head {
+  padding: 35px 0; }
+
+.main-ttl span img {
+  width: 65px;
+  height: 60px;
+  margin-right: 5px;
+  padding-bottom: 5px; }
+
+#wrapper {
+  padding: 50px 0 0;
+  /* マス目背景 */
+  background: url("../../common/css/svg/square.svg");
+  background-size: 1380px; }
+  .ad4 #wrapper {
+    background: url("../../common/css/img/bg_square.gif"); }
+  #wrapper #contents {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1000px;
+    margin-bottom: 50px;
+    padding: 50px 100px;
+    background: #fff; }
+
+#contact-foot {
+  padding: 45px 15px 30px;
+  color: #000;
+  background-color: #fff; }
+  #contact-foot #foot-logo {
+    margin-bottom: 25px; }
+  #contact-foot .foot-copy {
+    font-size: 10px;
+    font-size: 1rem; }
+
+@media screen and (max-width: 767px) {
+  #contact-head {
+    padding: 20px 0; }
+    #contact-head img {
+      width: 180px; }
+  #wrapper {
+    padding: 30px 0 0; }
+    #wrapper #contents {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 30px 15px 60px; }
+  #contact-foot {
+    padding: 40px 15px; }
+    #contact-foot #foot-logo {
+      margin-bottom: 15px; }
+      #contact-foot #foot-logo img {
+        width: 160px; }
+    #contact-foot .foot-copy {
+      font-size: 10px;
+      font-size: 1rem; } }
+
+/* ==========================================================================
+   一覧
+   ========================================================================== */
+/* ==========================================================================
+   詳細
+   ========================================================================== */
+.main-ttl {
+  line-height: 1.4;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 35px;
+  font-size: 3.5rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.info > .fbox {
+  margin-bottom: 30px; }
+
+.info .info-txt {
+  width: 470px;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.info .info-txt-cap li {
+  margin-bottom: 5px;
+  margin-left: 1em;
+  text-indent: -1em; }
+
+.info .info-tel {
+  width: 305px; }
+  .info .info-tel .info-tel-txt {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+  .info .info-tel .txt-tel > * {
+    font-size: 42px;
+    font-size: 4.2rem; }
+  .info .info-tel .txt-tel:before {
+    width: 36px;
+    height: 34px;
+    background-position: left 4px; }
+  .info .info-tel .txt-tel .txt-tel-cap {
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  .info .info-tel .info-tel-hour {
+    color: #888;
+    line-height: 1.4; }
+
+.info .info-txt-cap {
+  margin-bottom: 30px; }
+
+.wrap-step {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 30px; }
+  .wrap-step .step {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 28%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    .wrap-step .step .step-inner {
+      position: relative;
+      display: block;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 80px;
+      padding: 15px 0 15px 25px;
+      border-top: 4px solid #000;
+      border-bottom: 4px solid #000; }
+      .wrap-step .step .step-inner:after {
+        position: absolute;
+        z-index: 1;
+        top: -4px;
+        right: -30px;
+        display: block;
+        width: 32px;
+        height: 80px;
+        content: '';
+        background: url("img/bg_step.png") left top no-repeat;
+        background-size: auto 100%; }
+    .wrap-step .step:first-child {
+      width: 40%;
+      padding-left: 0; }
+    .wrap-step .step.active .step-inner {
+      background: #ffdb00; }
+      .wrap-step .step.active .step-inner:after {
+        background: url("img/bg_step_active.png") left top no-repeat;
+        background-size: auto 100%; }
+
+#formTable {
+  border-top: 1px solid #e5e5e5; }
+  #formTable th {
+    padding-left: 30px;
+    text-align: left;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    #formTable th b span {
+      margin-top: 3px;
+      padding: 0 10px;
+      font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      border-radius: 25px; }
+    #formTable th b.required span {
+      color: #000;
+      background-color: #f5cd00; }
+  #formTable td {
+    padding-right: 45px; }
+
+.wrap-btn-input {
+  margin-top: 50px;
+  text-align: center; }
+  .wrap-btn-input .btn-input {
+    margin: 0 10px; }
+  .wrap-btn-input .btn-input-txt {
+    margin-bottom: 21px; }
+
+@media screen and (max-width: 767px) {
+  .main-ttl {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-size: 2.2rem; }
+  .info > .fbox {
+    margin-bottom: 30px; }
+  .info .info-txt {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .info .info-tel {
+    width: 100%;
+    text-align: center; }
+    .info .info-tel .info-tel-txt {
+      font-size: 14px;
+      font-size: 1.4rem; }
+  .info .info-txt-cap {
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-size: 1.2rem; }
+  .wrap-step {
+    padding: 0 0 20px; }
+    .wrap-step .step {
+      width: 26%;
+      padding-left: 10px;
+      font-size: 13px;
+      font-size: 1.3rem; }
+      .wrap-step .step .step-inner {
+        height: 40px;
+        padding: 4px 0 15px 15px;
+        border-width: 2px; }
+        .wrap-step .step .step-inner:after {
+          top: -2px;
+          right: -15px;
+          width: 16px;
+          height: 40px; }
+      .wrap-step .step:first-child {
+        width: 42%; }
+        .wrap-step .step:first-child .step-inner {
+          padding-left: 10px; }
+  #formTable th {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0 0;
+    border-bottom: none;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #formTable th b {
+      padding-right: 0; }
+      #formTable th b span {
+        position: static;
+        margin-left: 15px; }
+  #formTable td {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 0 15px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #formTable td span {
+      font-size: 13px;
+      font-size: 1.3rem; }
+  .wrap-btn-input {
+    margin-top: 30px; } }
+
+/* ==========================================================================
+   フォーム周り
+   ========================================================================== */
+.btn-input {
+  position: relative;
+  display: inline-block;
+  background: #000;
+  -webkit-transform: translate3d(3px, 3px, 0);
+  -ms-transform: translate3d(3px, 3px, 0);
+  transform: translate3d(3px, 3px, 0); }
+  .btn-input .cmn-input {
+    position: relative;
+    top: -3px;
+    left: -3px;
+    display: block;
+    display: inline-block;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px 55px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #000;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+    .btn-input .cmn-input:focus {
+      outline: none; }
+    .btn-input .cmn-input:hover {
+      background-color: #f5cd00; }
+    .btn-input .cmn-input:active {
+      -webkit-transform: translate3d(3px, 3px, 0);
+      -ms-transform: translate3d(3px, 3px, 0);
+      transform: translate3d(3px, 3px, 0); }
+    .btn-input .cmn-input.cmn-input-back {
+      background-color: #ccc; }
+      .btn-input .cmn-input.cmn-input-back:hover {
+        background-color: #f5cd00; }
+  .btn-input.btn-az .cmn-input {
+    padding: 5px 12px;
+    font-family: "FOT-筑紫ゴシック Pr5 M","TsukuGoPr5-M",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-size: 1.4rem; }
+
+#formTable .wrap-inb {
+  letter-spacing: -.40em; }
+  #formTable .wrap-inb > * {
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top; }
+
+#formTable *[name^='name'],
+#formTable input[class^='small'],
+#formTable input[id^='form'],
+#formTable textarea[id^='form'] {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 3px 3px 0 0 #efefef inset;
+  -moz-box-shadow: 3px 3px 0 0 #efefef inset;
+  -ms-box-shadow: 3px 3px 0 0 #efefef inset;
+  -o-box-shadow: 3px 3px 0 0 #efefef inset;
+  box-shadow: 3px 3px 0 0 #efefef inset; }
+
+#formTable input[class^='small'] {
+  margin-right: 10px;
+  padding: 5px; }
+
+#formTable label[for^='Contact'], #formTable label[for^='Starter'] {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 15px !important;
+  padding-left: 5px;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  #formTable label[for^='Contact']:before, #formTable label[for^='Starter']:before {
+    position: absolute;
+    z-index: 3;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid #ccc;
+    border-radius: 50%; }
+  #formTable label[for^='Contact']:checked, #formTable label[for^='Starter']:checked {
+    opacity: 0; }
+  #formTable label[for^='Contact']:focus, #formTable label[for^='Starter']:focus {
+    opacity: 0; }
+
+#formTable label[for^='Catalog'] {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+#formTable input[type='radio'], #formTable input[type='checkbox'] {
+  display: none; }
+  #formTable input[type='radio']:checked + label:after, #formTable input[type='checkbox']:checked + label:after {
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border-radius: 100%;
+    background-color: #000; }
+
+@media screen and (max-width: 767px) {
+  .btn-input .cmn-input {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .btn-input.btn-az {
+    margin-top: 10px; }
+    .btn-input.btn-az .cmn-input {
+      padding: 5px;
+      font-size: 12px;
+      font-size: 1.2rem; }
+  #formTable *[id^='form'],
+  #formTable *[name^='name'] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; }
+  #formTable label[for^='Contact'], #formTable label[for^='Starter'] {
+    margin-right: 10px !important;
+    padding-left: 20px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #formTable label[for^='Contact']:before, #formTable label[for^='Starter']:before {
+      top: 6px;
+      width: 16px;
+      height: 16px; }
+  #formTable input[type='radio'], #formTable input[type='checkbox'] {
+    display: none; }
+    #formTable input[type='radio']:checked + label:after, #formTable input[type='checkbox']:checked + label:after {
+      top: 11px;
+      left: 5px;
+      width: 8px;
+      height: 8px; }
+  #formTable input[name='postal_code'] {
+    width: 125px; }
+  #formTable input#form_item_old.small {
+    width: 80px; }
+  #formTable input#form_item_area.small {
+    width: 50px; }
+  #formTable input#form_item_age.small {
+    width: 80px; } }
+
+.catalog-list {
+  margin: 0 -7px 30px; }
+  .catalog-list li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.3%;
+    padding: 0 7px; }
+    .catalog-list li img {
+      width: 100%; }
+    .catalog-list li span {
+      display: block;
+      font-size: 12px;
+      font-size: 1.2rem; }
+
+/* ==========================================================================
+   資料請求フォーム
+   ========================================================================== */
+.form-request .wrap-box-catalog {
+  width: 900px;
+  margin-bottom: 40px;
+  margin-left: -50px; }
+  .form-request .wrap-box-catalog #tab {
+    border-left: 3px solid #000; }
+    .form-request .wrap-box-catalog #tab li {
+      border-top: 3px solid #000;
+      border-right: 3px solid #000; }
+      .form-request .wrap-box-catalog #tab li a {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        background: #fff;
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+        font-style: normal;
+        font-weight: normal; }
+      .form-request .wrap-box-catalog #tab li.active {
+        position: relative; }
+        .form-request .wrap-box-catalog #tab li.active a {
+          background: #ffdb00; }
+        .form-request .wrap-box-catalog #tab li.active:before {
+          position: absolute;
+          z-index: 10;
+          bottom: -5px;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 6px;
+          content: '';
+          background: #ffdb00; }
+  .form-request .wrap-box-catalog .box-catalog {
+    border: 3px solid #000; }
+    .form-request .wrap-box-catalog .box-catalog .box-catalog-inner {
+      border: 17px solid #ffdb00; }
+    .form-request .wrap-box-catalog .box-catalog .catalog-img {
+      text-align: center; }
+    .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-ttl {
+      line-height: 1.5;
+      margin-bottom: 15px;
+      padding: 0;
+      font-size: 20px;
+      font-size: 2rem;
+      font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+      font-style: normal;
+      font-weight: normal; }
+    .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-txt {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 13px;
+      font-size: 1.3rem; }
+    .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p {
+      display: inline-block;
+      overflow: hidden;
+      cursor: pointer;
+      vertical-align: middle;
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+      font-style: normal;
+      font-weight: normal; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p:before {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        margin-right: 5px;
+        content: '';
+        vertical-align: middle;
+        border: 2px solid #000; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p:checked {
+        opacity: 0; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p:focus {
+        opacity: 0; }
+    .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check input {
+      display: none; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check input:checked + p:before {
+        background-color: #000;
+        background-image: url("../../common/css/img/icon_check2.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100% auto; }
+    .form-request .wrap-box-catalog .box-catalog.box-set .box-catalog-inner {
+      padding: 40px 40px 40px 0; }
+    .form-request .wrap-box-catalog .box-catalog.box-set .catalog-img {
+      width: 43%; }
+    .form-request .wrap-box-catalog .box-catalog.box-set .catalog-contents {
+      width: 57%; }
+      .form-request .wrap-box-catalog .box-catalog.box-set .catalog-contents .catalog-ttl-cap {
+        line-height: 1.5;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+        font-style: normal;
+        font-weight: normal; }
+    .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-inner {
+      padding: 70px 30px 60px; }
+    .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-cap {
+      margin-bottom: 15px;
+      color: #888;
+      font-size: 13px;
+      font-size: 1.3rem; }
+    .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e5e5e5; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li .catalog-img .txt-atwork {
+        display: none; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li.new .catalog-img {
+        position: relative; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li.new .catalog-img:before {
+          position: absolute;
+          top: -15px;
+          left: 0;
+          display: block;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 45px;
+          height: 45px;
+          padding-top: 9px;
+          content: 'NEW';
+          text-align: center;
+          background: #ff009c;
+          color: #fff;
+          font-family: 'Pragati Narrow', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          font-size: 1.5rem;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          z-index: 99; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li.atwork .catalog-img .txt-atwork {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li.atwork .catalog-img .txt-atwork span {
+          padding: 15px;
+          background: #888;
+          border-radius: 5px;
+          color: #fff;
+          line-height: 1.55;
+          font-size: 15px;
+          font-size: 1.5rem; }
+    .form-request .wrap-box-catalog .box-catalog.box-one .catalog-img {
+      width: 23%;
+      height: 180px;
+      background-image: url("img/img_catalog_bg.png");
+      background-size: cover;
+      position: relative; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .catalog-img img {
+        position: absolute;
+        max-width: 150px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        -webkit-backface-visibility: hidden; }
+    .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents {
+      width: 75%; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-ttl {
+        font-size: 16px;
+        font-size: 1.6rem; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-ttl .cap-set {
+          line-height: 1.4em;
+          display: inline-block;
+          margin-left: 10px;
+          padding: 2px 5px;
+          vertical-align: top;
+          background: #ffdb00;
+          font-size: 14px;
+          font-size: 1.4rem; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-check p {
+        font-size: 14px;
+        font-size: 1.4rem; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-check p:before {
+          width: 22px;
+          height: 22px; }
+
+.form-request #formTable {
+  border-top: none; }
+
+@media screen and (max-width: 767px) {
+  .form-request .wrap-box-catalog {
+    width: 100%;
+    margin-left: 0; }
+    .form-request .wrap-box-catalog #tab li a {
+      padding: 8px 5px;
+      font-size: 11px;
+      font-size: 1.1rem; }
+    .form-request .wrap-box-catalog .box-catalog {
+      border: 3px solid #000; }
+      .form-request .wrap-box-catalog .box-catalog .box-catalog-inner {
+        border: 7px solid #ffdb00; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-ttl {
+        font-size: 16px;
+        font-size: 1.6rem; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-txt {
+        font-size: 12px;
+        font-size: 1.2rem; }
+      .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p {
+        font-size: 14px;
+        font-size: 1.4rem; }
+        .form-request .wrap-box-catalog .box-catalog .catalog-contents .catalog-check p:before {
+          width: 18px;
+          height: 18px; }
+      .form-request .wrap-box-catalog .box-catalog.box-set .box-catalog-inner {
+        padding: 30px 15px 15px; }
+      .form-request .wrap-box-catalog .box-catalog.box-set .catalog-img {
+        float: none;
+        width: 60%;
+        margin: 0 auto 20px; }
+      .form-request .wrap-box-catalog .box-catalog.box-set .catalog-contents {
+        float: none;
+        width: 100%; }
+        .form-request .wrap-box-catalog .box-catalog.box-set .catalog-contents .catalog-ttl-cap {
+          font-size: 13px;
+          font-size: 1.3rem; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-inner {
+        padding: 30px 15px; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-cap {
+        margin-bottom: 0;
+        text-align: left !important;
+        font-size: 12px;
+        font-size: 1.2rem; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li {
+        width: 100%;
+        padding-top: 30px; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .box-catalog-list li.new .catalog-img:before {
+          top: -15px;
+          left: -10px;
+          width: 35px;
+          height: 35px;
+          padding-top: 4px;
+          font-size: 14px;
+          font-size: 1.4rem; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .catalog-img {
+        width: 100%;
+        float: none; }
+      .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents {
+        width: 100%;
+        float: none;
+        margin-top: 5%; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-ttl {
+          font-size: 14px;
+          font-size: 1.4rem; }
+          .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-ttl .cap-set {
+            margin-top: 5px;
+            margin-left: 0;
+            font-size: 11px;
+            font-size: 1.1rem; }
+        .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-check p {
+          font-size: 14px;
+          font-size: 1.4rem; }
+          .form-request .wrap-box-catalog .box-catalog.box-one .catalog-contents .catalog-check p:before {
+            width: 18px;
+            height: 18px; }
+  .form-request #formTable {
+    border-top: none; } }

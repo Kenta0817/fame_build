@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/**
+* 個人情報保護方針
+* サイトポリシー
+*/
+#contents {
+  padding-bottom: 50px;
+}
+
+#contents .page-inner {
+  background: #fff;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+  padding: 55px;
+}
+
+#contents .page-inner .cmn-inner {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #contents {
+    padding-bottom: 30px !important;
+  }
+  #contents .page-inner {
+    padding: 30px 15px 45px;
+  }
+}

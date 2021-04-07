@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="60" viewBox="0 0 82 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_num14.svg" class="cls-1" d="M1212.18,4636.13h-6.16c-1.05,2.87-4.13,7.56-13.73,8.26v5.53h11.14v40.05h8.75v-53.84Zm48.09,0.07h-8.75l-24.93,35.98v6.1h25.7v11.69h7.98v-11.69h7.42v-7.08h-7.42v-35Zm-10.78,14.7a44.044,44.044,0,0,0,3.64-6.37c-0.28,3.08-.7,15.05-0.7,17.15l-0.14,9.52-16.67.21Z" transform="translate(-1189 -4633)"/>
+</svg>

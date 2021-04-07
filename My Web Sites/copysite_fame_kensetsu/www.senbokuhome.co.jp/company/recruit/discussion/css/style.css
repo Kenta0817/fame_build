@@ -1,0 +1,653 @@
+@charset "UTF-8";
+/**
+* 採用情報 社員座談会
+*
+*/
+#contents.bg-square {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  #contents.bg-square {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contents.bg-square {
+    padding-top: 75px;
+  }
+}
+
+/* ==========================================================================
+sct-lead
+========================================================================== */
+.sct-lead {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sct-lead .sct-lead-lead {
+  margin-bottom: 5px;
+  font-size: 40px;
+  font-size: 4rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sct-lead .sct-lead-txt {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-lead {
+    padding: 50px 0 55px;
+    text-align: center;
+  }
+  .sct-lead .sct-lead-lead {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  .sct-lead .sct-lead-txt {
+    line-height: 1.65em;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================================================================
+sct-discussion-main
+========================================================================== */
+.sct-discussion-main {
+  margin-bottom: 150px;
+}
+
+.sct-discussion-main .sct-discussion-main-img {
+  border-bottom: 8px solid #000;
+}
+
+.sct-discussion-main .sct-discussion-main-img img {
+  width: 100%;
+}
+
+.sct-discussion-main .wrap-box-staff {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff {
+  box-sizing: border-box;
+  padding: 20px 25px 0;
+  width: 265px;
+  border: 8px solid #000;
+  border-bottom: none;
+  background: #fff;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-ruby {
+  line-height: 1.55em;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-name {
+  line-height: 1.55em;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-data {
+  margin-bottom: 20px;
+  line-height: 1.55em;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-qa {
+  line-height: 1.55em;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-qa dt {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 1.7em;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff .box-staff-qa dt span {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sct-discussion-main .wrap-box-staff .box-staff:nth-child(odd) {
+    margin-top: -150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sct-discussion-main .wrap-box-staff .box-staff:nth-child(even) {
+    margin-top: -180px;
+    height: 180px;
+  }
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff:nth-child(1) .box-staff-ruby {
+  color: #f176d3;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff:nth-child(2) .box-staff-ruby {
+  color: #7a39ff;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff:nth-child(3) .box-staff-ruby {
+  color: #6ed2de;
+}
+
+.sct-discussion-main .wrap-box-staff .box-staff:nth-child(4) .box-staff-ruby {
+  color: #7ccb51;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-discussion-main {
+    margin-bottom: 0;
+  }
+  .sct-discussion-main .sct-discussion-main-img {
+    border-bottom: 5px solid #000;
+  }
+  .sct-discussion-main .wrap-box-staff {
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 20px 50px;
+    width: 100%;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px 25px;
+    width: 100%;
+    border: 5px solid #000;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff .box-staff-ruby {
+    padding-left: 90px;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff .box-staff-name {
+    padding-left: 90px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff .box-staff-data {
+    padding-left: 90px;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff .box-staff-icon {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+  .sct-discussion-main .wrap-box-staff .box-staff .box-staff-qa {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================================================================
+sct-talk-main
+========================================================================== */
+.sct-talk-main {
+  margin: 0 auto 100px;
+  width: 1180px;
+  background-size: 100%;
+}
+
+.sct-talk-main-ttl {
+  padding: 25px 0 20px;
+  border: 1px dashed #000;
+  background: #f5cd00;
+  text-align: center;
+}
+
+.sct-talk-main-lead {
+  padding: 8px;
+  background: #000;
+  color: #f5cd00;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-talk-main {
+    margin: 0 auto 20px;
+    width: 94.5%;
+  }
+  .sct-talk-main-ttl {
+    padding: 15px 0 20px;
+  }
+  .sct-talk-main-ttl img {
+    width: 85%;
+  }
+  .sct-talk-main-lead {
+    padding: 12px 0;
+    line-height: 1.65;
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+sct-talk
+========================================================================== */
+.sct-talk {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.sct-talk.sct-talk01 {
+  background: url("img/bg_flow.png") no-repeat;
+  background-size: 100%;
+}
+
+.box-talk .box-talk-txt {
+  line-height: 1.667;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.box-talk .box-talk-txt span {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.box-talk .box-talk-txt span.nishiura {
+  color: #7a39ff;
+}
+
+.box-talk .box-talk-txt span.nakagawa {
+  color: #7ccb51;
+}
+
+.box-talk .box-talk-txt span.tanaka {
+  color: #6ed2de;
+}
+
+.box-talk .box-talk-txt span.okamoto {
+  color: #f176d3;
+}
+
+.box-talk .box-talk-txt span.all {
+  color: #959595;
+}
+
+@media screen and (max-width: 767px) {
+  .sct-talk {
+    margin: 0 auto 20px;
+    width: 94.5%;
+  }
+  .sct-talk.sct-talk01 {
+    background: none;
+  }
+  .box-talk .box-talk-txt {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .box-talk .box-talk-txt.sp-nowrap {
+    overflow: hidden;
+  }
+  .box-talk .box-talk-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrap-box-talk01 {
+    position: relative;
+    padding-right: 400px;
+    padding-left: 165px;
+    height: 695px;
+  }
+  .wrap-box-talk01 .box-talk {
+    overflow: hidden;
+    min-height: 165px;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-img {
+    position: absolute;
+    right: -55px;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-icon {
+    float: left;
+    margin-top: 22px;
+    margin-right: 30px;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-txt {
+    overflow: hidden;
+  }
+  .wrap-box-talk01 .box-talk.box-talk01 .box-talk-txt {
+    margin-top: 34px;
+  }
+  .wrap-box-talk01 .box-talk.box-talk02 .box-talk-txt {
+    margin-top: 34px;
+  }
+  .wrap-box-talk01 .box-talk.box-talk02 .box-talk-img {
+    top: 0;
+  }
+  .wrap-box-talk01 .box-talk.box-talk03 .box-talk-img {
+    top: 275px;
+  }
+  .wrap-box-talk02 {
+    position: relative;
+    padding-right: 165px;
+    padding-left: 400px;
+    height: 730px;
+  }
+  .wrap-box-talk02 .box-talk {
+    overflow: hidden;
+    min-height: 220px;
+  }
+  .wrap-box-talk02 .box-talk .box-talk-img {
+    position: absolute;
+    left: -55px;
+  }
+  .wrap-box-talk02 .box-talk .box-talk-icon {
+    float: right;
+    margin-top: 22px;
+    margin-left: 30px;
+  }
+  .wrap-box-talk02 .box-talk .box-talk-txt {
+    overflow: hidden;
+  }
+  .wrap-box-talk02 .box-talk.box-talk01 .box-talk-img {
+    top: 0;
+  }
+  .wrap-box-talk02 .box-talk.box-talk02 .box-talk-img {
+    top: 275px;
+  }
+  .wrap-box-talk03 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 80px;
+  }
+  .wrap-box-talk03 .box-talk {
+    overflow: hidden;
+    margin-bottom: 40px;
+    width: 425px;
+  }
+  .wrap-box-talk03 .box-talk .box-talk-txt {
+    overflow: hidden;
+  }
+  .wrap-box-talk03 .box-talk.box-talk01 .box-talk-icon, .wrap-box-talk03 .box-talk.box-talk03 .box-talk-icon {
+    float: left;
+    margin-right: 30px;
+  }
+  .wrap-box-talk03 .box-talk.box-talk02 .box-talk-icon, .wrap-box-talk03 .box-talk.box-talk04 .box-talk-icon {
+    float: right;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-box-talk01,
+  .wrap-box-talk02 {
+    position: relative;
+    z-index: 1;
+  }
+  .wrap-box-talk01:before,
+  .wrap-box-talk02:before {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: -1;
+    display: block;
+    width: 60px;
+    height: 100%;
+    border-left: 5px dashed #000;
+    content: "";
+  }
+  .wrap-box-talk01 .box-talk,
+  .wrap-box-talk02 .box-talk {
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-ttl,
+  .wrap-box-talk02 .box-talk .box-talk-ttl {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: -50px;
+    padding: 0 10px;
+    width: calc(100% + 70px);
+    border: 5px solid #000;
+    background: #fff;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-ttl span,
+  .wrap-box-talk01 .box-talk .box-talk-ttl strong,
+  .wrap-box-talk02 .box-talk .box-talk-ttl span,
+  .wrap-box-talk02 .box-talk .box-talk-ttl strong {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-ttl span,
+  .wrap-box-talk02 .box-talk .box-talk-ttl span {
+    margin-right: 15px;
+    font-family: "FOT-シャドウTL Std B";
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-img,
+  .wrap-box-talk02 .box-talk .box-talk-img {
+    margin-bottom: 20px;
+  }
+  .wrap-box-talk01 .box-talk .box-talk-icon,
+  .wrap-box-talk02 .box-talk .box-talk-icon {
+    float: left;
+    margin-right: 10px;
+  }
+  .wrap-box-talk02 {
+    padding-bottom: 120px;
+  }
+  .wrap-box-talk02:before {
+    border-bottom: 5px dashed #000;
+  }
+  .wrap-box-talk03 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    padding: 0 10px;
+  }
+  .wrap-box-talk03 .box-talk {
+    margin-bottom: 30px;
+    width: 46%;
+  }
+  .wrap-box-talk03 .box-talk .box-talk-icon {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .finish {
+    margin-top: -110px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .finish .finish-txt {
+    margin-top: 18px;
+    line-height: 1.45em;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrap-box-talk04,
+  .wrap-box-talk05,
+  .wrap-box-talk06 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrap-box-talk04 .sct-talk-sttl,
+  .wrap-box-talk05 .sct-talk-sttl,
+  .wrap-box-talk06 .sct-talk-sttl {
+    box-sizing: border-box;
+    padding-left: 30px;
+    width: 100%;
+    font-family: "FOT-シャドウTL Std B";
+    font-size: 33px;
+    font-size: 3.3rem;
+  }
+  .wrap-box-talk04 .sct-talk-sttl span,
+  .wrap-box-talk05 .sct-talk-sttl span,
+  .wrap-box-talk06 .sct-talk-sttl span {
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
+  .wrap-box-talk04 .box-talk,
+  .wrap-box-talk05 .box-talk,
+  .wrap-box-talk06 .box-talk {
+    margin-bottom: 70px;
+    width: 50%;
+  }
+  .wrap-box-talk04 .box-talk .box-talk-txt,
+  .wrap-box-talk05 .box-talk .box-talk-txt,
+  .wrap-box-talk06 .box-talk .box-talk-txt {
+    margin-top: 22px;
+  }
+  .wrap-box-talk04 .box-talk.box-talk-left .box-talk-txt,
+  .wrap-box-talk05 .box-talk.box-talk-left .box-talk-txt,
+  .wrap-box-talk06 .box-talk.box-talk-left .box-talk-txt {
+    margin-left: 30px;
+  }
+  .wrap-box-talk04 .box-talk.box-talk-left .box-talk-img,
+  .wrap-box-talk05 .box-talk.box-talk-left .box-talk-img,
+  .wrap-box-talk06 .box-talk.box-talk-left .box-talk-img {
+    padding-right: 90px;
+  }
+  .wrap-box-talk04 .box-talk.box-talk-right .box-talk-txt,
+  .wrap-box-talk05 .box-talk.box-talk-right .box-talk-txt,
+  .wrap-box-talk06 .box-talk.box-talk-right .box-talk-txt {
+    margin-right: 30px;
+  }
+  .wrap-box-talk04 .box-talk.box-talk-right .box-talk-img,
+  .wrap-box-talk05 .box-talk.box-talk-right .box-talk-img,
+  .wrap-box-talk06 .box-talk.box-talk-right .box-talk-img {
+    padding-left: 90px;
+  }
+  .wrap-box-talk04 {
+    margin-bottom: 50px;
+  }
+  .wrap-box-talk05 {
+    margin-bottom: 50px;
+  }
+  .wrap-box-talk06 {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .wrap-box-talk06 .box-talk-img {
+    margin-bottom: 35px;
+  }
+  .wrap-box-talk06 .sct-talk-sttl {
+    padding-left: 20px;
+  }
+  .wrap-box-talk06 .box-talk {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-box-talk04,
+  .wrap-box-talk05,
+  .wrap-box-talk06 {
+    padding: 0;
+  }
+  .wrap-box-talk04 .sct-talk-sttl,
+  .wrap-box-talk05 .sct-talk-sttl,
+  .wrap-box-talk06 .sct-talk-sttl {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 2.7em;
+    width: 100%;
+    font-family: "FOT-シャドウTL Std B";
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+  .wrap-box-talk04 .sct-talk-sttl strong,
+  .wrap-box-talk05 .sct-talk-sttl strong,
+  .wrap-box-talk06 .sct-talk-sttl strong {
+    position: absolute;
+    top: 0;
+    left: .3em;
+    display: inline-block;
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  .wrap-box-talk04 .sct-talk-sttl span,
+  .wrap-box-talk05 .sct-talk-sttl span,
+  .wrap-box-talk06 .sct-talk-sttl span {
+    display: inline-block;
+    padding-top: 13px;
+    line-height: 1.4em;
+  }
+  .wrap-box-talk04 .box-talk .box-talk-txt,
+  .wrap-box-talk05 .box-talk .box-talk-txt,
+  .wrap-box-talk06 .box-talk .box-talk-txt {
+    margin-top: 22px;
+    padding: 0 10px;
+  }
+  .wrap-box-talk04 .box-talk .box-talk-img,
+  .wrap-box-talk05 .box-talk .box-talk-img,
+  .wrap-box-talk06 .box-talk .box-talk-img {
+    margin-top: 22px;
+    margin-bottom: 30px;
+  }
+  .wrap-box-talk04 {
+    margin-bottom: 30px;
+  }
+  .wrap-box-talk05 {
+    margin-bottom: 30px;
+  }
+  .wrap-box-talk06 .box-talk-img {
+    margin-top: 30px;
+    margin-left: -10px;
+    width: calc(100% + 20px);
+  }
+}

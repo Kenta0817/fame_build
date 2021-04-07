@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*
+$spBreakPoint:768px;
+@function vw($pxValue) {
+@return (($pxValue / $spBreakPoint) * 100) + vw;
+}*/
+#building {
+  padding: 125px 0 0 0;
+  margin-top: 110px;
+  padding-top: 105px;
+}
+
+@media screen and (max-width: 768px) {
+  #building {
+    margin-top: 26vw;
+    padding-top: 30px;
+    padding-top: 15.2vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #header_img01 {
+    width: 207px;
+    height: 59px;
+    top: -57px;
+    right: 50%;
+    margin-right: 77px;
+  }
+  #header_img02 {
+    width: 214px;
+    height: 98px;
+    top: -95px;
+    left: 50%;
+    margin-left: 97px;
+  }
+}
+
+h1 {
+  width: 155px;
+  height: 155px;
+  top: -110px;
+  margin-left: -78px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    width: 100px;
+    width: 26.6666666667vw;
+    margin-left: -50px;
+    margin-left: -13.3333333333vw;
+    top: -75px;
+    top: -20vw;
+  }
+}
+
+article {
+  position: relative;
+  margin: 0 68px 0 68px;
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    margin-right: 20px;
+    margin-right: 5.3333333333vw;
+    margin-left: 20px;
+    margin-left: 5.3333333333vw;
+  }
+}
+
+.cate-wrap {
+  position: relative;
+}
+
+#cate {
+  display: inline-block;
+  padding: 14px 25px;
+  line-height: 1;
+  background-color: #0e2a51;
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 34px;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #cate {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+    padding: .5em 1em;
+    margin-bottom: 1.5em;
+  }
+}
+
+#lead-box {
+  display: block;
+  margin-bottom: 113px;
+}
+
+#lead-box:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#lead-box > div:first-child {
+  float: left;
+  width: 750px;
+}
+
+#lead-box > img:last-child {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  #lead-box > div:first-child,
+  #lead-box > img:last-child {
+    float: none;
+    width: 100%;
+  }
+  #lead-box > div:first-child {
+    margin-bottom: 10px;
+    margin-bottom: 3.125vw;
+  }
+  #lead-box > img:last-child {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    display: block;
+  }
+}
+
+#ttl {
+  color: #0e2a51;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.6;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 43px;
+  white-space: nowrap;
+}
+
+#ttl:before, #ttl:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: -0.1em;
+}
+
+@media screen and (max-width: 768px) {
+  #ttl {
+    white-space: normal;
+    font-size: 15.5px;
+    font-size: 4.1333333333vw;
+    margin-bottom: 1em;
+  }
+}
+
+#lead {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  #lead {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+
+#introducing {
+  background-color: #daf0fd;
+  width: 100%;
+  padding: 60px 77px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing {
+    margin-bottom: 20px;
+    margin-bottom: 10.2vw;
+    padding: 60px 10px 30px 10px;
+  }
+}
+
+#introducing:before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 122px;
+  background-image: url(../img/ttl.png);
+  background-size: 140px 122px;
+  position: absolute;
+  left: 50px;
+  top: -70px;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing:before {
+    left: 50%;
+    margin-left: -70px;
+  }
+}
+
+#introducing > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#introducing > div:first-child {
+  padding-bottom: 50px;
+  border-bottom: dotted #0e2a51 4px;
+  margin-bottom: 50px;
+}
+
+#introducing > div > p {
+  width: 250px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing > div > p {
+    width: 100%;
+    margin-bottom: 14px;
+    margin-bottom: 3.7333333333vw;
+  }
+}
+
+#introducing > div > dl {
+  width: 597px;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing > div > dl {
+    width: 100%;
+  }
+}
+
+#introducing > div > dl dt {
+  font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing > div > dl dt {
+    text-align: center;
+    font-size: 20px;
+    font-size: 5.3333333333vw;
+    margin-bottom: 14px;
+    margin-bottom: 3.7333333333vw;
+  }
+}
+
+#introducing > div > dl dd ul li {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  position: relative;
+}
+
+#introducing > div > dl dd ul li:before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #introducing > div > dl dd ul li {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+
+article {
+  padding-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    padding-bottom: 20px;
+    padding-bottom: 15.2vw;
+  }
+}
+
+#related {
+  position: relative;
+  border-top: solid #0e2a51 5px;
+  padding: 96px 96px 55px 96px;
+}
+
+@media screen and (max-width: 768px) {
+  #related {
+    padding: 1em 1em 1em 1em;
+  }
+}
+
+#related .ttl-wrap {
+  position: relative;
+}
+
+#related .ttl-wrap .ttl {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #0e2a51;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 34px;
+}
+
+@media screen and (max-width: 768px) {
+  #related .ttl-wrap .ttl {
+    font-size: 14px;
+    font-size: 3.7vw;
+    margin-bottom: 1.5em;
+    position: relative;
+    top: .2em;
+  }
+}
+
+#related .ttl-wrap .more2 {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  margin: auto;
+  width: 210px;
+}
+
+#related .ttl-wrap .more2 p span {
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: auto;
+  top: 50%;
+  line-height: 0;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #related .ttl-wrap .more2 p span {
+    font-size: 1.6vw;
+    right: 6.6666666667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #related .ttl-wrap .more2 {
+    width: 150px;
+    width: 30vw;
+  }
+}
+
+.btn-labotop {
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.btn-labotop span {
+  text-align: left;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-labotop {
+    width: 48vw;
+    height: 5.3333333333vw;
+  }
+  .btn-labotop span {
+    font-size: 3.4666666667vw;
+    padding-left: 6.6666666667vw;
+  }
+}

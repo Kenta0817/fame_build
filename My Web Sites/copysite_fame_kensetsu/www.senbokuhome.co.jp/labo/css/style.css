@@ -1,0 +1,417 @@
+@charset "UTF-8";
+/*
+$spBreakPoint:768px;
+@function vw($pxValue) {
+@return (($pxValue / $spBreakPoint) * 100) + vw;
+}*/
+body {
+  overflow: hidden;
+}
+
+#building {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.building-inner {
+  padding: 0 76px 0 62px;
+}
+
+@media screen and (max-width: 768px) {
+  .building-inner {
+    padding: 0 2vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .building-inner + img {
+    display: block;
+    width: 1154px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(25px);
+  }
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 52px;
+  padding-left: 15px;
+}
+
+.ad4 #menu {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    padding-left: 0;
+    justify-content: flex-start;
+    margin-bottom: 2vw;
+  }
+}
+
+#menu > li {
+  width: calc(100% / 10 - 11.7px);
+  margin-right: 13px;
+}
+
+#menu > li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li {
+    width: 24%;
+    width: calc(100% / 4 - 2.4vw);
+    margin-right: 10px;
+    margin-right: 2%;
+    margin-right: 3vw;
+    margin-bottom: 5px;
+    margin-bottom: 3vw;
+  }
+  .ad4 #menu > li {
+    display: inline-block;
+  }
+  #menu > li:last-child, #menu > li:nth-child(4n) {
+    margin-right: 0;
+  }
+  #menu > li:nth-child(6), #menu > li:nth-child(7), #menu > li:nth-child(8), #menu > li:nth-child(9) {
+    margin-bottom: 0;
+  }
+}
+
+#menu > li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#menu > li a p {
+  position: relative;
+  width: calc(100% - 10px);
+  border: solid 5px #0e2a51;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 2;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a p {
+    width: 95%;
+    width: calc(100% - 5px);
+    left: 0;
+    border-width: 3px;
+    border-radius: 3px;
+  }
+}
+
+#menu > li a p:before {
+  content: "";
+  display: block;
+  padding-top: 78%;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a p:before {
+    padding-top: 70%;
+  }
+}
+
+#menu > li a p:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 8px 0;
+  border-color: transparent #0e2a51 transparent transparent;
+  position: absolute;
+  left: -5px;
+  top: calc(100% + 4px);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a p:after {
+    left: -3px;
+    border-width: 0 10px 12px 0;
+    top: 100%;
+    top: calc(100% + 2px);
+  }
+}
+
+#menu > li a span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #0e2a51;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a span {
+    font-size: 12.5px;
+    font-size: 3.3333333333vw;
+  }
+}
+
+#menu > li a i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  background-color: #0e2a51;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a i {
+    width: 90%;
+    width: calc(100% - 5px);
+    border-radius: 3px;
+  }
+}
+
+#menu > li a i:before {
+  content: "";
+  display: block;
+  padding-top: 78%;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a i:before {
+    padding-top: 70%;
+  }
+}
+
+#menu > li a i:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 0 8px;
+  border-color: transparent transparent transparent #0e2a51;
+  position: absolute;
+  right: 1px;
+  bottom: calc(100% - 1px);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a i:after {
+    right: 0;
+    border-width: 12px 0 0 6px;
+    bottom: 98%;
+    bottom: calc(100% - 2px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #menu > li a:hover p {
+    top: 0;
+    left: 0;
+  }
+  #menu > li a:hover p:after {
+    border-width: 0 12px 10px 0;
+  }
+  #menu > li a:hover i:after {
+    border-width: 12px 0 0 10px;
+  }
+}
+
+#menu > li a:active p {
+  top: 10px;
+  left: 10px;
+}
+
+#menu > li a:active p:after {
+  border-width: 0 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  #menu > li a:active p {
+    top: 10px;
+    left: 5px;
+  }
+}
+
+#menu > li a:active i:after {
+  border-width: 0 0 0 0;
+}
+
+#menu > li.active a {
+  pointer-events: none;
+}
+
+#menu > li.active a p {
+  background-color: #f5cd00;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-about {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-bottom: 4vw;
+  }
+  .btn-about a {
+    border-radius: 40px;
+    color: #fff;
+    display: inline-block;
+    background: #0e2a51;
+    text-decoration: none;
+    font-family: "FOT-筑紫ゴシック Pro E","TsukuGoPro-E",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    font-size: 3.2vw;
+    padding-top: 1px;
+    padding-top: 0.2666666667vw;
+    padding-right: 30px;
+    padding-right: 8vw;
+    padding-bottom: 1px;
+    padding-bottom: 0.2666666667vw;
+    padding-left: 30px;
+    padding-left: 8vw;
+  }
+  .btn-about a::before {
+    display: inline-block;
+    width: 6px;
+    width: 1.6vw;
+    height: 6px;
+    height: 1.6vw;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    content: "";
+    transform: rotate(45deg);
+    margin-right: 5px;
+    margin-right: 1.3333333333vw;
+    margin-bottom: 2px;
+    margin-bottom: 0.5333333333vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mado-wrap {
+    margin-bottom: 45px;
+    margin-bottom: 12vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .box-btn i:after {
+    bottom: calc(100% - 0px);
+  }
+}
+
+.more-wrap {
+  margin-bottom: 89px;
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap {
+    margin-bottom: 13.3vw;
+  }
+}
+
+.more-wrap .more {
+  position: relative;
+  margin: auto;
+  width: 350px;
+}
+
+.more-wrap .more p {
+  background-image: url("../common/css/img/more.png");
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap .more {
+    width: 180px;
+    width: 48vw;
+  }
+}
+
+.more-wrap2 {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap2 {
+    bottom: 15px;
+    bottom: 4vw;
+  }
+}
+
+.more-wrap2 .more {
+  position: relative;
+  margin: auto;
+  width: 350px;
+}
+
+.more-wrap2 .more p {
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+.more-wrap2 .more p > b {
+  right: auto;
+  left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap2 .more p > b {
+    left: 30px;
+    left: 8vw;
+  }
+  .more-wrap2 .more p > b:after {
+    border-width: 1.5px;
+    border-width: 0.4vw;
+  }
+}
+
+.more-wrap2 .more p span {
+  font-size: 28px;
+  font-size: 2.8rem;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap2 .more p span {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more-wrap2 .more {
+    width: 180px;
+    width: 48vw;
+  }
+}

@@ -1,0 +1,708 @@
+/*
+****************************/
+.kvSect {
+  background: no-repeat top center / cover;
+}
+
+.kvSect .sectMain .sectTit {
+  text-align: center;
+  font-weight: bold;
+}
+
+.kvSect .sectMain .titBlock .txt {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.kvSect .sectMain .titBlock .txt rt {
+  font-size: 40%;
+}
+
+@media only screen and (min-width: 769px) {
+  .kvSect {
+    box-sizing: border-box;
+    padding-top: 105px;
+    padding-bottom: 70px;
+    min-height: 730px;
+    background-image: url("../images/kv_bg01.jpg");
+    background-position: bottom;
+  }
+  .kvSect .sectMain {
+    margin-right: 11px;
+    margin-left: auto;
+    width: 578px;
+  }
+  .kvSect .sectMain .sectTit {
+    line-height: 1.8;
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  .kvSect .sectMain .sectTit span {
+    position: relative;
+  }
+  .kvSect .sectMain .sectTit span::after {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ed782b;
+    content: "";
+  }
+  .kvSect .sectMain .titBlock {
+    margin-top: 10px;
+  }
+  .kvSect .sectMain .titBlock .txt {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  .kvSect .sectMain .titBlock .txt span {
+    font-size: 53px;
+    font-size: 5.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kvSect {
+    padding-top: 13%;
+    padding-bottom: 63%;
+    background-image: url("../images/kv_bg01-sp.jpg");
+    background-position: bottom;
+  }
+  .kvSect .inner {
+    padding: 0 15px;
+  }
+  .kvSect .sectMain .sectTit {
+    font-size: 3.4vw;
+    line-height: 1.9;
+  }
+  .kvSect .sectMain .sectTit span {
+    padding-bottom: 0.4%;
+    border-bottom: 0.4vw solid #ed782b;
+  }
+  .kvSect .sectMain .titBlock {
+    margin-top: 20px;
+  }
+  .kvSect .sectMain .titBlock .txt {
+    font-size: 5vw;
+  }
+  .kvSect .sectMain .titBlock .txt span {
+    font-size: 6.7vw;
+  }
+}
+
+/*
+****************************/
+.recommendSect {
+  background-color: #fff9ef;
+}
+
+.recommendSect .sectMain .txtBlock {
+  position: relative;
+  z-index: 1;
+}
+
+.recommendSect .sectMain .txtBlock .titBox {
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.recommendSect .sectMain .txtBlock .titBox .tit {
+  font-weight: bold;
+}
+
+.recommendSect .sectMain .txtBlock .txtBox .txt {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.recommendSect .sectMain .notes {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) {
+  .recommendSect {
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
+  .recommendSect .sectMain .txtBlock .titBox .thumb {
+    margin-right: 5px;
+  }
+  .recommendSect .sectMain .txtBlock .titBox .tit {
+    padding-left: 15px;
+    width: 350px;
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  .recommendSect .sectMain .txtBlock .txtBox {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .recommendSect .sectMain .txtBlock .txtBox .txt {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .recommendSect .sectMain .txtBlock .txtBox img {
+    position: absolute;
+    right: 70px;
+    bottom: 80px;
+  }
+  .recommendSect .sectMain .notes {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .recommendSect .sectMain .bgImg {
+    position: absolute;
+    top: -420px;
+    right: 20px;
+    width: 600px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recommendSect {
+    padding-top: 25px;
+  }
+  .recommendSect .sectMain {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .recommendSect .sectMain {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recommendSect .sectMain .txtBlock .titBox .thumb {
+    width: 47px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .recommendSect .sectMain .txtBlock .titBox .thumb {
+    width: 43px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recommendSect .sectMain .txtBlock .titBox .tit {
+    padding-left: 10px;
+    width: calc(100% - 43px);
+    line-height: 1.3;
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .recommendSect .sectMain .txtBlock .titBox .tit {
+    padding-left: 5px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recommendSect .sectMain .txtBlock .txtBox {
+    margin-top: 15px;
+  }
+  .recommendSect .sectMain .txtBlock .txtBox .txt {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .recommendSect .sectMain .txtBlock .txtBox img {
+    margin-top: 30px;
+  }
+  .recommendSect .sectMain .notes {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+  .recommendSect .sectMain .bgImg {
+    margin: 30px -35px 0;
+  }
+  .recommendSect .sectMain .bgImg img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .recommendSect .inner {
+    padding: 0 16px;
+  }
+}
+
+/*
+****************************/
+.planSect {
+  background-color: #ed782b;
+}
+
+.planSect .sectMain .thumb {
+  position: absolute;
+}
+
+@media only screen and (min-width: 769px) {
+  .planSect {
+    min-height: 420px;
+  }
+  .planSect .sectMain .thumb {
+    top: 0;
+    left: 0;
+    transform: translate(7%, -22%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .planSect {
+    padding-bottom: 48%;
+  }
+  .planSect .sectMain .thumb {
+    left: 50%;
+    width: 97%;
+    transform: translate(-50%, -10%);
+  }
+}
+
+/*
+****************************/
+.meritSect {
+  background: no-repeat top center / cover;
+}
+
+.meritSect .sectMain .meritBlock {
+  background-color: #fff;
+}
+
+.meritSect .sectMain .meritBlock .blockMain .tit {
+  font-weight: bold;
+}
+
+.meritSect .sectMain .meritBlock .blockMain .txtBox .txt {
+  line-height: 1.8;
+}
+
+@media only screen and (min-width: 769px) {
+  .meritSect {
+    padding: 80px 0;
+    background-image: url("../images/merit_bg01.jpg");
+  }
+  .meritSect .sectMain .meritBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 45px;
+    border-radius: 20px;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .tit {
+    margin-top: 5px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .tit strong {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .txtBox {
+    margin-top: 15px;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .txtBox .txt {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .meritSect .sectMain .firstBlock {
+    flex-direction: row-reverse;
+  }
+  .meritSect .sectMain .firstBlock .thumb {
+    width: 633px;
+  }
+  .meritSect .sectMain .firstBlock .blockMain {
+    width: calc(100% - 633px - 40px);
+  }
+  .meritSect .sectMain .secondBlock {
+    margin-top: 20px;
+  }
+  .meritSect .sectMain .secondBlock .thumb {
+    width: 447px;
+  }
+  .meritSect .sectMain .secondBlock .thumb img {
+    vertical-align: text-top;
+  }
+  .meritSect .sectMain .secondBlock .blockMain {
+    width: calc(100% - 447px - 40px);
+  }
+  .meritSect .sectMain .thirdBlock {
+    flex-direction: row-reverse;
+    margin-top: 20px;
+  }
+  .meritSect .sectMain .thirdBlock .thumb {
+    width: 537px;
+  }
+  .meritSect .sectMain .thirdBlock .blockMain {
+    width: calc(100% - 537px - 40px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .meritSect {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-image: url("../images/merit_bg01.jpg");
+  }
+  .meritSect .sectMain {
+    margin: 0 -15px;
+  }
+  .meritSect .sectMain .meritBlock {
+    padding: 25px 25px 45px;
+    border-radius: 10px;
+  }
+  .meritSect .sectMain .meritBlock .thumb {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+  .meritSect .sectMain .meritBlock .blockMain {
+    margin-top: 20px;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .tit {
+    line-height: 1.4;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .meritSect .sectMain .meritBlock .blockMain .tit {
+    line-height: 1.6;
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .meritSect .sectMain .meritBlock .blockMain .tit strong {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .txtBox {
+    margin-top: 10px;
+  }
+  .meritSect .sectMain .meritBlock .blockMain .txtBox .txt {
+    line-height: 1.7;
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .meritSect .sectMain .secondBlock {
+    margin-top: 10px;
+  }
+  .meritSect .sectMain .thirdBlock {
+    margin-top: 10px;
+  }
+}
+
+/*
+****************************/
+.slideSect.active .itemList {
+  -webkit-animation-name: galleryloop1;
+  animation-name: galleryloop1;
+}
+
+.slideSect .itemList {
+  width: 30000px;
+  -webkit-animation: 50s infinite linear both;
+  animation: 50s infinite linear both;
+}
+
+.slideSect .itemList:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.slideSect .itemList li {
+  float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .slideSect .itemList li {
+    width: 220px;
+  }
+}
+
+@-webkit-keyframes galleryloop1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes galleryloop1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*
+****************************/
+.copySect .sectTit {
+  position: relative;
+  text-align: center;
+}
+
+.copySect .sectTit .img01 {
+  position: absolute;
+}
+
+.copySect .sectMain .txt {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .copySect {
+    margin-top: 130px;
+  }
+  .copySect .sectTit .img01 {
+    top: -76px;
+    left: 184px;
+  }
+  .copySect .sectMain {
+    margin-top: 30px;
+  }
+  .copySect .sectMain .txt {
+    line-height: 1.8;
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .copySect {
+    margin-top: 72px;
+  }
+  .copySect .sectTit .img01 {
+    top: -40px;
+    right: 58%;
+    width: 178px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .copySect .sectTit .img01 {
+    right: 54%;
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .copySect .sectTit .img02 {
+    margin: 0 auto;
+    width: 312px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .copySect .sectTit .img02 {
+    width: 285px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .copySect .sectMain {
+    margin-top: 10px;
+  }
+  .copySect .sectMain .txt {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .copySect .sectMain .txt span {
+    display: inline-block;
+  }
+}
+
+/*
+****************************/
+.contactSect .sectMain .titBlock {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactSect .sectMain .titBlock .popTxt {
+  color: #ed782b;
+  font-weight: bold;
+}
+
+.contactSect .sectMain .titBlock .popTxt .img01,
+.contactSect .sectMain .titBlock .popTxt .img02 {
+  vertical-align: bottom;
+}
+
+.contactSect .sectMain .titBlock .sectTit {
+  font-weight: bold;
+}
+
+.contactSect .sectMain .btn {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactSect .sectMain .btn a {
+  display: block;
+  background: #ed782b;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  line-height: 1;
+}
+
+.contactSect .sectMain .btn a::before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 769px) {
+  .contactSect {
+    margin-top: 75px;
+    margin-bottom: 70px;
+  }
+  .contactSect .sectMain {
+    padding-top: 112px;
+    background: url("../images/txt_free.png") 235px top no-repeat;
+  }
+  .contactSect .sectMain .titBlock .popTxt {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+  .contactSect .sectMain .titBlock .popTxt .img01,
+  .contactSect .sectMain .titBlock .popTxt .img02 {
+    padding: 0 20px;
+    width: 26px;
+  }
+  .contactSect .sectMain .titBlock .sectTit {
+    margin-top: 5px;
+    line-height: 1.5;
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  .contactSect .sectMain .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 1080px;
+    font-size: 54px;
+    font-size: 5.4rem;
+  }
+  .contactSect .sectMain .btn a {
+    padding: 33px 10px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 3px 4px #000;
+  }
+  .contactSect .sectMain .btn a::before {
+    margin-top: -13px;
+    margin-right: 15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactSect {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  .contactSect .sectMain {
+    padding-top: 50px;
+    background: url("../images/txt_free.png") left top no-repeat;
+    background-size: 160px;
+  }
+  .contactSect .sectMain .titBlock .popTxt {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .contactSect .sectMain .titBlock .popTxt {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactSect .sectMain .titBlock .popTxt .img01,
+  .contactSect .sectMain .titBlock .popTxt .img02 {
+    width: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 374px) {
+  .contactSect .sectMain .titBlock .popTxt .img01,
+  .contactSect .sectMain .titBlock .popTxt .img02 {
+    width: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactSect .sectMain .titBlock .popTxt .img01 {
+    margin-right: 5px;
+  }
+  .contactSect .sectMain .titBlock .popTxt .img02 {
+    margin-left: 5px;
+  }
+  .contactSect .sectMain .titBlock .sectTit {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+  .contactSect .sectMain .titBlock .sectTit span {
+    display: inline-block;
+  }
+  .contactSect .sectMain .btn {
+    margin-top: 25px;
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
+  .contactSect .sectMain .btn a {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px #000;
+  }
+  .contactSect .sectMain .btn a::before {
+    margin-top: -6px;
+    margin-right: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+  }
+}
+
+.bnrHoy {
+  padding: 20px 0 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bnrHoy {
+    padding: 0 0 30px;
+  }
+}
+
+.bnrHoy a:hover {
+  opacity: 0.75;
+}
