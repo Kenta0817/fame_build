@@ -1,1306 +1,1342 @@
 @charset "UTF-8";
+
 /**
 * 建築実例
 *
 */
+
+
 /* ==========================================================================
 common
 ========================================================================== */
+
 .btn-refine {
-  max-width: 185px;
-  margin-left: 25px;
+    max-width: 185px;
+    margin-left: 25px;
 }
 
 .btn-refine a {
-  display: block;
-  padding: 10px 55px 10px 15px;
-  background: #f5cd00 url("img/icon_refine.png") 92% center no-repeat;
-  background-size: 25px auto;
-  text-decoration: none;
-  font-size: 15px;
-  font-size: 1.5rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    display: block;
+    padding: 10px 55px 10px 15px;
+    background: #f5cd00 url("img/icon_refine.png") 92% center no-repeat;
+    background-size: 25px auto;
+    text-decoration: none;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 767px) {
-  .btn-refine {
-    margin-left: 25px;
-  }
-  .btn-refine a {
-    padding: 5px 30px 5px 10px;
-    background-size: 18px auto;
-    font-size: 13px;
-    font-size: 1.3rem;
-  }
+    .btn-refine {
+        margin-left: 25px;
+    }
+    .btn-refine a {
+        padding: 5px 30px 5px 10px;
+        background-size: 18px auto;
+        font-size: 13px;
+        font-size: 1.3rem;
+    }
 }
+
 
 /* ==========================================================================
 layout
 ========================================================================== */
+
 #foot {
-  padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 body.open,
 html.open {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
-  #foot {
-    padding-bottom: 20px;
-  }
-  body.show > .overlay {
-    z-index: 130;
-  }
-  #head-nav.show {
-    z-index: 140;
-  }
+    #foot {
+        padding-bottom: 20px;
+    }
+    body.show>.overlay {
+        z-index: 130;
+    }
+    #head-nav.show {
+        z-index: 140;
+    }
 }
+
 
 /* ==========================================================================
 contents
 ========================================================================== */
+
 #contents {
-  background: #151515;
+    background: #151515;
 }
 
 #contents .contents-inner {
-  margin: 0 auto;
-  padding-top: 220px;
-  padding-bottom: 140px;
-  width: 1182px;
-  border-right: 1px solid #2d2d2d;
-  background: repeating-linear-gradient(90deg, #2d2d2d 0, #151515 1px, #151515 100%);
-  background-size: 197px;
+    margin: 0 auto;
+    padding-top: 220px;
+    padding-bottom: 140px;
+    width: 1182px;
+    /* border-right: 1px solid #2d2d2d;
+  background: repeating-linear-gradient(90deg, #2d2d2d 0, #151515 1px, #151515 100%); */
+    background-size: 197px;
 }
 
 #contents .wrap-contents-ttl {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 #contents .wrap-contents-ttl .contents-ttl {
-  color: #fff;
-  font-size: 20px;
-  font-size: 2rem;
+    color: #fff;
+    font-size: 20px;
+    font-size: 2rem;
 }
 
 #contents .pager {
-  margin-top: 160px;
+    margin-top: 160px;
 }
 
 #contents .pager li {
-  transform: none !important;
+    transform: none !important;
 }
 
 #contents .pager li a {
-  position: static;
-  transform: none !important;
+    position: static;
+    transform: none !important;
 }
 
 #contents .pager li a:active {
-  transform: none;
+    transform: none;
 }
 
 #contents .bnr-plan {
-  margin-top: 60px;
-  text-align: center;
+    margin-top: 60px;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  #contents .contents-inner {
-    box-sizing: border-box;
-    padding: 170px 15px 40px;
-    width: 100%;
-    background: #151515;
-  }
-  #contents .wrap-contents-ttl .contents-ttl {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-  #contents .pager {
-    margin-top: 40px;
-  }
-  #contents .bnr-plan {
-    margin-top: 40px;
-  }
+    #contents .contents-inner {
+        box-sizing: border-box;
+        padding: 170px 15px 40px;
+        width: 100%;
+        background: #151515;
+    }
+    #contents .wrap-contents-ttl .contents-ttl {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    #contents .pager {
+        margin-top: 40px;
+    }
+    #contents .bnr-plan {
+        margin-top: 40px;
+    }
 }
+
 
 /* ==========================================================================
 gallery
 ========================================================================== */
+
 .gallery {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .gallery .grid-item {
-  display: block;
-  width: 197px;
+    display: block;
+    width: 197px;
 }
 
 .gallery .item {
-  width: 197px;
-  opacity: 0;
+    width: 197px;
+    opacity: 0;
 }
 
 .gallery .item[style*="position"] {
-  transition: 0.3s opacity;
-  opacity: 1;
+    transition: 0.3s opacity;
+    opacity: 1;
 }
 
 .gallery .item.new:before {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  z-index: 1;
-  display: block;
-  max-width: 73px;
-  max-height: 73px;
-  width: 20%;
-  height: 73px;
-  background: url("img/icon_new.png") left top no-repeat;
-  background-size: 100%;
-  content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+    display: block;
+    max-width: 73px;
+    max-height: 73px;
+    width: 20%;
+    height: 73px;
+    background: url("img/icon_new.png") left top no-repeat;
+    background-size: 100%;
+    content: "";
 }
 
 @media screen and (max-width: 767px) {
-  .gallery .item.new:before {
-    max-width: 40px;
-    max-height: 40px;
-  }
+    .gallery .item.new:before {
+        max-width: 40px;
+        max-height: 40px;
+    }
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery.index-gallery:not(.index-gallery-part) .item:nth-of-type(1) {
-    width: 591px;
-  }
+    .gallery.index-gallery:not(.index-gallery-part) .item:nth-of-type(1) {
+        width: 591px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-  .gallery .grid-item {
-    width: 33.3%;
-  }
-  .gallery .item {
-    width: 33.3%;
-  }
+    .gallery .grid-item {
+        width: 33.3%;
+    }
+    .gallery .item {
+        width: 33.3%;
+    }
 }
+
 
 /* ==========================================================================
 modal
 ========================================================================== */
+
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 120;
-  display: flex;
-  visibility: hidden;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .modal .modal-inner {
-  position: relative;
-  box-sizing: border-box;
-  padding: 40px 35px 50px;
-  max-width: 1300px;
-  border-radius: 8px;
-  background-color: #151515;
-  box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.5);
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 35px 50px;
+    max-width: 1300px;
+    border-radius: 8px;
+    background-color: #151515;
+    box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.5);
 }
 
 .modal .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
-  transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    transition: 0.5s;
 }
 
 .modal.open {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .modal-close {
-  position: absolute;
-  top: 45px;
-  right: 50px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
-.modal-close:after, .modal-close:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: "";
+.modal-close:after,
+.modal-close:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
 }
 
 .modal-close:before {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .modal-close:after {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
-.modal-close:hover:after, .modal-close:hover:before {
-  background-color: #f5cd00;
+.modal-close:hover:after,
+.modal-close:hover:before {
+    background-color: #f5cd00;
 }
 
 @media screen and (max-width: 767px) {
-  .modal .modal-inner {
-    box-sizing: border-box;
-    padding: 30px 10px;
-    width: 100%;
-  }
-  .modal .modal-close {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
+    .modal .modal-inner {
+        box-sizing: border-box;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .modal .modal-close {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
 }
+
 
 /* ==========================================================================
 refine
 ========================================================================== */
+
 #refine .refine-inner {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 #refine .refine-ttl {
-  margin-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  font-size: 25px;
-  font-size: 2.5rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-size: 2.5rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #refine .refine-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #refine .refine-list li {
-  position: relative;
-  box-sizing: border-box;
-  padding: 5px;
-  width: 16.666%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 16.666%;
 }
 
 #refine .refine-list li .refine-thumb img {
-  width: 100%;
-  height: 12.8vw;
-  max-height: 195px;
+    width: 100%;
+    height: 12.8vw;
+    max-height: 195px;
 }
 
 #refine .refine-list li .btn-more {
-  position: absolute;
-  right: 0;
-  bottom: 15px;
-  left: 0;
-  margin: auto;
-  width: 135px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+    margin: auto;
+    width: 135px;
 }
 
-#refine .refine-list li .btn-more > span {
-  width: 100%;
+#refine .refine-list li .btn-more>span {
+    width: 100%;
 }
 
-#refine .refine-list li .btn-more > span span {
-  padding: 8px 3px;
-  background-color: #f5cd00;
-  text-align: center;
-  line-height: 1.4;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+#refine .refine-list li .btn-more>span span {
+    padding: 8px 3px;
+    background-color: #f5cd00;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
-#refine .refine-list li a:hover .btn-more > span span {
-  background-color: #fff;
+#refine .refine-list li a:hover .btn-more>span span {
+    background-color: #fff;
 }
 
-#refine .refine-list li a:active .btn-more > span span {
-  transform: translate3d(3px, 3px, 0);
+#refine .refine-list li a:active .btn-more>span span {
+    transform: translate3d(3px, 3px, 0);
 }
 
 @media screen and (max-width: 767px) {
-  #refine .refine-ttl {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-size: 1.8rem;
-  }
-  #refine .refine-list {
-    overflow: auto;
-    max-height: 105vw;
-    -webkit-overflow-scrolling: touch;
-  }
-  #refine .refine-list li {
-    padding: 2px;
-    width: 50%;
-  }
-  #refine .refine-list li .refine-thumb img {
-    height: 35vw;
-  }
-  #refine .refine-list li .btn-more {
-    bottom: 10px;
-    width: 80%;
-  }
-  #refine .refine-list li .btn-more > span span {
-    font-size: 11px;
-    font-size: 1.1rem;
-  }
+    #refine .refine-ttl {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    #refine .refine-list {
+        overflow: auto;
+        max-height: 105vw;
+        -webkit-overflow-scrolling: touch;
+    }
+    #refine .refine-list li {
+        padding: 2px;
+        width: 50%;
+    }
+    #refine .refine-list li .refine-thumb img {
+        height: 35vw;
+    }
+    #refine .refine-list li .btn-more {
+        bottom: 10px;
+        width: 80%;
+    }
+    #refine .refine-list li .btn-more>span span {
+        font-size: 11px;
+        font-size: 1.1rem;
+    }
 }
+
 
 /* ==========================================================================
 detail
 ========================================================================== */
+
 #detail .detail-inner {
-  position: relative;
-  box-sizing: border-box;
-  padding: 110px 50px 50px;
-  max-width: 1300px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 110px 50px 50px;
+    max-width: 1300px;
 }
 
 #detail .detail-img {
-  position: relative;
-  margin-bottom: 20px;
-  width: 100%;
-  max-height: 700px;
-  height: 70vh;
-  text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    max-height: 700px;
+    height: 70vh;
+    text-align: center;
 }
 
-#detail .detail-img > img {
-  height: 100%;
-  text-align: center;
-  font-family: 'object-fit: contain;';
-  -o-object-fit: contain;
-  object-fit: contain;
+#detail .detail-img>img {
+    height: 100%;
+    text-align: center;
+    font-family: 'object-fit: contain;';
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 #detail .detail-img .btn-favo {
-  position: absolute;
-  right: 25px;
-  bottom: -50px;
-  width: 100px;
-  height: 100px;
+    position: absolute;
+    right: 25px;
+    bottom: -50px;
+    width: 100px;
+    height: 100px;
 }
 
 #detail .detail-img .btn-favo a {
-  display: block;
-  box-sizing: border-box;
-  padding-top: 50px;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background: #f5cd00 url("img/icon_favo.png") center 15px no-repeat;
-  background-size: 31px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.4;
-  font-size: 11px;
-  font-size: 1.1rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  transition: 0.3s;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #f5cd00 url("img/icon_favo.png") center 15px no-repeat;
+    background-size: 31px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    transition: 0.3s;
 }
 
-#detail .detail-img .btn-favo a.del, #detail .detail-img .btn-favo a:hover {
-  background: #fff url("img/icon_favo.png") center 15px no-repeat;
-  background-size: 31px;
+#detail .detail-img .btn-favo a.del,
+#detail .detail-img .btn-favo a:hover {
+    background: #fff url("img/icon_favo.png") center 15px no-repeat;
+    background-size: 31px;
 }
 
 #detail .detail-img .btn-favo a.del {
-  position: relative;
+    position: relative;
 }
 
 #detail .detail-img .btn-favo a.del .txt-add {
-  display: none;
+    display: none;
 }
 
-#detail .detail-img .btn-favo a.del:after, #detail .detail-img .btn-favo a.del:before {
-  content: "";
-  display: block;
-  position: absolute;
+#detail .detail-img .btn-favo a.del:after,
+#detail .detail-img .btn-favo a.del:before {
+    content: "";
+    display: block;
+    position: absolute;
 }
 
 #detail .detail-img .btn-favo a.del:before {
-  background: #ff0000;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  top: 32px;
-  right: 26px;
+    background: #ff0000;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    top: 32px;
+    right: 26px;
 }
 
 #detail .detail-img .btn-favo a.del:after {
-  width: 6px;
-  height: 2px;
-  background: #fff;
-  top: 37px;
-  right: 29px;
+    width: 6px;
+    height: 2px;
+    background: #fff;
+    top: 37px;
+    right: 29px;
 }
 
 #detail .detail-img .btn-favo a.add .txt-del {
-  display: none;
+    display: none;
 }
 
 #detail .detail-cap {
-  box-sizing: border-box;
-  padding: 0 10px;
-  max-width: 70%;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 0 10px;
+    max-width: 70%;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 #detail .arrow {
-  position: fixed;
-  top: 0;
-  display: block;
-  width: 100px;
-  height: 100%;
-  cursor: pointer;
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
 }
 
 #detail .arrow:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: block;
-  margin: auto;
-  width: 30px;
-  height: 30px;
-  border: 3px solid #fff;
-  content: "";
-  transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    content: "";
+    transform: rotate(45deg);
 }
 
 #detail .arrow.prev {
-  left: 0;
+    left: 0;
 }
 
 #detail .arrow.prev:before {
-  left: 40px;
-  border-top: none;
-  border-right: none;
+    left: 40px;
+    border-top: none;
+    border-right: none;
 }
 
 #detail .arrow.next {
-  right: 0;
+    right: 0;
 }
 
 #detail .arrow.next:before {
-  right: 40px;
-  border-bottom: none;
-  border-left: none;
+    right: 40px;
+    border-bottom: none;
+    border-left: none;
 }
 
 #detail .arrow:hover {
-  background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 #detail .arrow:hover:before {
-  border-color: #f5cd00;
+    border-color: #f5cd00;
 }
 
 #detail.first .arrow.prev {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 #detail.last .arrow.next {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 #detail.modal-pickup .arrow {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
-  #detail .detail-inner {
-    padding: 0;
-    background: none;
-    border-radius: 0;
-  }
-  #detail .detail-img {
-    margin-bottom: 10px;
-    height: auto;
-  }
-  #detail .detail-img > img {
-    height: auto;
-    max-height: 60vh;
-  }
-  #detail .detail-img .btn-favo {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 75px;
-    height: 75px;
-  }
-  #detail .detail-img .btn-favo a {
-    padding-top: 32px;
-    background: #f5cd00 url("img/icon_favo.png") center 12px no-repeat;
-    background-size: 20px;
-    font-size: 10px;
-    font-size: 1rem;
-  }
-  #detail .detail-img .btn-favo a.del, #detail .detail-img .btn-favo a:hover {
-    background: #fff url("img/icon_favo.png") center 12px no-repeat;
-    background-size: 20px;
-  }
-  #detail .detail-img .btn-favo a.del:before {
-    top: 19px;
-    right: 16px;
-  }
-  #detail .detail-img .btn-favo a.del:after {
-    top: 24px;
-    right: 19px;
-  }
-  #detail .detail-cap {
-    padding: 0;
-    margin-top: 15px;
-    padding: 0 30px;
-    max-width: 100%;
-    font-size: 12px;
-    font-size: 1.2rem;
-  }
-  #detail .arrow {
-    position: absolute;
-    width: 100px;
-  }
-  #detail .arrow:before {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #fff;
-  }
-  #detail .arrow.prev:before {
-    left: 16px;
-  }
-  #detail .arrow.next:before {
-    right: 16px;
-  }
-  #detail .arrow:hover {
-    background: none;
-  }
-  #detail .arrow:hover:before {
-    border-color: #fff;
-  }
+    #detail .detail-inner {
+        padding: 0;
+        background: none;
+        border-radius: 0;
+    }
+    #detail .detail-img {
+        margin-bottom: 10px;
+        height: auto;
+    }
+    #detail .detail-img>img {
+        height: auto;
+        max-height: 60vh;
+    }
+    #detail .detail-img .btn-favo {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 75px;
+        height: 75px;
+    }
+    #detail .detail-img .btn-favo a {
+        padding-top: 32px;
+        background: #f5cd00 url("img/icon_favo.png") center 12px no-repeat;
+        background-size: 20px;
+        font-size: 10px;
+        font-size: 1rem;
+    }
+    #detail .detail-img .btn-favo a.del,
+    #detail .detail-img .btn-favo a:hover {
+        background: #fff url("img/icon_favo.png") center 12px no-repeat;
+        background-size: 20px;
+    }
+    #detail .detail-img .btn-favo a.del:before {
+        top: 19px;
+        right: 16px;
+    }
+    #detail .detail-img .btn-favo a.del:after {
+        top: 24px;
+        right: 19px;
+    }
+    #detail .detail-cap {
+        padding: 0;
+        margin-top: 15px;
+        padding: 0 30px;
+        max-width: 100%;
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+    #detail .arrow {
+        position: absolute;
+        width: 100px;
+    }
+    #detail .arrow:before {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #fff;
+    }
+    #detail .arrow.prev:before {
+        left: 16px;
+    }
+    #detail .arrow.next:before {
+        right: 16px;
+    }
+    #detail .arrow:hover {
+        background: none;
+    }
+    #detail .arrow:hover:before {
+        border-color: #fff;
+    }
 }
+
 
 /* ==========================================================================
 bookmark
 ========================================================================== */
+
 #bookmark {
-  position: fixed;
-  top: 100%;
-  z-index: 110;
-  padding: 10px 0 45px;
-  width: 100%;
-  background: #f5cd00;
-  transform: translateY(0);
-  transition: 0.5s transform ease-in-out;
+    position: fixed;
+    top: 100%;
+    z-index: 110;
+    padding: 10px 0 45px;
+    width: 100%;
+    background: #f5cd00;
+    transform: translateY(0);
+    transition: 0.5s transform ease-in-out;
 }
 
 #bookmark .bookmark-ttl {
-  position: absolute;
-  top: -69px;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  max-width: 1280px;
-  width: 100%;
-  height: 70px;
-  background: #f5cd00;
-  box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.004);
-  text-align: center;
-  cursor: pointer;
+    position: absolute;
+    top: -69px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 70px;
+    background: #f5cd00;
+    box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.004);
+    text-align: center;
+    cursor: pointer;
 }
 
 #bookmark .bookmark-ttl .txt {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
-#bookmark .bookmark-ttl .txt > span {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 17px;
-  font-size: 1.7rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+#bookmark .bookmark-ttl .txt>span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #bookmark .bookmark-ttl .txt:before {
-  display: inline-block;
-  margin-right: 5px;
-  width: 31px;
-  height: 28px;
-  background: url("img/icon_favo.png") left top no-repeat;
-  background-size: 100%;
-  content: "";
-  vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    width: 31px;
+    height: 28px;
+    background: url("img/icon_favo.png") left top no-repeat;
+    background-size: 100%;
+    content: "";
+    vertical-align: middle;
 }
 
 #bookmark .bookmark-ttl .num,
 #bookmark .bookmark-ttl .txt {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #bookmark .bookmark-ttl .num {
-  box-sizing: border-box;
-  padding-top: 1px;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #000;
-  border-radius: 100%;
-  background: #fff;
-  font-size: 15px;
-  font-size: 1.5rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    box-sizing: border-box;
+    padding-top: 1px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background: #fff;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #bookmark #cord {
-  margin: 0 auto 25px;
-  max-width: 1182px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+    margin: 0 auto 25px;
+    max-width: 1182px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#bookmark #cord > * {
-  box-sizing: border-box;
+#bookmark #cord>* {
+    box-sizing: border-box;
 }
 
 #bookmark #cord .cord-ttl {
-  width: 180px;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  font-size: 1.7rem;
+    width: 180px;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 #bookmark #cord .cord-url {
-  width: calc(100% - 180px);
-  letter-spacing: -.40em;
-  background: #000;
-  padding: 5px 25px;
+    width: calc(100% - 180px);
+    letter-spacing: -.40em;
+    background: #000;
+    padding: 5px 25px;
 }
 
 #bookmark #cord .cord-url .bookmark-url {
-  color: #fff;
-  display: inline-block;
-  letter-spacing: normal;
-  vertical-align: top;
-  vertical-align: middle;
-  max-width: calc(100% - 150px);
-  margin-right: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+    vertical-align: middle;
+    max-width: calc(100% - 150px);
+    margin-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #bookmark #cord .cord-url .bookmark-btn {
-  line-height: 1;
-  display: inline-block;
-  letter-spacing: normal;
-  vertical-align: top;
-  vertical-align: middle;
-  width: 130px;
+    line-height: 1;
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: top;
+    vertical-align: middle;
+    width: 130px;
 }
 
 #bookmark #cord .cord-url .bookmark-btn button {
-  display: block;
-  width: 100%;
-  background: url("../../common/css/img/icon_clipbord.png") #f5cd00 13px center no-repeat;
-  background-size: 15px;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  font-size: 1.3rem;
-  border-radius: 40px;
-  border: none;
-  padding: 6px 5px 6px 17px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    display: block;
+    width: 100%;
+    background: url("../../common/css/img/icon_clipbord.png") #f5cd00 13px center no-repeat;
+    background-size: 15px;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    border: none;
+    padding: 6px 5px 6px 17px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #bookmark #cord .bookmark-desc {
-  margin-top: 10px;
-  width: 100%;
+    margin-top: 10px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  #bookmark .gallery-scroll {
-    max-height: 50vh;
-    overflow: auto;
-  }
+    #bookmark .gallery-scroll {
+        max-height: 50vh;
+        overflow: auto;
+    }
 }
 
 #bookmark .bookmark-gallery {
-  margin: 0 auto;
-  max-width: 1182px;
+    margin: 0 auto;
+    max-width: 1182px;
 }
 
 #bookmark .bookmark-gallery .item {
-  box-sizing: border-box;
-  border: 5px solid #f5cd00;
+    box-sizing: border-box;
+    border: 5px solid #f5cd00;
 }
 
 #bookmark.open {
-  z-index: 111;
-  transform: translateY(-100%);
+    z-index: 111;
+    transform: translateY(-100%);
 }
 
 .bookmark-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 109;
-  display: block;
-  visibility: hidden;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 109;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .bookmark-overlay.open {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .bookmark-overlay .modal-close {
-  top: 30px;
-  right: 30px;
+    top: 30px;
+    right: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  #bookmark {
-    box-sizing: border-box;
-    padding: 0;
-    width: 100%;
-  }
-  #bookmark .bookmark-inner {
-    overflow: auto;
-    max-height: 115vw;
-    -webkit-overflow-scrolling: touch;
-  }
-  #bookmark .bookmark-ttl {
-    position: absolute;
-    top: -49px;
-    width: 100%;
-    height: 50px;
-  }
-  #bookmark .bookmark-ttl .txt {
-    margin-right: 5px;
-  }
-  #bookmark .bookmark-ttl .txt > span {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-  #bookmark .bookmark-ttl .txt:before {
-    width: 22px;
-    height: 20px;
-  }
-  #bookmark .bookmark-ttl .num {
-    width: 25px;
-    height: 25px;
-    line-height: 1.7;
-    font-size: 13px;
-    font-size: 1.3rem;
-  }
-  #bookmark #cord {
-    max-width: 100%;
-    display: block;
-    padding: 10px;
-  }
-  #bookmark #cord .cord-ttl {
-    width: 100%;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-  #bookmark #cord .cord-url {
-    width: 100%;
-    padding: 5px 10px 40px;
-    position: relative;
-  }
-  #bookmark #cord .cord-url .bookmark-url {
-    max-width: calc(100%);
-    margin-right: 0;
-    font-size: 12px;
-    font-size: 1.2rem;
-  }
-  #bookmark #cord .cord-url .bookmark-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    left: 0;
-    margin: auto;
-  }
-  #bookmark #cord .bookmark-desc {
-    margin-top: 10px;
-    width: 100%;
-    font-size: 12px;
-    font-size: 1.2rem;
-  }
-  #bookmark .bookmark-gallery {
-    width: 100%;
-  }
-  #bookmark.open {
-    transform: translateY(-100%);
-  }
-  .bookmark-btn-sp {
-    width: 45px;
-    height: 45px;
-    background: #f5cd00;
-    border-radius: 100%;
-    position: fixed;
-    top: 150px;
-    right: 10px;
-    z-index: 110;
-    background: #f5cd00 url("img/icon_favo.png") center no-repeat;
-    background-size: 23px;
-  }
+    #bookmark {
+        box-sizing: border-box;
+        padding: 0;
+        width: 100%;
+    }
+    #bookmark .bookmark-inner {
+        overflow: auto;
+        max-height: 115vw;
+        -webkit-overflow-scrolling: touch;
+    }
+    #bookmark .bookmark-ttl {
+        position: absolute;
+        top: -49px;
+        width: 100%;
+        height: 50px;
+    }
+    #bookmark .bookmark-ttl .txt {
+        margin-right: 5px;
+    }
+    #bookmark .bookmark-ttl .txt>span {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    #bookmark .bookmark-ttl .txt:before {
+        width: 22px;
+        height: 20px;
+    }
+    #bookmark .bookmark-ttl .num {
+        width: 25px;
+        height: 25px;
+        line-height: 1.7;
+        font-size: 13px;
+        font-size: 1.3rem;
+    }
+    #bookmark #cord {
+        max-width: 100%;
+        display: block;
+        padding: 10px;
+    }
+    #bookmark #cord .cord-ttl {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    #bookmark #cord .cord-url {
+        width: 100%;
+        padding: 5px 10px 40px;
+        position: relative;
+    }
+    #bookmark #cord .cord-url .bookmark-url {
+        max-width: calc(100%);
+        margin-right: 0;
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+    #bookmark #cord .cord-url .bookmark-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #bookmark #cord .bookmark-desc {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+    #bookmark .bookmark-gallery {
+        width: 100%;
+    }
+    #bookmark.open {
+        transform: translateY(-100%);
+    }
+    .bookmark-btn-sp {
+        width: 45px;
+        height: 45px;
+        background: #f5cd00;
+        border-radius: 100%;
+        position: fixed;
+        top: 150px;
+        right: 10px;
+        z-index: 110;
+        background: #f5cd00 url("img/icon_favo.png") center no-repeat;
+        background-size: 23px;
+    }
 }
+
 
 /* ==========================================================================
 index-main
 ========================================================================== */
+
 #index-main {
-  position: relative;
+    position: relative;
 }
 
 #index-main .main-gallery {
-  overflow: hidden;
-  min-height: 440px;
-  height: 37vw;
+    overflow: hidden;
+    min-height: 440px;
+    height: 37vw;
 }
 
 #index-main .main-gallery .main-gallery-box {
-  display: flex;
+    display: flex;
 }
 
 #index-main .main-gallery .main-gallery-box .col {
-  min-height: 440px;
-  height: 37vw;
+    min-height: 440px;
+    height: 37vw;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span {
-  display: block;
+#index-main .main-gallery .main-gallery-box .col>span {
+    display: block;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span a {
-  display: block;
-  height: 100%;
+#index-main .main-gallery .main-gallery-box .col>span a {
+    display: block;
+    height: 100%;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span.pickup {
-  position: relative;
-  overflow: hidden;
+#index-main .main-gallery .main-gallery-box .col>span.pickup {
+    position: relative;
+    overflow: hidden;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span.pickup img {
-  height: 100%;
-  width: auto;
-  max-width: none;
+#index-main .main-gallery .main-gallery-box .col>span.pickup img {
+    height: 100%;
+    width: auto;
+    max-width: none;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span.pickup:before {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-  display: block;
-  width: 48px;
-  height: 48px;
-  background: url("img/icon_pickup.png") left top no-repeat;
-  background-size: 100%;
-  content: "";
+#index-main .main-gallery .main-gallery-box .col>span.pickup:before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url("img/icon_pickup.png") left top no-repeat;
+    background-size: 100%;
+    content: "";
 }
 
-#index-main .main-gallery .main-gallery-box .col > span.h100 {
-  height: 100%;
+#index-main .main-gallery .main-gallery-box .col>span.h100 {
+    height: 100%;
 }
 
-#index-main .main-gallery .main-gallery-box .col > span.h50 {
-  height: 50%;
+#index-main .main-gallery .main-gallery-box .col>span.h50 {
+    height: 50%;
 }
 
 #index-main .main-gallery .main-gallery-box .col.col1 {
-  width: 24%;
+    width: 24%;
 }
 
 #index-main .main-gallery .main-gallery-box .col.col2 {
-  width: 52%;
+    width: 52%;
 }
 
 #index-main .main-ttl {
-  position: absolute;
-  right: 0;
-  bottom: -135px;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 720px;
-  height: 270px;
-  border-radius: 6px;
-  background-color: #151515;
-  box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.2);
+    position: absolute;
+    right: 0;
+    bottom: -135px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 720px;
+    height: 270px;
+    border-radius: 6px;
+    background-color: #151515;
+    box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.2);
 }
 
 #index-main .main-ttl .ttl {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #index-main .main-ttl .txt {
-  color: #fff;
-  line-height: 1.5;
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 767px) {
-  #index-main .main-gallery {
-    min-height: 0;
-    height: 38vw !important;
-  }
-  #index-main .main-gallery .col {
-    min-height: 0 !important;
-    height: 38vw !important;
-  }
-  #index-main .main-gallery .col span.pickup:before {
-    top: 10px !important;
-    right: 10px !important;
-    width: 30px !important;
-    height: 30px !important;
-  }
-  #index-main .main-ttl {
-    bottom: -135px;
-    box-sizing: border-box;
-    padding: 0 15px;
-    width: 90%;
-    height: 150px;
-  }
-  #index-main .main-ttl .ttl {
-    margin-bottom: 20px;
-  }
-  #index-main .main-ttl .ttl img {
-    width: 220px;
-  }
-  #index-main .main-ttl .txt {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
+    #index-main .main-gallery {
+        min-height: 0;
+        height: 38vw !important;
+    }
+    #index-main .main-gallery .col {
+        min-height: 0 !important;
+        height: 38vw !important;
+    }
+    #index-main .main-gallery .col span.pickup:before {
+        top: 10px !important;
+        right: 10px !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    #index-main .main-ttl {
+        bottom: -135px;
+        box-sizing: border-box;
+        padding: 0 15px;
+        width: 90%;
+        height: 150px;
+    }
+    #index-main .main-ttl .ttl {
+        margin-bottom: 20px;
+    }
+    #index-main .main-ttl .ttl img {
+        width: 220px;
+    }
+    #index-main .main-ttl .txt {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
 }
+
 
 /* ==========================================================================
 contents-part
 ========================================================================== */
+
 #contents.contents-part .contents-inner {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 
 @media screen and (max-width: 767px) {
-  #contents.contents-part .contents-inner {
-    padding-top: 20px;
-  }
+    #contents.contents-part .contents-inner {
+        padding-top: 20px;
+    }
 }
+
 
 /* ==========================================================================
 part-main
 ========================================================================== */
+
 #part-main {
-  width: calc(100% + 1px);
-  margin-bottom: 40px;
-  border-radius: 6px;
-  background-color: #151515;
-  box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.2);
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px 20px 35px;
-  box-sizing: border-box;
+    width: calc(100% + 1px);
+    margin-bottom: 40px;
+    border-radius: 6px;
+    background-color: #151515;
+    box-shadow: 0 25px 50px 0 rgba(6, 0, 1, 0.2);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 35px;
+    box-sizing: border-box;
 }
 
 #part-main .part-main-ttl {
-  line-height: 1;
-  width: 325px;
+    line-height: 1;
+    width: 325px;
 }
 
 @media screen and (max-width: 767px) {
-  #part-main {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    padding: 10px;
-    text-align: center;
-  }
-  #part-main .part-main-ttl {
-    width: 130px;
-  }
-  #part-main .btn-refine {
-    margin-left: 0;
-  }
+    #part-main {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        padding: 10px;
+        text-align: center;
+    }
+    #part-main .part-main-ttl {
+        width: 130px;
+    }
+    #part-main .btn-refine {
+        margin-left: 0;
+    }
 }
+
 
 /* ==========================================================================
 sct-nav
 ========================================================================== */
+
 .sct-nav {
-  padding: 0 35px 10px;
-  border-bottom: 1px solid #444;
-  margin-bottom: 60px;
+    padding: 0 35px 10px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 60px;
 }
 
 .sct-nav .sct-nav-ttl {
-  color: #f5cd00;
-  font-size: 25px;
-  font-size: 2.5rem;
+    color: #f5cd00;
+    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .sct-nav .wrap-theme {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .sct-nav .theme-ttl {
-  color: #fff;
-  margin-right: 40px;
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-family: "FOT-筑紫ゴシック Pro B","TsukuGoPro-B",sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "FOT-筑紫ゴシック Pro B", "TsukuGoPro-B", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .sct-nav .theme-nav {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sct-nav .theme-nav li {
-  margin-right: 35px;
+    margin-right: 35px;
 }
 
 .sct-nav .theme-nav li span {
-  font-size: 16px;
-  font-size: 1.6rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 3px 0 3px 30px;
-  position: relative;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 0 3px 30px;
+    position: relative;
 }
 
-.sct-nav .theme-nav li span:after, .sct-nav .theme-nav li span:before {
-  content: "";
-  display: block;
-  position: absolute;
-  box-sizing: border-box;
-  border-radius: 100%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transition: 0.2s;
+.sct-nav .theme-nav li span:after,
+.sct-nav .theme-nav li span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.2s;
 }
 
 .sct-nav .theme-nav li span:before {
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #444;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444;
 }
 
 .sct-nav .theme-nav li span:after {
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background: #444;
-  opacity: 0;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #444;
+    opacity: 0;
 }
 
 .sct-nav .theme-nav li a.active span:before,
 .sct-nav .theme-nav li a:hover span:before {
-  border-color: #f5cd00;
+    border-color: #f5cd00;
 }
 
 .sct-nav .theme-nav li a.active span:after,
 .sct-nav .theme-nav li a:hover span:after {
-  background: #f5cd00;
-  opacity: 1;
+    background: #f5cd00;
+    opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
-  .sct-nav {
-    padding: 0 0 10px;
-    margin-bottom: 30px;
-  }
-  .sct-nav .sct-nav-ttl {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-size: 2rem;
-  }
-  .sct-nav .wrap-theme {
-    display: block;
-  }
-  .sct-nav .theme-ttl {
-    margin-right: 0;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-size: 1.5rem;
-  }
-  .sct-nav .theme-nav {
-    display: flex;
-  }
-  .sct-nav .theme-nav li {
-    margin-right: 15px;
-    margin-bottom: 5px;
-  }
-  .sct-nav .theme-nav li span {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
+    .sct-nav {
+        padding: 0 0 10px;
+        margin-bottom: 30px;
+    }
+    .sct-nav .sct-nav-ttl {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-size: 2rem;
+    }
+    .sct-nav .wrap-theme {
+        display: block;
+    }
+    .sct-nav .theme-ttl {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-size: 1.5rem;
+    }
+    .sct-nav .theme-nav {
+        display: flex;
+    }
+    .sct-nav .theme-nav li {
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    .sct-nav .theme-nav li span {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
 }
+
 
 /* ==========================================================================
 works-bookmark
 ========================================================================== */
+
 #works-bookmark #foot,
 #works-bookmark #head {
-  display: none;
+    display: none;
 }
 
 #works-bookmark .contents-inner {
-  padding-top: 50px;
-  box-sizing: border-box;
-  min-height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 #works-bookmark .contents-inner .bookmark-ttl {
-  position: static;
-  margin-bottom: 50px;
+    position: static;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  #works-bookmark #foot,
-  #works-bookmark #head {
-    display: none;
-  }
-  #works-bookmark #wrapper {
-    padding: 0;
-  }
-  #works-bookmark .contents-inner {
-    box-sizing: border-box;
-    min-height: 100vh;
-  }
-  #works-bookmark .contents-inner .bookmark-ttl {
-    position: static;
-    margin-bottom: 50px;
-  }
-  #works-bookmark .contents-inner .bookmark-ttl img {
-    width: 75%;
-  }
+    #works-bookmark #foot,
+    #works-bookmark #head {
+        display: none;
+    }
+    #works-bookmark #wrapper {
+        padding: 0;
+    }
+    #works-bookmark .contents-inner {
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    #works-bookmark .contents-inner .bookmark-ttl {
+        position: static;
+        margin-bottom: 50px;
+    }
+    #works-bookmark .contents-inner .bookmark-ttl img {
+        width: 75%;
+    }
 }
+
 
 /* ==========================================================================
 .bnr-form
 ========================================================================== */
+
 .bnr-form {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .bnr-form.col2 {
-  width: 100%;
+    width: 100%;
 }
 
 .bnr-form.col2 a {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 @media screen and (max-width: 767px) {
-  .bnr-form.col2 a {
-    display: block;
-  }
+    .bnr-form.col2 a {
+        display: block;
+    }
 }
 
 .bnr-form.col2 a .box {
-  width: 50%;
+    width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  .bnr-form.col2 a .box {
-    width: 100%;
-  }
+    .bnr-form.col2 a .box {
+        width: 100%;
+    }
 }
 
 .bnr-form.col2 a .box img {
-  width: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  .bnr-form {
-    margin-top: 45px;
-  }
+    .bnr-form {
+        margin-top: 45px;
+    }
 }
