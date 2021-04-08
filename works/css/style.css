@@ -72,7 +72,8 @@ contents
 ========================================================================== */
 
 #contents {
-    background: #151515;
+    /* background: #151515; */
+    background: #eef5eb;
 }
 
 #contents .contents-inner {
